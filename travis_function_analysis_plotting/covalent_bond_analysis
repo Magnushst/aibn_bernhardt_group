@@ -1,0 +1,49 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+
+plt.close('all')
+files_to_plot = {
+    'dacf_O_H_d[O1r_H1o]_r0-125_int_acfless_correq.csv': 'Water (O-H)',
+    'dacf_C2H3O2_H_d[CHOr_H1o]_r0-131_int_acfless_correq.csv': 'Acetic Acid (O-H)',
+    'dacf_C3H3N2_H_d[CHNr_H1o]_r0-131_int_acfless_correq.csv': 'Imidazole (N-H)'
+}
+
+output_filename = 'covalent_lifetimes_analysis_200k_10.png'
+
+plt.figure(figsize=(10, 6))
+for filename, label in files_to_plot.items():
+    if os.path.exists(filename):
+        try:
+            # TRAVIS CSVs use semicolons. 
+            # We use comment='#' to skip the metadata header lines.
+            df = pd.read_csv(filename, sep=';', comment='#')
+            
+            # Clean up column names (i.e., white space)
+            df.columns = df.columns.str.strip()
+            
+            # Column 0 = X-axis (Time)
+            # Column 1 = Y-axis (ACF)
+            time_data = df.iloc[:, 0]
+            acf_data = df.iloc[:, 1]
+            
+            plt.plot(time_data, acf_data, linewidth=2.0, label=label)
+            print(f"Successfully plotted: {filename}")
+            
+        except Exception as e:
+            print(f"Error reading {filename}: {e}")
+    else:
+        print(f"Warning: File not found: {filename}")
+
+
+plt.xlabel('Time (ps)', fontsize=14)
+plt.ylabel('Bond Survival Probability', fontsize=14)
+plt.title('MACE - Covalent Bond Stability', fontsize=16)
+
+plt.ylim(-0.05, 1.05)  # plt.ylim(-0.05, 1.05)
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.legend(fontsize=12)
+plt.tight_layout()
+plt.savefig(output_filename, dpi=1200)
+print(f"\nPlot saved as: {output_filename}")
