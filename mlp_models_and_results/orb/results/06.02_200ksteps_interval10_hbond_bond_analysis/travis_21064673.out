@@ -1,0 +1,1908 @@
+[1;30m[Renaming existing File travis.log to #1#travis.log ...[0;0;0m[1;30mOK.]
+[0;0;0m
+[1;33m  ________                                 __
+[0;0;0m[1;33m /        |                               /  |
+[0;0;0m[1;33m ########/ ______    ______    __     __  ##/    _______
+[0;0;0m[1;33m    ## |  /      \  /      \  /  \   /  | /  |  /       |
+[0;0;0m[1;33m    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+[0;0;0m[1;33m    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+[0;0;0m[1;33m    ## | ## |      /####### |   ## ##/    ## |  ######  |
+[0;0;0m[1;33m    ## | ## |      ##    ## |    ###/     ## | /     ##/
+[0;0;0m[1;33m    ##/  ##/        #######/      #/      ##/  #######/
+[0;0;0m[1;37m
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+[0;0;0m    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+[1;33m    http://www.travis-analyzer.de
+
+[0;0;0m    Please cite: [1;37mJ. Chem. Phys. 2020, 152 (16), 164105.         [0;0;0m(DOI 10.1063/5.0005078 )
+[1;37m                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  [0;0;0m(DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+[1;37m #  [0;0;0mRunning on bun126 at Fri Feb  6 10:21:30 2026 (PID 3059282)
+[1;37m #  [0;0;0mRunning in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+[1;37m #  [0;0;0mVersion: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+[1;37m #  [0;0;0mTarget platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+[1;37m #  [0;0;0mMachine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+[1;37m #  [0;0;0mHome: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+[1;37m #  [0;0;0mInput from input_tr.txt, Output is redirected
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+    Opening position trajectory orb_analysis_unwrapped_v6_200k_interval_10.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 20014 frames (just a *guess* from the file size of 2.63 GiB).
+
+[1;37m    4700 atoms in the system: [0;0;0m500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {   -569 ..  +4165 pm }, dX = 4734 pm
+      (in step 1)   Y = {   -643 ..  +4379 pm }, dY = 5022 pm
+                    Z = {   -624 ..  +4408 pm }, dZ = 5032 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] [1;37mn
+[0;0;0m
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] [1;37my
+[0;0;0m    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] [1;37my
+[0;0;0m[1;37m
+    Using the following element data:
+
+[0;0;0m      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+
+    1194 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m] Done.
+[0;0;0m    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 9 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 3 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+[1;37m
+Output of bond matrices:
+[0;0;0m[1;33m
+*** Molecule 1: C5H8N2O2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mC4[0;0;0m  [1;37mC5[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mH5[0;0;0m  [1;37mH6[0;0;0m  [1;37mH7[0;0;0m  [1;37mH8[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -   -  148  -   -   -   -   -   -   -   -   -   -  128 129 
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m -   -   -   -   -  106  -   -   -   -   -  [1;32m133 [0;0;0m[1;32m134 [0;0;0m -   -  
+[1;37mC3[0;0;0m   -   -  [1;34m*** [0;0;0m[1;32m136 [0;0;0m -   -   -   -  110  -   -   -   -  [1;32m136 [0;0;0m -   -   -  
+[1;37mC4[0;0;0m   -   -  [1;32m136 [0;0;0m[1;34m*** [0;0;0m -   -   -   -   -  110  -   -   -   -  [1;32m142 [0;0;0m -   -  
+[1;37mC5[0;0;0m  148  -   -   -  [1;34m*** [0;0;0m -   -   -   -   -  107 110 113  -   -   -   -  
+[1;37mH1[0;0;0m   -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -   -  118  -  127  -  
+[1;37mH2[0;0;0m   -   -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -   -  106  -   -  
+[1;37mH3[0;0;0m   -  106  -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -   -   -   -  
+[1;37mH4[0;0;0m   -   -  110  -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -   -   -  
+[1;37mH5[0;0;0m   -   -   -  110  -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -   -  
+[1;37mH6[0;0;0m   -   -   -   -  107  -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -  
+[1;37mH7[0;0;0m   -   -   -   -  110  -   -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -  
+[1;37mH8[0;0;0m   -   -   -   -  113  -   -   -   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mN1[0;0;0m   -  [1;32m133 [0;0;0m[1;32m136 [0;0;0m -   -  118  -   -   -   -   -   -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mN2[0;0;0m   -  [1;32m134 [0;0;0m -  [1;32m142 [0;0;0m -   -  106  -   -   -   -   -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO1[0;0;0m  128  -   -   -   -  127  -   -   -   -   -   -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  129  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C2 - N2 - C4 - C3 - N1
+
+    Atoms H6, H7, H8 are equivalent.
+[1;33m
+*** Molecule 2: C2H6O3; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mH5[0;0;0m  [1;37mH6[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m  [1;37mO3[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m148  -   -   -   -   -   -  130 127  -  
+[1;37mC2[0;0;0m  148 [1;34m*** [0;0;0m -   -   -  103 110 109  -   -   -  
+[1;37mH1[0;0;0m   -   -  [1;34m*** [0;0;0m -   -   -   -   -  121  -  126 
+[1;37mH2[0;0;0m   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -   -  101 
+[1;37mH3[0;0;0m   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -   -  106 
+[1;37mH4[0;0;0m   -  103  -   -   -  [1;34m*** [0;0;0m -   -   -   -   -  
+[1;37mH5[0;0;0m   -  110  -   -   -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH6[0;0;0m   -  109  -   -   -   -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mO1[0;0;0m  130  -  121  -   -   -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO2[0;0;0m  127  -   -   -   -   -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO3[0;0;0m   -   -  126 101 106  -   -   -   -   -  [1;34m*** [0;0;0m
+
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5, H6 are equivalent.
+[1;33m
+*** Molecule 3: C3H5N2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mH5[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -   -   -  104  -   -  [1;32m138 [0;0;0m[1;32m134 [0;0;0m
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m[1;32m139 [0;0;0m -   -   -  107  -  [1;32m139 [0;0;0m -  
+[1;37mC3[0;0;0m   -  [1;32m139 [0;0;0m[1;34m*** [0;0;0m -   -   -   -  106  -  [1;32m132 [0;0;0m
+[1;37mH1[0;0;0m   -   -   -  [1;34m*** [0;0;0m -   -   -   -  106  -  
+[1;37mH2[0;0;0m   -   -   -   -  [1;34m*** [0;0;0m -   -   -   -  107 
+[1;37mH3[0;0;0m  104  -   -   -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH4[0;0;0m   -  107  -   -   -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH5[0;0;0m   -   -  106  -   -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mN1[0;0;0m  [1;32m138 [0;0;0m[1;32m139 [0;0;0m -  106  -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mN2[0;0;0m  [1;32m134 [0;0;0m -  [1;32m132 [0;0;0m -  107  -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms N1, N2 are equivalent.
+[1;33m
+*** Molecule 4: C3H4N2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -   -  109  -   -  [1;32m131 [0;0;0m[1;32m135 [0;0;0m
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m[1;32m139 [0;0;0m -   -  109  -  [1;32m146 [0;0;0m -  
+[1;37mC3[0;0;0m   -  [1;32m139 [0;0;0m[1;34m*** [0;0;0m -   -   -  108  -  [1;32m136 [0;0;0m
+[1;37mH1[0;0;0m   -   -   -  [1;34m*** [0;0;0m -   -   -  106  -  
+[1;37mH2[0;0;0m  109  -   -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH3[0;0;0m   -  109  -   -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH4[0;0;0m   -   -  108  -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mN1[0;0;0m  [1;32m131 [0;0;0m[1;32m146 [0;0;0m -  106  -   -   -  [1;34m*** [0;0;0m -  
+[1;37mN2[0;0;0m  [1;32m135 [0;0;0m -  [1;32m136 [0;0;0m -   -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+[1;33m
+*** Molecule 5: C2H4O2; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m155  -   -   -   -  137 121 
+[1;37mC2[0;0;0m  155 [1;34m*** [0;0;0m -  110 106 107  -   -  
+[1;37mH1[0;0;0m   -   -  [1;34m*** [0;0;0m -   -   -  100  -  
+[1;37mH2[0;0;0m   -  110  -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH3[0;0;0m   -  106  -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH4[0;0;0m   -  107  -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO1[0;0;0m  137  -  100  -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  121  -   -   -   -   -   -  [1;34m*** [0;0;0m
+
+    Atoms H2, H3, H4 are equivalent.
+[1;33m
+*** Molecule 6: C2H3O2; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m154  -   -   -  125 130 
+[1;37mC2[0;0;0m  154 [1;34m*** [0;0;0m124 109 112  -   -  
+[1;37mH1[0;0;0m   -  124 [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH2[0;0;0m   -  109  -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH3[0;0;0m   -  112  -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO1[0;0;0m  125  -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  130  -   -   -   -   -  [1;34m*** [0;0;0m
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+[1;33m
+*** Molecule 7: H5O2; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mH5[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m -   -   -   -  120 125 
+[1;37mH2[0;0;0m   -  [1;34m*** [0;0;0m -   -   -  105  -  
+[1;37mH3[0;0;0m   -   -  [1;34m*** [0;0;0m -   -  101  -  
+[1;37mH4[0;0;0m   -   -   -  [1;34m*** [0;0;0m -   -  101 
+[1;37mH5[0;0;0m   -   -   -   -  [1;34m*** [0;0;0m -   98 
+[1;37mO1[0;0;0m  120 105 101  -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  125  -   -  101  98  -  [1;34m*** [0;0;0m
+
+    Atoms H2, H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+[1;33m
+*** Molecule 8: H3O; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mO1[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m -   -  104 
+[1;37mH2[0;0;0m   -  [1;34m*** [0;0;0m -  108 
+[1;37mH3[0;0;0m   -   -  [1;34m*** [0;0;0m100 
+[1;37mO1[0;0;0m  104 108 100 [1;34m*** [0;0;0m
+
+    Atoms H1, H2, H3 are equivalent.
+[1;33m
+*** Molecule 9: H2O; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mO1[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m -   99 
+[1;37mH2[0;0;0m   -  [1;34m*** [0;0;0m102 
+[1;37mO1[0;0;0m   99 102 [1;34m*** [0;0;0m
+
+    Atoms H1, H2 are equivalent.
+[1;33m
+
+*** The following 9 kinds of molecules have been recognized:
+[0;0;0m    (ordered by molecular mass)
+
+[1;37m  - Molecule 1:  C5H8N2O2 [0;0;0m(1 piece, 128.13 g/mol)
+      (15 noneq. atoms, 15 noneq. bonds, 22 noneq. angles)
+      Concentration:   0.032257 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC2 - N2 - C4 - C3 - N1
+
+[1;37m  - Molecule 2:  C2H6O3 [0;0;0m(1 piece, 78.07 g/mol)
+      (8 noneq. atoms, 7 noneq. bonds, 9 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+[1;37m  - Molecule 3:  C3H5N2 [0;0;0m(38 pieces, 69.09 g/mol)
+      (6 noneq. atoms, 6 noneq. bonds, 8 noneq. angles)
+      Concentration:   1.225756 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC1 - N2 - C3 - C2 - N1
+
+[1;37m  - Molecule 4:  C3H4N2 [0;0;0m(61 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   1.967660 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC2 - C3 - N2 - C1 - N1
+
+[1;37m  - Molecule 5:  C2H4O2 [0;0;0m(53 pieces, 60.05 g/mol)
+      (6 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   1.709606 mol/liter
+
+[1;37m  - Molecule 6:  C2H3O2 [0;0;0m(45 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   1.451553 mol/liter
+
+[1;37m  - Molecule 7:  H5O2 [0;0;0m(4 pieces, 37.04 g/mol)
+      (3 noneq. atoms, 2 noneq. bonds, 3 noneq. angles)
+      Concentration:   0.129027 mol/liter
+
+[1;37m  - Molecule 8:  H3O [0;0;0m(3 pieces, 19.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:   0.096770 mol/liter
+
+[1;37m  - Molecule 9:  H2O [0;0;0m(988 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  31.869644 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] [1;37mn
+[0;0;0m
+    Accept these molecules (y) or change something (n)? [yes] [1;37mn
+[0;0;0m
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+[1;33m
+    *** Modify Molecules ***
+
+[0;0;0m    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] [1;37m2
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m9
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m8
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m7
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m5
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m4
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mN1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m3
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mN1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m2
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m1
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mN1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-9)? [1;37m1
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mO1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37mn
+[0;0;0m
+[1;33m
+    *** Modify Molecules ***
+
+[0;0;0m    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] [1;37m<RETURN>
+[0;0;0m[1;37m
+    Going back to molecule recognition with changed settings.
+
+[0;0;0m
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+
+    2344 molecules found.
+
+    Sorting atom types...
+    1150 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m] Done.
+[0;0;0m    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 7 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 3 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+[1;37m
+Output of bond matrices:
+[0;0;0m[1;33m
+*** Molecule 1: C3H4N2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mH4[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -   -  112  -   -  [1;32m133 [0;0;0m[1;32m131 [0;0;0m
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m[1;32m140 [0;0;0m -   -  115  -  [1;32m140 [0;0;0m -  
+[1;37mC3[0;0;0m   -  [1;32m140 [0;0;0m[1;34m*** [0;0;0m -   -   -  111  -  [1;32m137 [0;0;0m
+[1;37mH1[0;0;0m   -   -   -  [1;34m*** [0;0;0m -   -   -  106  -  
+[1;37mH2[0;0;0m  112  -   -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH3[0;0;0m   -  115  -   -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH4[0;0;0m   -   -  111  -   -   -  [1;34m*** [0;0;0m -   -  
+[1;37mN1[0;0;0m  [1;32m133 [0;0;0m[1;32m140 [0;0;0m -  106  -   -   -  [1;34m*** [0;0;0m -  
+[1;37mN2[0;0;0m  [1;32m131 [0;0;0m -  [1;32m137 [0;0;0m -   -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C3 - C2 - N1 - C1 - N2
+[1;33m
+*** Molecule 2: C3H3N2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -  109  -   -  [1;32m131 [0;0;0m[1;32m135 [0;0;0m
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m[1;32m139 [0;0;0m -  109  -  [1;32m146 [0;0;0m -  
+[1;37mC3[0;0;0m   -  [1;32m139 [0;0;0m[1;34m*** [0;0;0m -   -  108  -  [1;32m136 [0;0;0m
+[1;37mH1[0;0;0m  109  -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH2[0;0;0m   -  109  -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH3[0;0;0m   -   -  108  -   -  [1;34m*** [0;0;0m -   -  
+[1;37mN1[0;0;0m  [1;32m131 [0;0;0m[1;32m146 [0;0;0m -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mN2[0;0;0m  [1;32m135 [0;0;0m -  [1;32m136 [0;0;0m -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+[1;33m
+*** Molecule 3: C2H3O2; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m150  -   -   -  134 123 
+[1;37mC2[0;0;0m  150 [1;34m*** [0;0;0m108 113 113  -   -  
+[1;37mH1[0;0;0m   -  108 [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH2[0;0;0m   -  113  -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH3[0;0;0m   -  113  -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO1[0;0;0m  134  -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  123  -   -   -   -   -  [1;34m*** [0;0;0m
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+[1;33m
+*** Molecule 4: H3O; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mO1[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m -   -  [1;32m125 [0;0;0m
+[1;37mH2[0;0;0m   -  [1;34m*** [0;0;0m -   98 
+[1;37mH3[0;0;0m   -   -  [1;34m*** [0;0;0m101 
+[1;37mO1[0;0;0m  [1;32m125 [0;0;0m 98 101 [1;34m*** [0;0;0m
+
+    2-ring: H1 - O1
+
+    Atoms H1, H2, H3 are equivalent.
+[1;33m
+*** Molecule 5: H2O; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mO1[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m -  105 
+[1;37mH2[0;0;0m   -  [1;34m*** [0;0;0m101 
+[1;37mO1[0;0;0m  105 101 [1;34m*** [0;0;0m
+
+    Atoms H1, H2 are equivalent.
+[1;33m
+*** Molecule 6: HO; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mH1[0;0;0m  [1;37mO1[0;0;0m 
+[1;37mH1[0;0;0m  [1;34m*** [0;0;0m102 
+[1;37mO1[0;0;0m  102 [1;34m*** [0;0;0m
+[1;33m
+*** Molecule 7: H; Representant 1; Distances in pm ***
+[0;0;0m[only 1 Atom]
+[1;33m
+
+*** The following 7 kinds of molecules have been recognized:
+[0;0;0m    (ordered by molecular mass)
+
+[1;37m  - Molecule 1:  C3H4N2 [0;0;0m(39 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   1.258012 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC3 - C2 - N1 - C1 - N2
+
+[1;37m  - Molecule 2:  C3H3N2 [0;0;0m(61 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   1.967660 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC2 - C3 - N2 - C1 - N1
+
+[1;37m  - Molecule 3:  C2H3O2 [0;0;0m(100 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.225672 mol/liter
+
+[1;37m  - Molecule 4:  H3O [0;0;0m(5 pieces, 19.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:   0.161284 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  2-ring: [0;0;0mH1 - O1
+
+[1;37m  - Molecule 5:  H2O [0;0;0m(7 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:   0.225797 mol/liter
+
+[1;37m  - Molecule 6:  HO [0;0;0m(988 pieces, 17.01 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 0 noneq. angles)
+      Concentration:  31.869644 mol/liter
+
+[1;37m  - Molecule 7:  H [0;0;0m(1144 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  36.901693 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] [1;37mn
+[0;0;0m
+    Accept these molecules (y) or change something (n)? [yes] [1;37mn
+[0;0;0m
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+[1;33m
+    *** Modify Molecules ***
+
+[0;0;0m    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] [1;37m2
+[0;0;0m
+    Break bonds in which molecule (1-7)? [1;37m6
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37my
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-7)? [1;37m5
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37my
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-7)? [1;37m4
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37my
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37my
+[0;0;0m
+    Break bonds in which molecule (1-7)? [1;37m1
+[0;0;0m    Break all bonds within this molecule (y/n)? [no] [1;37mn
+[0;0;0m    Enter 1st atom of the bond to break (e.g. C1): [1;37mN1
+[0;0;0m    Enter 2nd atom of the bond to break (e.g. C2): [1;37mH1
+[0;0;0m
+    Break another bond (y/n)? [no] [1;37mn
+[0;0;0m
+[1;33m
+    *** Modify Molecules ***
+
+[0;0;0m    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] [1;37m<RETURN>
+[0;0;0m[1;37m
+    Going back to molecule recognition with changed settings.
+
+[0;0;0m
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+
+    3400 molecules found.
+
+    Sorting atom types...
+    2206 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m] Done.
+[0;0;0m    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 4 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 1 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+[1;37m
+Output of bond matrices:
+[0;0;0m[1;33m
+*** Molecule 1: C3H3N2; Representant 1; Distances in pm ***
+[0;0;0m[1;32m    (ring bonds are shown in green)
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mC3[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mN1[0;0;0m  [1;37mN2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m -   -  109  -   -  [1;32m131 [0;0;0m[1;32m135 [0;0;0m
+[1;37mC2[0;0;0m   -  [1;34m*** [0;0;0m[1;32m139 [0;0;0m -  109  -  [1;32m146 [0;0;0m -  
+[1;37mC3[0;0;0m   -  [1;32m139 [0;0;0m[1;34m*** [0;0;0m -   -  108  -  [1;32m136 [0;0;0m
+[1;37mH1[0;0;0m  109  -   -  [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH2[0;0;0m   -  109  -   -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH3[0;0;0m   -   -  108  -   -  [1;34m*** [0;0;0m -   -  
+[1;37mN1[0;0;0m  [1;32m131 [0;0;0m[1;32m146 [0;0;0m -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mN2[0;0;0m  [1;32m135 [0;0;0m -  [1;32m136 [0;0;0m -   -   -   -  [1;34m*** [0;0;0m
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+[1;33m
+*** Molecule 2: C2H3O2; Representant 1; Distances in pm ***
+[0;0;0m
+    [1;37mC1[0;0;0m  [1;37mC2[0;0;0m  [1;37mH1[0;0;0m  [1;37mH2[0;0;0m  [1;37mH3[0;0;0m  [1;37mO1[0;0;0m  [1;37mO2[0;0;0m 
+[1;37mC1[0;0;0m  [1;34m*** [0;0;0m150  -   -   -  134 123 
+[1;37mC2[0;0;0m  150 [1;34m*** [0;0;0m108 113 113  -   -  
+[1;37mH1[0;0;0m   -  108 [1;34m*** [0;0;0m -   -   -   -  
+[1;37mH2[0;0;0m   -  113  -  [1;34m*** [0;0;0m -   -   -  
+[1;37mH3[0;0;0m   -  113  -   -  [1;34m*** [0;0;0m -   -  
+[1;37mO1[0;0;0m  134  -   -   -   -  [1;34m*** [0;0;0m -  
+[1;37mO2[0;0;0m  123  -   -   -   -   -  [1;34m*** [0;0;0m
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+[1;33m
+*** Molecule 3: O; Representant 1; Distances in pm ***
+[0;0;0m[only 1 Atom]
+[1;33m
+*** Molecule 4: H; Representant 1; Distances in pm ***
+[0;0;0m[only 1 Atom]
+[1;33m
+
+*** The following 4 kinds of molecules have been recognized:
+[0;0;0m    (ordered by molecular mass)
+
+[1;37m  - Molecule 1:  C3H3N2 [0;0;0m(100 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   3.225672 mol/liter
+[1;37m      Detected 1 ring:
+[0;0;0m[1;37m         1.)  5-ring: [0;0;0mC2 - C3 - N2 - C1 - N1
+
+[1;37m  - Molecule 2:  C2H3O2 [0;0;0m(100 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.225672 mol/liter
+
+[1;37m  - Molecule 3:  O [0;0;0m(1000 pieces, 16.00 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  32.256725 mol/liter
+
+[1;37m  - Molecule 4:  H [0;0;0m(2200 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  70.964795 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] [1;37mn
+[0;0;0m
+    Accept these molecules (y) or change something (n)? [yes] [1;37my
+[0;0;0m
+    Uniting molecules which have been broken by wrapping...
+
+    Determining maximum molecular diameters...
+
+[1;37m    Found the following maximal molecular diameters:
+[0;0;0m
+[1;33m      (*)[0;0;0m Molecule 1 (C3H3N2):    439.69 pm
+
+[1;33m      (*)[0;0;0m Molecule 2 (C2H3O2):    350.82 pm
+
+[1;33m      (*)[0;0;0m Molecule 3 (O):       (only one atom)
+
+[1;33m      (*)[0;0;0m Molecule 4 (H):       (only one atom)
+
+[1;37m
+    The atoms are currently ordered by topological priority.
+[0;0;0m[1;37m
+    Defining virtual atom #1 as molecular Center of Geometry:
+[0;0;0m      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+[1;37m
+    Defining virtual atom #2 as molecular Center of Mass:
+[0;0;0m      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+[1;37m
+    Defining ring centers in C3H3N2:
+[0;0;0m      - Defining #3 as Center of Ring 1: C2 - C3 - N2 - C1 - N1
+[1;37m
+    Defining molecular dipole vectors:
+
+[0;0;0m      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #4 in C3H3N2 ...
+      - Dipole vector #2 --> #3 in C2H3O2 ...
+      - Dipole vector #2 --> #3 in O ...
+      - Dipole vector #2 --> #3 in H ...
+[1;32m
+>>> 13 virtual atoms have been defined: >>>
+[0;0;0m[1;37m
+    #1 in C3H3N2: Center of Geometry.[0;0;0m[1;37m
+    #2 in C3H3N2: Center of Mass.[0;0;0m
+[1;37m
+    #3 in C3H3N2 - defined through center:
+[0;0;0m      -  C2    Weight 20.00%
+      -  C3    Weight 20.00%
+      -  C1    Weight 20.00%
+      -  N2    Weight 20.00%
+      -  N1    Weight 20.00%
+[1;37m
+    #4 in C3H3N2 - tip of molecular dipole vector starting in #2.
+[0;0;0m[1;37m
+    #1 in C2H3O2: Center of Geometry.[0;0;0m[1;37m
+    #2 in C2H3O2: Center of Mass.[0;0;0m
+[1;37m
+    #3 in C2H3O2 - tip of molecular dipole vector starting in #2.
+[0;0;0m[1;37m
+    #1 in O: Center of Geometry.[0;0;0m[1;37m
+    #2 in O: Center of Mass.[0;0;0m
+[1;37m
+    #3 in O - tip of molecular dipole vector starting in #2.
+[0;0;0m[1;37m
+    #1 in H: Center of Geometry.[0;0;0m[1;37m
+    #2 in H: Center of Mass.[0;0;0m
+[1;37m
+    #3 in H - tip of molecular dipole vector starting in #2.
+[0;0;0m[1;32m
+<<< End of virtual atoms <<<
+
+[0;0;0m[1;37m
+>>> List of functions <<<
+
+[0;0;0m[1;33m *** Static (time independent) Functions
+[0;0;0m[1;37m cdf      [0;0;0m- Combined Distribution Function
+[1;37m rdf      [0;0;0m- Radial Distribution Function
+[1;37m adf      [0;0;0m- Angular Distribution Function
+[1;37m ddf      [0;0;0m- Dihedral Distribution Function
+[1;37m pldf     [0;0;0m- Point-Plane Distance Distribution
+[1;37m lidf     [0;0;0m- Point-Line Distance Distribution
+[1;37m plproj   [0;0;0m- Plane Projection Distribution
+[1;37m dprof    [0;0;0m- Fixed Plane Density Profile
+[1;37m fpp      [0;0;0m- Fixed Plane Projection
+[1;37m dens     [0;0;0m- Density Distribution Function
+[1;37m sdf      [0;0;0m- Spatial Distribution Function
+[1;37m psdf     [0;0;0m- Pseudo SDF (only 2 ref. atoms)
+[1;37m dip      [0;0;0m- Dipole Distribution Function
+[1;37m cond     [0;0;0m- Evaluate Structural Condition
+[1;37m sfac     [0;0;0m- Compute Structure Factor
+[1;37m agtopo   [0;0;0m- Aggregation Topology Analysis
+[1;37m sankey   [0;0;0m- Sankey diagram plot
+[1;37m cmat     [0;0;0m- Contact Matrix / Connection Matrix
+[1;37m geodens  [0;0;0m- Particle Density inside Geometric Object
+
+[1;33m *** Dynamic (time dependent) Functions
+[0;0;0m[1;37m vdf      [0;0;0m- Velocity Distribution Function
+[1;37m fdf      [0;0;0m- Force Distribution Function
+[1;37m msd      [0;0;0m- Mean Square Displacement / Diffusion Coefficients
+[1;37m acf      [0;0;0m- Velocity Autocorrelation Functions
+[1;37m rdyn     [0;0;0m- Vector Reorientation Dynamics
+[1;37m vhcf     [0;0;0m- Van Hove Correlation Function
+[1;37m aggr     [0;0;0m- Aggregation Functions (DACF, DLDF, DDisp)
+[1;37m hbond    [0;0;0m- Hydrogen Bond Dynamics
+[1;37m ionpair  [0;0;0m- Diffusion Corrected Ion Pair Dynamics
+[1;37m tddf     [0;0;0m- Time Dependent Distribution Functions
+
+[1;33m *** Spectroscopic Functions
+[0;0;0m[1;37m spec     [0;0;0m- New Spectroscopy Module (IR, Raman, VCD, ROA)
+[1;37m power    [0;0;0m- Calculate Power Spectrum
+[1;37m nc       [0;0;0m- Normal Coordinate Analysis
+[1;37m ir       [0;0;0m- (old) Calculate IR Spectrum
+[1;37m raman    [0;0;0m- (old) Calculate Raman Spectrum
+[1;37m vcd      [0;0;0m- (old) Calculate VCD Spectrum
+[1;37m rera     [0;0;0m- Calculate Resonance Raman Spectrum
+[1;37m drst     [0;0;0m- Save Dipole Restart File
+[1;37m mrst     [0;0;0m- Save Magnetic Moment Restart File
+[1;37m pol      [0;0;0m- Set up Polarizability Calculation
+
+[1;33m *** Miscellaneous Functions
+[0;0;0m[1;37m env      [0;0;0m- Save Trajectory of RM Environment / TDO Plot
+[1;37m proc     [0;0;0m- Save Processed Trajectory
+[1;37m cut      [0;0;0m- Cut Clusters
+[1;37m reg      [0;0;0m- Region-specific Analysis
+[1;37m chi      [0;0;0m- Chirality Analysis
+[1;37m eck      [0;0;0m- Transform to Eckart Frame
+[1;37m swan     [0;0;0m- Sort Wannier Centers
+[1;37m voro     [0;0;0m- Basic Voronoi Analysis
+[1;37m vori     [0;0;0m- Voronoi Integration Functions
+[1;37m vorochg  [0;0;0m- Voronoi Charge Optimization
+[1;37m doma     [0;0;0m- Domain Analysis
+[1;37m order    [0;0;0m- Order Parameters
+[1;37m hole     [0;0;0m- Hole Theory based Analysis
+[1;37m cla      [0;0;0m- Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? [1;37maggr
+[0;0;0m
+[1;37m aggr    [0;0;0m- Aggregation Functions (DACF, DLDF, DDisp)
+
+[1;37m    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+[0;0;0m    Use the advanced mode for the main part (y/n)? [no] [1;37mn
+[0;0;0m
+    Enter the physical time distance between successive trajectory frames in fs: [0.5] [1;37m10
+[0;0;0m
+[1;37m>>> Selection of Aggregation Functions >>>
+
+[0;0;0m    Compute Dimer Existence Autocorrelation Functions (DACFs) (y/n)? [yes] [1;37my
+[0;0;0m    Compute Dimer Lifetime Distribution Functions (DLDFs) (y/n)? [no] [1;37mn
+[0;0;0m    Compute Dimer Displacement Functions / Pair Diffusion (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< Selection of Aggregation Functions <<<
+
+[0;0;0m[1;33m
+>>> Observation 1 >>>
+
+[0;0;0m    Enter first molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m3
+[0;0;0m    Enter second molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m4
+[0;0;0m    Observing aggregates between O and H.
+
+    Enter the correlation depth of the DACF in trajectory frames: [6004] [1;37m6004
+[0;0;0m    Fit poly-exponential functions to DACF and integrate over [0,infinity) (y/n)? [yes] [1;37my
+[0;0;0m
+    TRAVIS will fit functions with different count of exponential terms to your data.
+    This enables you to see how many different processes contribute to your decay.
+
+    How many exponential terms to use at most: [3] [1;37m3
+[0;0;0m
+
+
+Now you have to enter the condition(s) for aggregation.
+
+To combine several conditions via AND/OR, activate the "advanced mode"!
+
+[1;33m>>> 1. set of conditions >>>
+[0;0;0m[1;33m
+>>> Condition between O and H >>>
+
+[0;0;0m    Do you want to define a distance condition (y/n)? [yes] [1;37my
+[0;0;0m[1;37m
+>>> Distance Condition >>>
+[0;0;0m
+    O is only one atom, there is no choice.
+    H is only one atom, there is no choice.
+    Enter another set of atoms for this condition (y/n)? [no] [1;37m*
+[0;0;0m[1;31mInvalid input. Enter "y" or "n".
+[0;0;0m    Enter another set of atoms for this condition (y/n)? [no] [1;37m*
+[0;0;0m[1;31mInvalid input. Enter "y" or "n".
+[0;0;0m    Enter another set of atoms for this condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Enter min./max. distance (0) or min./max. nearest neighbor count (1)? [0] [1;37m0
+[0;0;0m    Enter the minimal distance in pm: [0] [1;37m125
+[0;0;0m    Enter the maximal distance in pm: [400] [1;37m245
+[0;0;0m    Enter another distance interval (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Distance Condition <<<
+
+[0;0;0m    Do you want to define an angular condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Using 1 combinations of subconditions for this condition:
+
+       1.) Distance  1 - Angle  1.
+[1;33m
+<<< End of this condition <<<
+
+[0;0;0m[1;33m
+<<< End of 1. set of conditions <<<
+
+[0;0;0m
+    Calculate this function as continuous (0) or intermittent (1) type? [1] [1;37m1
+[0;0;0m    Perform finite-size ensemble equilibrium correction (y/n)? [yes] [1;37my
+[0;0;0m
+    Using new ACF-less intermittent mode.
+
+
+    Add another aggregation function with different criterion values (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Aggregation Functions <<<
+[0;0;0m[1;33m
+<<< End of Observation 1 <<<
+[0;0;0m
+    Add another observation (y/n)? [no] [1;37my
+[0;0;0m[1;33m
+>>> Observation 2 >>>
+
+[0;0;0m    Enter first molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m2
+[0;0;0m    Enter second molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m4
+[0;0;0m    Observing aggregates between C2H3O2 and H.
+
+    Enter the correlation depth of the DACF in trajectory frames: [6004] [1;37m6004
+[0;0;0m    Fit poly-exponential functions to DACF and integrate over [0,infinity) (y/n)? [yes] [1;37my
+[0;0;0m
+    TRAVIS will fit functions with different count of exponential terms to your data.
+    This enables you to see how many different processes contribute to your decay.
+
+    How many exponential terms to use at most: [3] [1;37m3
+[0;0;0m
+
+
+Now you have to enter the condition(s) for aggregation.
+
+To combine several conditions via AND/OR, activate the "advanced mode"!
+
+[1;33m>>> 1. set of conditions >>>
+[0;0;0m[1;33m
+>>> Condition between C2H3O2 and H >>>
+
+[0;0;0m    Do you want to define a distance condition (y/n)? [yes] [1;37my
+[0;0;0m[1;37m
+>>> Distance Condition >>>
+[0;0;0m
+    Which atom(s) to take from RM C2H3O2 (e.g. "C1,C3-5,H", "*"=all)? [#2] [1;37m*
+[0;0;0m    H is only one atom, there is no choice.
+    Enter another set of atoms for this condition (y/n)? [no] [1;37m*
+[0;0;0m[1;31mInvalid input. Enter "y" or "n".
+[0;0;0m    Enter another set of atoms for this condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Enter min./max. distance (0) or min./max. nearest neighbor count (1)? [0] [1;37m0
+[0;0;0m    Enter the minimal distance in pm: [0] [1;37m130
+[0;0;0m    Enter the maximal distance in pm: [400] [1;37m260
+[0;0;0m    Enter another distance interval (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Distance Condition <<<
+
+[0;0;0m    Do you want to define an angular condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Using 7 combinations of subconditions for this condition:
+
+       1.) Distance  1 - Angle  1.
+       2.) Distance  2 - Angle  1.
+       3.) Distance  3 - Angle  1.
+       4.) Distance  4 - Angle  1.
+       5.) Distance  5 - Angle  1.
+       6.) Distance  6 - Angle  1.
+       7.) Distance  7 - Angle  1.
+[1;33m
+<<< End of this condition <<<
+
+[0;0;0m[1;33m
+<<< End of 1. set of conditions <<<
+
+[0;0;0m
+    Calculate this function as continuous (0) or intermittent (1) type? [1] [1;37m1
+[0;0;0m    Perform finite-size ensemble equilibrium correction (y/n)? [yes] [1;37my
+[0;0;0m
+    Using new ACF-less intermittent mode.
+
+
+    Add another aggregation function with different criterion values (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Aggregation Functions <<<
+[0;0;0m[1;33m
+<<< End of Observation 2 <<<
+[0;0;0m
+    Add another observation (y/n)? [no] [1;37my
+[0;0;0m[1;33m
+>>> Observation 3 >>>
+
+[0;0;0m    Enter first molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m1
+[0;0;0m    Enter second molecule for aggregation (C3H3N2=1, C2H3O2=2, O=3, H=4): [1;37m4
+[0;0;0m    Observing aggregates between C3H3N2 and H.
+
+    Enter the correlation depth of the DACF in trajectory frames: [6004] [1;37m6004
+[0;0;0m    Fit poly-exponential functions to DACF and integrate over [0,infinity) (y/n)? [yes] [1;37my
+[0;0;0m
+    TRAVIS will fit functions with different count of exponential terms to your data.
+    This enables you to see how many different processes contribute to your decay.
+
+    How many exponential terms to use at most: [3] [1;37m3
+[0;0;0m
+
+
+Now you have to enter the condition(s) for aggregation.
+
+To combine several conditions via AND/OR, activate the "advanced mode"!
+
+[1;33m>>> 1. set of conditions >>>
+[0;0;0m[1;33m
+>>> Condition between C3H3N2 and H >>>
+
+[0;0;0m    Do you want to define a distance condition (y/n)? [yes] [1;37my
+[0;0;0m[1;37m
+>>> Distance Condition >>>
+[0;0;0m
+    Which atom(s) to take from RM C3H3N2 (e.g. "C1,C3-5,H", "*"=all)? [#2] [1;37m*
+[0;0;0m    H is only one atom, there is no choice.
+    Enter another set of atoms for this condition (y/n)? [no] [1;37m*
+[0;0;0m[1;31mInvalid input. Enter "y" or "n".
+[0;0;0m    Enter another set of atoms for this condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Enter min./max. distance (0) or min./max. nearest neighbor count (1)? [0] [1;37m0
+[0;0;0m    Enter the minimal distance in pm: [0] [1;37m140
+[0;0;0m    Enter the maximal distance in pm: [400] [1;37m260
+[0;0;0m    Enter another distance interval (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Distance Condition <<<
+
+[0;0;0m    Do you want to define an angular condition (y/n)? [no] [1;37mn
+[0;0;0m
+    Using 8 combinations of subconditions for this condition:
+
+       1.) Distance  1 - Angle  1.
+       2.) Distance  2 - Angle  1.
+       3.) Distance  3 - Angle  1.
+       4.) Distance  4 - Angle  1.
+       5.) Distance  5 - Angle  1.
+       6.) Distance  6 - Angle  1.
+       7.) Distance  7 - Angle  1.
+       8.) Distance  8 - Angle  1.
+[1;33m
+<<< End of this condition <<<
+
+[0;0;0m[1;33m
+<<< End of 1. set of conditions <<<
+
+[0;0;0m
+    Calculate this function as continuous (0) or intermittent (1) type? [1] [1;37m1
+[0;0;0m    Perform finite-size ensemble equilibrium correction (y/n)? [yes] [1;37my
+[0;0;0m
+    Using new ACF-less intermittent mode.
+
+
+    Add another aggregation function with different criterion values (y/n)? [no] [1;37mn
+[0;0;0m[1;37m
+<<< End of Aggregation Functions <<<
+[0;0;0m[1;33m
+<<< End of Observation 3 <<<
+[0;0;0m
+    Add another observation (y/n)? [no] [1;37mn
+[0;0;0m
+[1;37m>>> Observation List >>>
+
+[0;0;0m[1;33m  *** Observation 1
+[0;0;0m    - Aggregation functions - 1 value sets:
+      > O_H_d[O1r_H1o]_r125-245_int_acfless_correq
+[1;33m  *** Observation 2
+[0;0;0m    - Aggregation functions - 1 value sets:
+      > C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq
+[1;33m  *** Observation 3
+[0;0;0m    - Aggregation functions - 1 value sets:
+      > C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq
+[1;37m
+<<< End of Observation List <<<
+
+[0;0;0m
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    In which trajectory frame to start processing the trajectory? [1] [1;37m<RETURN>
+[0;0;0m    How many trajectory frames to read (from this position on)? [all] [1;37m<RETURN>
+[0;0;0m    Use every n-th read trajectory frame for the analysis: [1] [1;37m<RETURN>
+[0;0;0m[1;33m
+    Using 20014 time steps: Every 1st within range 1 - approx. 20014.
+[0;0;0m[1;37m
+########## All information collected ##########
+
+[0;0;0m[1;37m>>> Initialization >>>
+
+[0;0;0mInitializing observation 1...
+  Creating aggregation functions (1 value sets)...
+Initializing observation 2...
+  Creating aggregation functions (1 value sets)...
+Initializing observation 3...
+  Creating aggregation functions (1 value sets)...
+[1;37m
+<<< End of Initialization <<<
+
+[0;0;0m[1;37m
+##########   Starting Main Pass   ##########
+[0;0;0m[1;37m
+Hint: [0;0;0mPress CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 .................................................. ETA  1h33m09s
+Step     50 .................................................. ETA  1h36m15s
+Step    100 .................................................. ETA  1h34m54s
+Step    150 .................................................. ETA  1h34m06s
+Step    200 .................................................. ETA  1h34m52s
+Step    250 .................................................. ETA  1h34m11s
+Step    300 .................................................. ETA  1h33m38s
+Step    350 .................................................. ETA  1h33m59s
+Step    400 .................................................. ETA  1h33m28s
+Step    450 .................................................. ETA  1h33m01s
+Step    500 .................................................. ETA  1h32m36s
+Step    550 .................................................. ETA  1h32m45s
+Step    600 .................................................. ETA  1h32m21s
+Step    650 .................................................. ETA  1h31m58s
+Step    700 .................................................. ETA  1h32m02s
+Step    750 .................................................. ETA  1h31m40s
+Step    800 .................................................. ETA  1h31m18s
+Step    850 .................................................. ETA  1h30m58s
+Step    900 .................................................. ETA  1h30m58s
+Step    950 .................................................. ETA  1h30m38s
+Step   1000 .................................................. ETA  1h30m18s
+Step   1050 .................................................. ETA  1h30m16s
+Step   1100 .................................................. ETA  1h29m56s
+Step   1150 .................................................. ETA  1h29m37s
+Step   1200 .................................................. ETA  1h29m34s
+Step   1250 .................................................. ETA  1h29m15s
+Step   1300 .................................................. ETA  1h28m56s
+Step   1350 .................................................. ETA  1h28m51s
+Step   1400 .................................................. ETA  1h28m33s
+Step   1450 .................................................. ETA  1h28m15s
+Step   1500 .................................................. ETA  1h27m57s
+Step   1550 .................................................. ETA  1h27m51s
+Step   1600 .................................................. ETA  1h27m33s
+Step   1650 .................................................. ETA  1h27m15s
+Step   1700 .................................................. ETA  1h26m58s
+Step   1750 .................................................. ETA  1h26m51s
+Step   1800 .................................................. ETA  1h26m33s
+Step   1850 .................................................. ETA  1h26m16s
+Step   1900 .................................................. ETA  1h25m59s
+Step   1950 .................................................. ETA  1h25m52s
+Step   2000 .................................................. ETA  1h25m35s
+Step   2050 .................................................. ETA  1h25m18s
+Step   2100 .................................................. ETA  1h25m09s
+Step   2150 .................................................. ETA  1h24m53s
+Step   2200 .................................................. ETA  1h24m36s
+Step   2250 .................................................. ETA  1h24m20s
+Step   2300 .................................................. ETA  1h24m11s
+Step   2350 .................................................. ETA  1h23m54s
+Step   2400 .................................................. ETA  1h23m38s
+Step   2450 .................................................. ETA  1h23m29s
+Step   2500 .................................................. ETA  1h23m12s
+Step   2550 .................................................. ETA  1h22m56s
+Step   2600 .................................................. ETA  1h22m40s
+Step   2650 .................................................. ETA  1h22m30s
+Step   2700 .................................................. ETA  1h22m14s
+Step   2750 .................................................. ETA  1h21m58s
+Step   2800 .................................................. ETA  1h21m42s
+Step   2850 .................................................. ETA  1h21m32s
+Step   2900 .................................................. ETA  1h21m16s
+Step   2950 .................................................. ETA  1h21m00s
+Step   3000 .................................................. ETA  1h20m50s
+Step   3050 .................................................. ETA  1h20m34s
+Step   3100 .................................................. ETA  1h20m18s
+Step   3150 .................................................. ETA  1h20m02s
+Step   3200 .................................................. ETA  1h19m51s
+Step   3250 .................................................. ETA  1h19m36s
+Step   3300 .................................................. ETA  1h19m20s
+Step   3350 .................................................. ETA  1h19m09s
+Step   3400 .................................................. ETA  1h18m53s
+Step   3450 .................................................. ETA  1h18m38s
+Step   3500 .................................................. ETA  1h18m27s
+Step   3550 .................................................. ETA  1h18m20s
+Step   3600 .................................................. ETA  1h18m05s
+Step   3650 .................................................. ETA  1h17m49s
+Step   3700 .................................................. ETA  1h17m33s
+Step   3750 .................................................. ETA  1h17m22s
+Step   3800 .................................................. ETA  1h17m06s
+Step   3850 .................................................. ETA  1h16m51s
+Step   3900 .................................................. ETA  1h16m39s
+Step   3950 .................................................. ETA  1h16m24s
+Step   4000 .................................................. ETA  1h16m08s
+Step   4050 .................................................. ETA  1h15m52s
+Step   4100 .................................................. ETA  1h15m41s
+Step   4150 .................................................. ETA  1h15m25s
+Step   4200 .................................................. ETA  1h15m10s
+Step   4250 .................................................. ETA  1h14m54s
+Step   4300 .................................................. ETA  1h14m43s
+Step   4350 .................................................. ETA  1h14m27s
+Step   4400 .................................................. ETA  1h14m12s
+Step   4450 .................................................. ETA  1h13m57s
+Step   4500 .................................................. ETA  1h13m45s
+Step   4550 .................................................. ETA  1h13m29s
+Step   4600 .................................................. ETA  1h13m14s
+Step   4650 .................................................. ETA  1h13m02s
+Step   4700 .................................................. ETA  1h12m50s
+Step   4750 .................................................. ETA  1h12m35s
+Step   4800 .................................................. ETA  1h12m19s
+Step   4850 .................................................. ETA  1h12m07s
+Step   4900 .................................................. ETA  1h11m52s
+Step   4950 .................................................. ETA  1h11m40s
+Step   5000 .................................................. ETA  1h11m24s
+Step   5050 .................................................. ETA  1h11m09s
+Step   5100 .................................................. ETA  1h10m54s
+Step   5150 .................................................. ETA  1h10m41s
+Step   5200 .................................................. ETA  1h10m26s
+Step   5250 .................................................. ETA  1h10m11s
+Step   5300 .................................................. ETA  1h09m59s
+Step   5350 .................................................. ETA  1h09m43s
+Step   5400 .................................................. ETA  1h09m28s
+Step   5450 .................................................. ETA  1h09m13s
+Step   5500 .................................................. ETA  1h09m01s
+Step   5550 .................................................. ETA  1h08m46s
+Step   5600 .................................................. ETA  1h08m30s
+Step   5650 .................................................. ETA  1h08m18s
+Step   5700 .................................................. ETA  1h08m03s
+Step   5750 .................................................. ETA  1h07m50s
+Step   5800 .................................................. ETA  1h07m37s
+Step   5850 .................................................. ETA  1h07m22s
+Step   5900 .................................................. ETA  1h07m07s
+Step   5950 .................................................. ETA  1h06m52s
+Step   6000 .................................................. ETA  1h06m37s
+Step   6050 .................................................. ETA  1h06m22s
+Step   6100 .................................................. ETA  1h06m09s
+Step   6150 .................................................. ETA  1h05m54s
+Step   6200 .................................................. ETA  1h05m39s
+Step   6250 .................................................. ETA  1h05m24s
+Step   6300 .................................................. ETA  1h05m09s
+Step   6350 .................................................. ETA  1h04m57s
+Step   6400 .................................................. ETA  1h04m44s
+Step   6450 .................................................. ETA  1h04m29s
+Step   6500 .................................................. ETA  1h04m14s
+Step   6550 .................................................. ETA  1h03m59s
+Step   6600 .................................................. ETA  1h03m46s
+Step   6650 .................................................. ETA  1h03m31s
+Step   6700 .................................................. ETA  1h03m16s
+Step   6750 .................................................. ETA  1h03m01s
+Step   6800 .................................................. ETA  1h02m46s
+Step   6850 .................................................. ETA  1h02m33s
+Step   6900 .................................................. ETA  1h02m18s
+Step   6950 .................................................. ETA  1h02m03s
+Step   7000 .................................................. ETA  1h01m48s
+Step   7050 .................................................. ETA  1h01m34s
+Step   7100 .................................................. ETA  1h01m21s
+Step   7150 .................................................. ETA  1h01m06s
+Step   7200 .................................................. ETA  1h00m51s
+Step   7250 .................................................. ETA  1h00m36s
+Step   7300 .................................................. ETA  1h00m23s
+Step   7350 .................................................. ETA  1h00m08s
+Step   7400 .................................................. ETA 59m53s
+Step   7450 .................................................. ETA 59m39s
+Step   7500 .................................................. ETA 59m24s
+Step   7550 .................................................. ETA 59m11s
+Step   7600 .................................................. ETA 58m56s
+Step   7650 .................................................. ETA 58m41s
+Step   7700 .................................................. ETA 58m26s
+Step   7750 .................................................. ETA 58m11s
+Step   7800 .................................................. ETA 57m57s
+Step   7850 .................................................. ETA 57m43s
+Step   7900 .................................................. ETA 57m29s
+Step   7950 .................................................. ETA 57m14s
+Step   8000 .................................................. ETA 56m59s
+Step   8050 .................................................. ETA 56m46s
+Step   8100 .................................................. ETA 56m31s
+Step   8150 .................................................. ETA 56m17s
+Step   8200 .................................................. ETA 56m02s
+Step   8250 .................................................. ETA 55m47s
+Step   8300 .................................................. ETA 55m32s
+Step   8350 .................................................. ETA 55m19s
+Step   8400 .................................................. ETA 55m04s
+Step   8450 .................................................. ETA 54m50s
+Step   8500 .................................................. ETA 54m35s
+Step   8550 .................................................. ETA 54m22s
+Step   8600 .................................................. ETA 54m07s
+Step   8650 .................................................. ETA 53m52s
+Step   8700 .................................................. ETA 53m38s
+Step   8750 .................................................. ETA 53m23s
+Step   8800 .................................................. ETA 53m10s
+Step   8850 .................................................. ETA 52m55s
+Step   8900 .................................................. ETA 52m40s
+Step   8950 .................................................. ETA 52m26s
+Step   9000 .................................................. ETA 52m11s
+Step   9050 .................................................. ETA 51m58s
+Step   9100 .................................................. ETA 51m43s
+Step   9150 .................................................. ETA 51m29s
+Step   9200 .................................................. ETA 51m14s
+Step   9250 .................................................. ETA 50m59s
+Step   9300 .................................................. ETA 50m46s
+Step   9350 .................................................. ETA 50m31s
+Step   9400 .................................................. ETA 50m17s
+Step   9450 .................................................. ETA 50m02s
+Step   9500 .................................................. ETA 49m47s
+Step   9550 .................................................. ETA 49m34s
+Step   9600 .................................................. ETA 49m19s
+Step   9650 .................................................. ETA 49m05s
+Step   9700 .................................................. ETA 48m50s
+Step   9750 .................................................. ETA 48m36s
+Step   9800 .................................................. ETA 48m22s
+Step   9850 .................................................. ETA 48m08s
+Step   9900 .................................................. ETA 47m53s
+Step   9950 .................................................. ETA 47m38s
+Step  10000 .................................................. ETA 47m25s
+Step  10050 .................................................. ETA 47m10s
+Step  10100 .................................................. ETA 46m56s
+Step  10150 .................................................. ETA 46m41s
+Step  10200 .................................................. ETA 46m27s
+Step  10250 .................................................. ETA 46m12s
+Step  10300 .................................................. ETA 45m58s
+Step  10350 .................................................. ETA 45m44s
+Step  10400 .................................................. ETA 45m30s
+Step  10450 .................................................. ETA 45m15s
+Step  10500 .................................................. ETA 45m01s
+Step  10550 .................................................. ETA 44m46s
+Step  10600 .................................................. ETA 44m32s
+Step  10650 .................................................. ETA 44m18s
+Step  10700 .................................................. ETA 44m03s
+Step  10750 .................................................. ETA 43m49s
+Step  10800 .................................................. ETA 43m34s
+Step  10850 .................................................. ETA 43m20s
+Step  10900 .................................................. ETA 43m06s
+Step  10950 .................................................. ETA 42m52s
+Step  11000 .................................................. ETA 42m37s
+Step  11050 .................................................. ETA 42m23s
+Step  11100 .................................................. ETA 42m08s
+Step  11150 .................................................. ETA 41m55s
+Step  11200 .................................................. ETA 41m40s
+Step  11250 .................................................. ETA 41m26s
+Step  11300 .................................................. ETA 41m11s
+Step  11350 .................................................. ETA 40m57s
+Step  11400 .................................................. ETA 40m43s
+Step  11450 .................................................. ETA 40m29s
+Step  11500 .................................................. ETA 40m14s
+Step  11550 .................................................. ETA 40m00s
+Step  11600 .................................................. ETA 39m46s
+Step  11650 .................................................. ETA 39m31s
+Step  11700 .................................................. ETA 39m17s
+Step  11750 .................................................. ETA 39m03s
+Step  11800 .................................................. ETA 38m49s
+Step  11850 .................................................. ETA 38m34s
+Step  11900 .................................................. ETA 38m20s
+Step  11950 .................................................. ETA 38m05s
+Step  12000 .................................................. ETA 37m51s
+Step  12050 .................................................. ETA 37m37s
+Step  12100 .................................................. ETA 37m23s
+Step  12150 .................................................. ETA 37m08s
+Step  12200 .................................................. ETA 36m54s
+Step  12250 .................................................. ETA 36m40s
+Step  12300 .................................................. ETA 36m25s
+Step  12350 .................................................. ETA 36m11s
+Step  12400 .................................................. ETA 35m57s
+Step  12450 .................................................. ETA 35m42s
+Step  12500 .................................................. ETA 35m28s
+Step  12550 .................................................. ETA 35m14s
+Step  12600 .................................................. ETA 35m00s
+Step  12650 .................................................. ETA 34m45s
+Step  12700 .................................................. ETA 34m31s
+Step  12750 .................................................. ETA 34m17s
+Step  12800 .................................................. ETA 34m03s
+Step  12850 .................................................. ETA 33m48s
+Step  12900 .................................................. ETA 33m34s
+Step  12950 .................................................. ETA 33m20s
+Step  13000 .................................................. ETA 33m06s
+Step  13050 .................................................. ETA 32m51s
+Step  13100 .................................................. ETA 32m37s
+Step  13150 .................................................. ETA 32m23s
+Step  13200 .................................................. ETA 32m09s
+Step  13250 .................................................. ETA 31m54s
+Step  13300 .................................................. ETA 31m40s
+Step  13350 .................................................. ETA 31m25s
+Step  13400 .................................................. ETA 31m12s
+Step  13450 .................................................. ETA 30m57s
+Step  13500 .................................................. ETA 30m43s
+Step  13550 .................................................. ETA 30m28s
+Step  13600 .................................................. ETA 30m14s
+Step  13650 .................................................. ETA 30m00s
+Step  13700 .................................................. ETA 29m45s
+Step  13750 .................................................. ETA 29m31s
+Step  13800 .................................................. ETA 29m17s
+Step  13850 .................................................. ETA 29m03s
+Step  13900 .................................................. ETA 28m48s
+Step  13950 .................................................. ETA 28m34s
+Step  14000 .................................................. ETA 28m20s
+Step  14050 .................................................. ETA 28m06s
+Step  14100 .................................................. ETA 27m51s
+Step  14150 .................................................. ETA 27m37s
+Step  14200 .................................................. ETA 27m23s
+Step  14250 .................................................. ETA 27m08s
+Step  14300 .................................................. ETA 26m54s
+Step  14350 .................................................. ETA 26m40s
+Step  14400 .................................................. ETA 26m26s
+Step  14450 .................................................. ETA 26m11s
+Step  14500 .................................................. ETA 25m57s
+Step  14550 .................................................. ETA 25m42s
+Step  14600 .................................................. ETA 25m28s
+Step  14650 .................................................. ETA 25m14s
+Step  14700 .................................................. ETA 25m00s
+Step  14750 .................................................. ETA 24m45s
+Step  14800 .................................................. ETA 24m31s
+Step  14850 .................................................. ETA 24m17s
+Step  14900 .................................................. ETA 24m03s
+Step  14950 .................................................. ETA 23m48s
+Step  15000 .................................................. ETA 23m34s
+Step  15050 .................................................. ETA 23m20s
+Step  15100 .................................................. ETA 23m05s
+Step  15150 .................................................. ETA 22m51s
+Step  15200 .................................................. ETA 22m37s
+Step  15250 .................................................. ETA 22m23s
+Step  15300 .................................................. ETA 22m09s
+Step  15350 .................................................. ETA 21m54s
+Step  15400 .................................................. ETA 21m40s
+Step  15450 .................................................. ETA 21m26s
+Step  15500 .................................................. ETA 21m12s
+Step  15550 .................................................. ETA 20m57s
+Step  15600 .................................................. ETA 20m43s
+Step  15650 .................................................. ETA 20m29s
+Step  15700 .................................................. ETA 20m15s
+Step  15750 .................................................. ETA 20m00s
+Step  15800 .................................................. ETA 19m46s
+Step  15850 .................................................. ETA 19m32s
+Step  15900 .................................................. ETA 19m18s
+Step  15950 .................................................. ETA 19m03s
+Step  16000 .................................................. ETA 18m49s
+Step  16050 .................................................. ETA 18m35s
+Step  16100 .................................................. ETA 18m20s
+Step  16150 .................................................. ETA 18m06s
+Step  16200 .................................................. ETA 17m52s
+Step  16250 .................................................. ETA 17m38s
+Step  16300 .................................................. ETA 17m23s
+Step  16350 .................................................. ETA 17m09s
+Step  16400 .................................................. ETA 16m55s
+Step  16450 .................................................. ETA 16m40s
+Step  16500 .................................................. ETA 16m26s
+Step  16550 .................................................. ETA 16m12s
+Step  16600 .................................................. ETA 15m58s
+Step  16650 .................................................. ETA 15m44s
+Step  16700 .................................................. ETA 15m29s
+Step  16750 .................................................. ETA 15m15s
+Step  16800 .................................................. ETA 15m01s
+Step  16850 .................................................. ETA 14m47s
+Step  16900 .................................................. ETA 14m32s
+Step  16950 .................................................. ETA 14m18s
+Step  17000 .................................................. ETA 14m04s
+Step  17050 .................................................. ETA 13m50s
+Step  17100 .................................................. ETA 13m35s
+Step  17150 .................................................. ETA 13m21s
+Step  17200 .................................................. ETA 13m07s
+Step  17250 .................................................. ETA 12m53s
+Step  17300 .................................................. ETA 12m38s
+Step  17350 .................................................. ETA 12m24s
+Step  17400 .................................................. ETA 12m10s
+Step  17450 .................................................. ETA 11m56s
+Step  17500 .................................................. ETA 11m41s
+Step  17550 .................................................. ETA 11m27s
+Step  17600 .................................................. ETA 11m13s
+Step  17650 .................................................. ETA 10m59s
+Step  17700 .................................................. ETA 10m45s
+Step  17750 .................................................. ETA 10m30s
+Step  17800 .................................................. ETA 10m16s
+Step  17850 .................................................. ETA 10m02s
+Step  17900 .................................................. ETA  9m48s
+Step  17950 .................................................. ETA  9m33s
+Step  18000 .................................................. ETA  9m19s
+Step  18050 .................................................. ETA  9m05s
+Step  18100 .................................................. ETA  8m51s
+Step  18150 .................................................. ETA  8m36s
+Step  18200 .................................................. ETA  8m22s
+Step  18250 .................................................. ETA  8m08s
+Step  18300 .................................................. ETA  7m54s
+Step  18350 .................................................. ETA  7m39s
+Step  18400 .................................................. ETA  7m25s
+Step  18450 .................................................. ETA  7m11s
+Step  18500 .................................................. ETA  6m57s
+Step  18550 .................................................. ETA  6m42s
+Step  18600 .................................................. ETA  6m28s
+Step  18650 .................................................. ETA  6m14s
+Step  18700 .................................................. ETA  6m00s
+Step  18750 .................................................. ETA  5m45s
+Step  18800 .................................................. ETA  5m31s
+Step  18850 .................................................. ETA  5m17s
+Step  18900 .................................................. ETA  5m03s
+Step  18950 .................................................. ETA  4m48s
+Step  19000 .................................................. ETA  4m34s
+Step  19050 .................................................. ETA  4m20s
+Step  19100 .................................................. ETA  4m06s
+Step  19150 .................................................. ETA  3m51s
+Step  19200 .................................................. ETA  3m37s
+Step  19250 .................................................. ETA  3m23s
+Step  19300 .................................................. ETA  3m09s
+Step  19350 .................................................. ETA  2m54s
+Step  19400 .................................................. ETA  2m40s
+Step  19450 .................................................. ETA  2m26s
+Step  19500 .................................................. ETA  2m12s
+Step  19550 .................................................. ETA  1m57s
+Step  19600 .................................................. ETA  1m43s
+Step  19650 .................................................. ETA  1m29s
+Step  19700 .................................................. ETA  1m15s
+Step  19750 .................................................. ETA  1m00s
+Step  19800 .................................................. ETA 46s
+Step  19850 .................................................. ETA 32s
+Step  19900 .................................................. ETA 18s
+Step  19950 .................................................. ETA  3s
+Step  20000 .
+End of trajectory file reached.
+[1;37m
+
+##########   Main pass done   ##########
+[0;0;0m
+20001 time steps processed.
+
+[1;37m
+
+    Finishing analyses:
+[0;0;0m[1;37m----------------------------------------------------------------------------------------------------------
+
+[0;0;0m[1;33m
+>>> Observation 1 >>>
+[0;0;0m[1;37m
+* Aggregation Functions
+[0;0;0m
+###########################################################################################################
+
+[1;37m  > Value Set 1: O_H_d[O1r_H1o]_r125-245_int_acfless_correq
+[0;0;0m    Finishing functions... (1752 pairs pending)
+[1;37m    [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+
+[0;0;0m[1;32m
+>>> Condition Data >>>
+
+[0;0;0m    34952936 of 44002200000 molecules passed the conditions (0.08 percent).
+
+Neighbor count histogram:
+
+  - 0 Neighbors:   0.7592 percent of the time (151838 hits).
+  - 1 Neighbors:  25.3285 percent of the time (5065961 hits).
+  - 2 Neighbors:  72.3136 percent of the time (14463450 hits).
+  - 3 Neighbors:   1.5946 percent of the time (318930 hits).
+  - 4 Neighbors:   0.0041 percent of the time (820 hits).
+  - 5 Neighbors:   0.0000 percent of the time (1 hits).
+
+    Saving detailed condition data as "cond_O_H_d[O1r_H1o]_r125-245_int_acfless_correq.txt"...
+[1;32m
+<<< End of Condition Data <<<
+
+[0;0;0m[1;37mNeighbour Count Distribution
+[0;0;0m    20001000 Bin entries have been made.
+    Writing Neighbor Count Distribution File "ncd_O_H_d[O1r_H1o]_r125-245_int_acfless_correq.csv"...
+[1;37m
+Dimer Existence Autocorrelation Function
+[0;0;0m    Building intermittent function (new ACF-less method)...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    Finite-size ensemble average is 0.079435 %.
+    Subtracting squared average value (0.000794345 - 6.30984E-07)...
+    Normalizing ACF with factor 1259.9 ...
+
+[1;33m    Please note: [0;0;0mThe lifetime is two times the integral value!
+
+    Performing Levenberg-Marquardt fit with 1-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    1.000000      e1  =     4.473701  (    20.01400 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     7.21080333,  sst =   106.20797206,  sse/sst =     0.06789324
+      Status: success (the relative error in the sum of squares is at most tol) (25 cycles).
+        c1   =    0.991930      e1  =     8.371183    tau(1) =      69.511224 ps
+        R    =   0.965456762  Chi^2 =   2.80357759
+      Curve integral: tau(total) =      69.511224 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 2-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.500000      e1  =     0.100000  (     0.00500 ps)
+        c2   =    0.500000      e2  =    14.147085  (   100.07000 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.16260041,  sst =   106.20797206,  sse/sst =     0.00153096
+      Status: success (the relative error in the sum of squares is at most tol) (132 cycles).
+        c1   =    0.888908      e1  =     9.493200    tau(1) =      80.109113 ps
+        c2   =    0.110827      e2  =     1.706938    tau(2) =       0.322910 ps
+        R    =   0.999234226  Chi^2 =   0.40403510
+      Curve integral: tau(total) =      80.432023 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 3-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.333333      e1  =     0.100000  (     0.00333 ps)
+        c2   =    0.333333      e2  =     1.189415  (     0.47157 ps)
+        c3   =    0.333333      e3  =    14.147085  (    66.71333 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.00904733,  sst =   106.20797206,  sse/sst =     0.00008519
+      Status: success (the relative error in the sum of squares is at most tol) (200 cycles).
+        c1   =    0.858285      e1  =     9.837590    tau(1) =      83.063274 ps
+        c2   =    0.090827      e2  =     3.057750    tau(2) =       0.849214 ps
+        c3   =    0.050876      e3  =     0.561474    tau(3) =       0.016039 ps
+        R    =   0.999957407  Chi^2 =   0.09510284
+      Curve integral: tau(total) =      83.928527 ps.
+    Fitting done.
+
+[1;33m    DACF fit integral overview:
+[0;0;0m      (use the row with the highest R value)
+
+[1;37m      Degree  R             Integral / ps     Lifetime / ps
+[0;0;0m      1       0.96545676    69.5112           139.022   
+      2       0.99923423    80.432            160.864   
+      3       0.99995741    83.9285           167.857   
+
+[1;37m    Resulting aggregate lifetime:[0;0;0m 167.857    ps
+
+[1;31m    Warning:[0;0;0m The lifetime is larger than 10% of the total trajectory length. The value
+             is not reliable. Use a longer trajectory to obtain reliable lifetimes.
+
+
+    Saving DACF File as "dacf_O_H_d[O1r_H1o]_r125-245_int_acfless_correq.csv"...
+    Saving DACF Agr File as "dacf_O_H_d[O1r_H1o]_r125-245_int_acfless_correq.agr"...
+      Preparing set  1: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  2: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  3: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  4: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Writing file...
+[1;37m        [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m[1;33m
+>>> Observation 2 >>>
+[0;0;0m[1;37m
+* Aggregation Functions
+[0;0;0m
+###########################################################################################################
+
+[1;37m  > Value Set 1: C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq
+[0;0;0m    Finishing functions... (472 pairs pending)
+[1;37m    [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+
+[0;0;0m[1;32m
+>>> Condition Data >>>
+
+[0;0;0m    9397345 of 4400220000 molecules passed the conditions (0.21 percent).
+
+Neighbor count histogram:
+
+  - 1 Neighbors:   0.1312 percent of the time (2625 hits).
+  - 2 Neighbors:   5.9519 percent of the time (119043 hits).
+  - 3 Neighbors:  16.6699 percent of the time (333415 hits).
+  - 4 Neighbors:  25.8398 percent of the time (516821 hits).
+  - 5 Neighbors:  23.9043 percent of the time (478109 hits).
+  - 6 Neighbors:  15.0483 percent of the time (300981 hits).
+  - 7 Neighbors:   7.5294 percent of the time (150595 hits).
+  - 8 Neighbors:   3.1804 percent of the time (63612 hits).
+  - 9 Neighbors:   1.1816 percent of the time (23634 hits).
+  - 10 Neighbors:   0.4010 percent of the time (8020 hits).
+  - 11 Neighbors:   0.1218 percent of the time (2437 hits).
+  - 12 Neighbors:   0.0320 percent of the time (640 hits).
+  - 13 Neighbors:   0.0068 percent of the time (137 hits).
+  - 14 Neighbors:   0.0013 percent of the time (27 hits).
+  - 15 Neighbors:   0.0001 percent of the time (3 hits).
+  - 16 Neighbors:   0.0000 percent of the time (1 hits).
+
+    Saving detailed condition data as "cond_C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq.txt"...
+[1;32m
+<<< End of Condition Data <<<
+
+[0;0;0m[1;37mNeighbour Count Distribution
+[0;0;0m    2000100 Bin entries have been made.
+    Writing Neighbor Count Distribution File "ncd_C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq.csv"...
+[1;37m
+Dimer Existence Autocorrelation Function
+[0;0;0m    Building intermittent function (new ACF-less method)...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    Finite-size ensemble average is 0.213565 %.
+    Subtracting squared average value (0.00213565 - 4.56102E-06)...
+    Normalizing ACF with factor 469.243 ...
+
+[1;33m    Please note: [0;0;0mThe lifetime is two times the integral value!
+
+    Performing Levenberg-Marquardt fit with 1-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    1.000000      e1  =     4.473701  (    20.01400 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =    51.81318427,  sst =    40.19070929,  sse/sst =     1.28918313
+[1;37m    Warning:[0;0;0m sse/sst > 1.0, correlation coefficient R = sqrt( 1.0 - sse/sst ) is indeterminate.
+      Status: success (the relative error in the sum of squares is at most tol) (28 cycles).
+        c1   =    0.977664      e1  =     8.136751    tau(1) =      64.727948 ps
+        R    =          -nan  Chi^2 =   7.53601450
+      Curve integral: tau(total) =      64.727948 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 2-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.500000      e1  =     0.100000  (     0.00500 ps)
+        c2   =    0.500000      e2  =    14.147085  (   100.07000 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.72505196,  sst =    40.19070929,  sse/sst =     0.01804029
+      Status: success (the relative error in the sum of squares is at most tol) (201 cycles).
+        c1   =    0.757710      e1  =    11.448001    tau(1) =      99.302935 ps
+        c2   =    0.242246      e2  =     0.400676    tau(2) =       0.038890 ps
+        R    =   0.990938804  Chi^2 =   0.85140341
+      Curve integral: tau(total) =      99.341825 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 3-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.333333      e1  =     0.100000  (     0.00333 ps)
+        c2   =    0.333333      e2  =     1.189415  (     0.47157 ps)
+        c3   =    0.333333      e3  =    14.147085  (    66.71333 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.01232520,  sst =    40.19070929,  sse/sst =     0.00030667
+      Status: success (the relative error in the sum of squares is at most tol) (92 cycles).
+        c1   =    0.705559      e1  =    12.929658    tau(1) =     117.952656 ps
+        c2   =    0.096431      e2  =     3.118895    tau(2) =       0.938033 ps
+        c3   =    0.198004      e3  =     0.235747    tau(3) =       0.011004 ps
+        R    =   0.999846654  Chi^2 =   0.11269455
+      Curve integral: tau(total) =     118.901694 ps.
+    Fitting done.
+
+[1;33m    DACF fit integral overview:
+[0;0;0m      (use the row with the highest R value)
+
+[1;37m      Degree  R             Integral / ps     Lifetime / ps
+[0;0;0m      1             -nan    64.7279           129.456   
+      2       0.99093880    99.3418           198.684   
+      3       0.99984665    118.902           237.803   
+
+[1;37m    Resulting aggregate lifetime:[0;0;0m 237.803    ps
+
+[1;31m    Warning:[0;0;0m The lifetime is larger than the total trajectory length! The value
+             is a pure guess! Use a (much) longer trajectory to obtain reliable lifetimes.
+
+
+    Saving DACF File as "dacf_C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq.csv"...
+    Saving DACF Agr File as "dacf_C2H3O2_H_d[CHOr_H1o]_r130-260_int_acfless_correq.agr"...
+      Preparing set  1: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  2: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  3: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  4: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Writing file...
+[1;37m        [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m[1;33m
+>>> Observation 3 >>>
+[0;0;0m[1;37m
+* Aggregation Functions
+[0;0;0m
+###########################################################################################################
+
+[1;37m  > Value Set 1: C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq
+[0;0;0m    Finishing functions... (330 pairs pending)
+[1;37m    [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+
+[0;0;0m[1;32m
+>>> Condition Data >>>
+
+[0;0;0m    6879791 of 4400220000 molecules passed the conditions (0.16 percent).
+
+Neighbor count histogram:
+
+  - 1 Neighbors:   0.6057 percent of the time (12115 hits).
+  - 2 Neighbors:  25.0698 percent of the time (501421 hits).
+  - 3 Neighbors:  31.7459 percent of the time (634950 hits).
+  - 4 Neighbors:  23.8248 percent of the time (476519 hits).
+  - 5 Neighbors:  12.2005 percent of the time (244023 hits).
+  - 6 Neighbors:   4.7099 percent of the time (94202 hits).
+  - 7 Neighbors:   1.4179 percent of the time (28360 hits).
+  - 8 Neighbors:   0.3425 percent of the time (6851 hits).
+  - 9 Neighbors:   0.0688 percent of the time (1376 hits).
+  - 10 Neighbors:   0.0125 percent of the time (250 hits).
+  - 11 Neighbors:   0.0013 percent of the time (27 hits).
+  - 12 Neighbors:   0.0003 percent of the time (6 hits).
+
+    Saving detailed condition data as "cond_C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq.txt"...
+[1;32m
+<<< End of Condition Data <<<
+
+[0;0;0m[1;37mNeighbour Count Distribution
+[0;0;0m    2000100 Bin entries have been made.
+    Writing Neighbor Count Distribution File "ncd_C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq.csv"...
+[1;37m
+Dimer Existence Autocorrelation Function
+[0;0;0m    Building intermittent function (new ACF-less method)...
+[1;37m      [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    Finite-size ensemble average is 0.156351 %.
+    Subtracting squared average value (0.00156351 - 2.44457E-06)...
+    Normalizing ACF with factor 640.588 ...
+
+[1;33m    Please note: [0;0;0mThe lifetime is two times the integral value!
+
+    Performing Levenberg-Marquardt fit with 1-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    1.000000      e1  =     4.473701  (    20.01400 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =   110.40789535,  sst =    10.80651818,  sse/sst =    10.21678709
+[1;37m    Warning:[0;0;0m sse/sst > 1.0, correlation coefficient R = sqrt( 1.0 - sse/sst ) is indeterminate.
+      Status: success (the relative error in the sum of squares is at most tol) (31 cycles).
+        c1   =    0.967314      e1  =     8.075980    tau(1) =      63.089633 ps
+        R    =          -nan  Chi^2 =  11.00321562
+      Curve integral: tau(total) =      63.089633 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 2-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.500000      e1  =     0.100000  (     0.00500 ps)
+        c2   =    0.500000      e2  =    14.147085  (   100.07000 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.44199560,  sst =    10.80651818,  sse/sst =     0.04090083
+      Status: success (the relative error in the sum of squares is at most tol) (86 cycles).
+        c1   =    0.653769      e1  =    15.868731    tau(1) =     164.629952 ps
+        c2   =    0.346211      e2  =     0.295005    tau(2) =       0.030130 ps
+        R    =   0.979336084  Chi^2 =   0.66747119
+      Curve integral: tau(total) =     164.660082 ps.
+    Fitting done.
+
+    Performing Levenberg-Marquardt fit with 3-exponential curve...
+      f(x) = c1 * exp(-x/e1^2) + c2 * exp(-x/e2^2) + ...
+      Starting values:
+        c1   =    0.333333      e1  =     0.100000  (     0.00333 ps)
+        c2   =    0.333333      e2  =     1.189415  (     0.47157 ps)
+        c3   =    0.333333      e3  =    14.147085  (    66.71333 ps)
+    Fitting [1;37m[[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m    sse =     0.01464399,  sst =    10.80651818,  sse/sst =     0.00135511
+      Status: success (the relative error in the sum of squares is at most tol) (78 cycles).
+        c1   =    0.629102      e1  =    18.092098    tau(1) =     205.920040 ps
+        c2   =    0.063400      e2  =     2.593517    tau(2) =       0.426451 ps
+        c3   =    0.307490      e3  =     0.237517    tau(3) =       0.017347 ps
+        R    =   0.999322217  Chi^2 =   0.15730197
+      Curve integral: tau(total) =     206.363838 ps.
+    Fitting done.
+
+[1;33m    DACF fit integral overview:
+[0;0;0m      (use the row with the highest R value)
+
+[1;37m      Degree  R             Integral / ps     Lifetime / ps
+[0;0;0m      1             -nan    63.0896           126.179   
+      2       0.97933608    164.66            329.32    
+      3       0.99932222    206.364           412.728   
+
+[1;37m    Resulting aggregate lifetime:[0;0;0m 412.728    ps
+
+[1;31m    Warning:[0;0;0m The lifetime is larger than the total trajectory length! The value
+             is a pure guess! Use a (much) longer trajectory to obtain reliable lifetimes.
+
+
+    Saving DACF File as "dacf_C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq.csv"...
+    Saving DACF Agr File as "dacf_C3H3N2_H_d[CHNr_H1o]_r140-260_int_acfless_correq.agr"...
+      Preparing set  1: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  2: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  3: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Preparing set  4: [[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m]
+      Writing file...
+[1;37m        [[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m#[0;0;0m[1;37m]
+[0;0;0m[1;37m
+
+----------------------------------------------------------------------------------------------------------
+[0;0;0m[1;37m    Finished all analyses.
+
+[0;0;0m[1;37m
+    Analysis was running for 1h 35m 1s.
+[0;0;0m[1;37m      (3.508 steps per second)
+
+[0;0;0m
+[1;33m    Note:[0;0;0m To show a list of all persons who contributed to TRAVIS,
+          please add "[1;37m-credits[0;0;0m" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from [1;37mJoachim Wuttke
+[0;0;0m      - kiss_fft  from [1;37mMark Borgerding
+[0;0;0m      - voro++    from [1;37mChris Rycroft
+[0;0;0m
+[1;37m    http://www.travis-analyzer.de
+
+[0;0;0m[1;31m    Please cite all of the following articles for the analyses you have used:
+
+[0;0;0m[1;33m  * For TRAVIS in general:
+
+[0;0;0m[1;37m    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+[0;0;0m    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+[1;37m    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+[0;0;0m    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+[1;37m*** The End ***
+
+[0;0;0mJob completed.
