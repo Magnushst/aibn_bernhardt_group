@@ -1,0 +1,2 @@
+corrupted size vs. prev_size
+/var/spool/slurmd/job21210543/slurm_script: line 17: 1807581 Aborted                 (core dumped) travis -p mace_analysis_unwrapped_v6_200k_interval_10.lmp -i input_tr.txt

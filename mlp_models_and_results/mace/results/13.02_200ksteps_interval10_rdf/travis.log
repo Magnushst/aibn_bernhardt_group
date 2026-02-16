@@ -1,0 +1,1743 @@
+Command line:
+"travis -p mace_analysis_unwrapped_v6_200k_interval_10.lmp -i input_tr.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bun134 at Fri Feb 13 10:27:34 2026 (PID 1301177)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from input_tr.txt, Output is redirected
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+    Opening position trajectory mace_analysis_unwrapped_v6_200k_interval_10.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 13675 frames (just a *guess* from the file size of 1839.67 MiB).
+
+    4700 atoms in the system: 500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {   -327 ..  +3971 pm }, dX = 4298 pm
+      (in step 1)   Y = {   -180 ..  +3966 pm }, dY = 4146 pm
+                    Z = {   -343 ..  +3926 pm }, dZ = 4269 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] n
+
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] y
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] y
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    1188 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 14 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 11 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C6H9N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  H8  H9  N1  N2  N3  N4 
+C1  *** 154  -   -   -   -  111  -   -   -   -   -   -   -   -  151 141  -   -  
+C2  154 *** 150  -   -   -   -  108  -   -   -   -   -   -   -   -   -   -  158 
+C3   -  150 ***  -   -   -   -   -   -   -   -   -  104  -   -   -   -  137  -  
+C4   -   -   -  ***  -   -   -   -   -   -   -  108  -   -   -   -   -  144 128 
+C5   -   -   -   -  *** 142  -   -   -   -   -   -   -  104  -  135  -   -   -  
+C6   -   -   -   -  142 ***  -   -   -   -   -   -   -   -  109  -  134  -   -  
+H1  111  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -  
+H2   -  108  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  102  -   -   -  
+H4   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  103  -   -  
+H5   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   99  -  
+H6   -   -   -  108  -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H7   -   -  104  -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H8   -   -   -   -  104  -   -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H9   -   -   -   -   -  109  -   -   -   -   -   -   -   -  ***  -   -   -   -  
+N1  151  -   -   -  135  -   -   -  102  -   -   -   -   -   -  ***  -   -   -  
+N2  141  -   -   -   -  134  -   -   -  103  -   -   -   -   -   -  ***  -   -  
+N3   -   -  137 144  -   -   -   -   -   -   99  -   -   -   -   -   -  ***  -  
+N4   -  158  -  128  -   -   -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - N1 - C5 - C6 - N2
+    5-ring: N4 - C4 - N3 - C3 - C2
+
+    Atoms C5, C6 are equivalent.
+    Atoms H3, H4 are equivalent.
+    Atoms H8, H9 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 2: C6H8N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  H8  N1  N2  N3  N4 
+C1  *** 154  -  148  -   -  109  -   -   -   -   -   -   -  149  -   -   -  
+C2  154 *** 146  -   -   -   -  112  -   -   -   -   -   -   -   -  144  -  
+C3   -  146 ***  -   -   -   -   -   -  106  -   -   -   -   -  135  -   -  
+C4  148  -   -  ***  -   -   -   -   -   -  105  -   -   -   -   -   -  135 
+C5   -   -   -   -  ***  -   -   -   -   -   -   -  113  -  129  -   -  141 
+C6   -   -   -   -   -  ***  -   -   -   -   -   -   -  114  -  137 127  -  
+H1  109  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+H2   -  112  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -   -  106  -   -   -  
+H4   -   -  106  -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H5   -   -   -  105  -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H6   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -  101  -   -  
+H7   -   -   -   -  113  -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H8   -   -   -   -   -  114  -   -   -   -   -   -   -  ***  -   -   -   -  
+N1  149  -   -   -  129  -   -   -  106  -   -   -   -   -  ***  -   -   -  
+N2   -   -  135  -   -  137  -   -   -   -   -  101  -   -   -  ***  -   -  
+N3   -  144  -   -   -  127  -   -   -   -   -   -   -   -   -   -  ***  -  
+N4   -   -   -  135 141  -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - C4 - N4 - C5 - N1
+    5-ring: N3 - C6 - N2 - C3 - C2
+
+*** Molecule 3: C6H8N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  H8  N1  N2  N3  N4 
+C1  ***  -  152 156  -   -  109  -   -   -   -   -   -   -  146  -   -   -  
+C2   -  *** 159 156  -   -   -  107  -   -   -   -   -   -   -  142  -   -  
+C3  152 159 ***  -   -   -   -   -  107  -   -   -   -   -   -   -  146  -  
+C4  156 156  -  ***  -   -   -   -   -  110  -   -   -   -   -   -   -  144 
+C5   -   -   -   -  ***  -   -   -   -   -   -   -  106  -  132  -  129  -  
+C6   -   -   -   -   -  ***  -   -   -   -   -   -   -  113  -  129  -  130 
+H1  109  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+H2   -  107  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H3   -   -  107  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H4   -   -   -  110  -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H5   -   -   -   -   -   -   -   -   -   -  ***  -   -   -  104  -   -   -  
+H6   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -  105  -   -  
+H7   -   -   -   -  106  -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H8   -   -   -   -   -  113  -   -   -   -   -   -   -  ***  -   -   -   -  
+N1  146  -   -   -  132  -   -   -   -   -  104  -   -   -  ***  -   -   -  
+N2   -  142  -   -   -  129  -   -   -   -   -  105  -   -   -  ***  -   -  
+N3   -   -  146  -  129  -   -   -   -   -   -   -   -   -   -   -  ***  -  
+N4   -   -   -  144  -  130  -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - C3 - N3 - C5 - N1
+    5-ring: N2 - C6 - N4 - C4 - C2
+    4-ring: C1 - C4 - C2 - C3
+
+    Atoms C1, C2 are equivalent.
+    Atoms C3, C4 are equivalent.
+    Atoms C5, C6 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H3, H4 are equivalent.
+    Atoms H5, H6 are equivalent.
+    Atoms H7, H8 are equivalent.
+    Atoms N1, N2 are equivalent.
+    Atoms N3, N4 are equivalent.
+
+*** Molecule 4: C5H7N2O2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  H1  H2  H3  H4  H5  H6  H7  N1  N2  O1  O2 
+C1  ***  -  147  -   -  106  -   -   -   -   -   -  144  -  138  -  
+C2   -  ***  -   -  148  -   -   -   -   -   -   -   -   -  141 120 
+C3  147  -  ***  -   -   -   -   -  111  -   -   -   -  136  -   -  
+C4   -   -   -  ***  -   -   -  106  -   -   -   -  134 140  -   -  
+C5   -  148  -   -  ***  -   -   -   -  108 106 113  -   -   -   -  
+H1  106  -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H2   -   -   -   -   -   -  ***  -   -   -   -   -  100  -   -   -  
+H3   -   -   -  106  -   -   -  ***  -   -   -   -   -   -   -   -  
+H4   -   -  111  -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H5   -   -   -   -  108  -   -   -   -  ***  -   -   -   -   -   -  
+H6   -   -   -   -  106  -   -   -   -   -  ***  -   -   -   -   -  
+H7   -   -   -   -  113  -   -   -   -   -   -  ***  -   -   -   -  
+N1  144  -   -  134  -   -  100  -   -   -   -   -  ***  -   -   -  
+N2   -   -  136 140  -   -   -   -   -   -   -   -   -  ***  -   -  
+O1  138 141  -   -   -   -   -   -   -   -   -   -   -   -  ***  -  
+O2   -  120  -   -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - C3 - N2 - C4 - N1
+
+    Atoms H5, H6, H7 are equivalent.
+
+*** Molecule 5: C2H6O3; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  H5  H6  O1  O2  O3 
+C1  *** 151  -   -   -   -   -   -  128 127  -  
+C2  151 ***  -   -   -  114 110 111  -   -   -  
+H1   -   -  ***  -   -   -   -   -  122  -  126 
+H2   -   -   -  ***  -   -   -   -   -   -  110 
+H3   -   -   -   -  ***  -   -   -   -   -   97 
+H4   -  114  -   -   -  ***  -   -   -   -   -  
+H5   -  110  -   -   -   -  ***  -   -   -   -  
+H6   -  111  -   -   -   -   -  ***  -   -   -  
+O1  128  -  122  -   -   -   -   -  ***  -   -  
+O2  127  -   -   -   -   -   -   -   -  ***  -  
+O3   -   -  126 110  97  -   -   -   -   -  *** 
+
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5, H6 are equivalent.
+
+*** Molecule 6: C3H5N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  H5  N1  N2 
+C1  ***  -   -   -   -  106  -   -  133 138 
+C2   -  *** 138  -   -   -  107  -  141  -  
+C3   -  138 ***  -   -   -   -  112  -  142 
+H1   -   -   -  ***  -   -   -   -  102  -  
+H2   -   -   -   -  ***  -   -   -   -   98 
+H3  106  -   -   -   -  ***  -   -   -   -  
+H4   -  107  -   -   -   -  ***  -   -   -  
+H5   -   -  112  -   -   -   -  ***  -   -  
+N1  133 141  -  102  -   -   -   -  ***  -  
+N2  138  -  142  -   98  -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 7: C3H4N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  N1  N2 
+C1  ***  -   -   -  107  -   -  137 130 
+C2   -  *** 139  -   -  107  -  137  -  
+C3   -  139 ***  -   -   -  110  -  142 
+H1   -   -   -  ***  -   -   -  108  -  
+H2  107  -   -   -  ***  -   -   -   -  
+H3   -  107  -   -   -  ***  -   -   -  
+H4   -   -  110  -   -   -  ***  -   -  
+N1  137 137  -  108  -   -   -  ***  -  
+N2  130  -  142  -   -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+*** Molecule 8: C3H3N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  N1  N2 
+C1  ***  -   -  104  -   -  132 132 
+C2   -  *** 145  -  104  -  140  -  
+C3   -  145 ***  -   -  109  -  138 
+H1  104  -   -  ***  -   -   -   -  
+H2   -  104  -   -  ***  -   -   -  
+H3   -   -  109  -   -  ***  -   -  
+N1  132 140  -   -   -   -  ***  -  
+N2  132  -  138  -   -   -   -  *** 
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 9: C2H5O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  H5  O1  O2 
+C1  *** 154  -   -   -   -   -  130 136 
+C2  154 ***  -   -  111 109 108  -   -  
+H1   -   -  ***  -   -   -   -   99  -  
+H2   -   -   -  ***  -   -   -   -  107 
+H3   -  111  -   -  ***  -   -   -   -  
+H4   -  109  -   -   -  ***  -   -   -  
+H5   -  108  -   -   -   -  ***  -   -  
+O1  130  -   99  -   -   -   -  ***  -  
+O2  136  -   -  107  -   -   -   -  *** 
+
+    Atoms H1, H2 are equivalent.
+    Atoms H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 10: C2H4O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  O1  O2 
+C1  *** 154  -   -   -   -  136 125 
+C2  154 ***  -  106 110 107  -   -  
+H1   -   -  ***  -   -   -  101  -  
+H2   -  106  -  ***  -   -   -   -  
+H3   -  110  -   -  ***  -   -   -  
+H4   -  107  -   -   -  ***  -   -  
+O1  136  -  101  -   -   -  ***  -  
+O2  125  -   -   -   -   -   -  *** 
+
+    Atoms H2, H3, H4 are equivalent.
+
+*** Molecule 11: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 147  -   -   -  125 129 
+C2  147 *** 106 113 113  -   -  
+H1   -  106 ***  -   -   -   -  
+H2   -  113  -  ***  -   -   -  
+H3   -  113  -   -  ***  -   -  
+O1  125  -   -   -   -  ***  -  
+O2  129  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 12: H5O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  H5  O1  O2 
+H1  ***  -   -   -   -  124 118 
+H2   -  ***  -   -   -   98  -  
+H3   -   -  ***  -   -   98  -  
+H4   -   -   -  ***  -   -  104 
+H5   -   -   -   -  ***  -  109 
+O1  124  98  98  -   -  ***  -  
+O2  118  -   -  104 109  -  *** 
+
+    Atoms H2, H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 13: H3O; Representant 1; Distances in pm ***
+
+    H1  H2  H3  O1 
+H1  ***  -   -  108 
+H2   -  ***  -   99 
+H3   -   -  *** 102 
+O1  108  99 102 *** 
+
+    Atoms H1, H2, H3 are equivalent.
+
+*** Molecule 14: H2O; Representant 1; Distances in pm ***
+
+    H1  H2  O1 
+H1  ***  -   95 
+H2   -  ***  98 
+O1   95  98 *** 
+
+    Atoms H1, H2 are equivalent.
+
+
+*** The following 14 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C6H9N4 (1 piece, 137.16 g/mol)
+      (15 noneq. atoms, 16 noneq. bonds, 26 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C1 - N1 - C5 - C6 - N2
+         2.)  5-ring: N4 - C4 - N3 - C3 - C2
+
+  - Molecule 2:  C6H8N4 (2 pieces, 136.16 g/mol)
+      (18 noneq. atoms, 19 noneq. bonds, 32 noneq. angles)
+      Concentration:   0.064513 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C1 - C4 - N4 - C5 - N1
+         2.)  5-ring: N3 - C6 - N2 - C3 - C2
+
+  - Molecule 3:  C6H8N4 (1 piece, 136.16 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 15 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 3 rings:
+         1.)  5-ring: C1 - C3 - N3 - C5 - N1
+         2.)  5-ring: N2 - C6 - N4 - C4 - C2
+         3.)  4-ring: C1 - C4 - C2 - C3
+
+  - Molecule 4:  C5H7N2O2 (1 piece, 127.12 g/mol)
+      (14 noneq. atoms, 14 noneq. bonds, 22 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - C3 - N2 - C4 - N1
+
+  - Molecule 5:  C2H6O3 (6 pieces, 78.07 g/mol)
+      (8 noneq. atoms, 7 noneq. bonds, 9 noneq. angles)
+      Concentration:   0.193540 mol/liter
+
+  - Molecule 6:  C3H5N2 (5 pieces, 69.09 g/mol)
+      (6 noneq. atoms, 6 noneq. bonds, 8 noneq. angles)
+      Concentration:   0.161284 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 7:  C3H4N2 (84 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   2.709565 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 8:  C3H3N2 (2 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   0.064513 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C2 - C3 - N2 - C1 - N1
+
+  - Molecule 9:  C2H5O2 (1 piece, 61.06 g/mol)
+      (5 noneq. atoms, 4 noneq. bonds, 5 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 10:  C2H4O2 (80 pieces, 60.05 g/mol)
+      (6 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.580538 mol/liter
+
+  - Molecule 11:  C2H3O2 (12 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.387081 mol/liter
+
+  - Molecule 12:  H5O2 (1 piece, 37.04 g/mol)
+      (3 noneq. atoms, 2 noneq. bonds, 3 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 13:  H3O (7 pieces, 19.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:   0.225797 mol/liter
+
+  - Molecule 14:  H2O (985 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  31.772874 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] n
+
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] 2
+
+    Break bonds in which molecule (1-14)? 14
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 13
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 12
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 10
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O1
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 9
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O1
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 9
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O2
+    Enter 2nd atom of the bond to break (e.g. C2): H2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 7
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 6
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 6
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N2
+    Enter 2nd atom of the bond to break (e.g. C2): H2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O3
+    Enter 2nd atom of the bond to break (e.g. C2): H3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O3
+    Enter 2nd atom of the bond to break (e.g. C2): H2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O3
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O1
+    Enter 2nd atom of the bond to break (e.g. C2): H1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 4
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 4
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): O2
+    Enter 2nd atom of the bond to break (e.g. C2): H2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H5
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N2
+    Enter 2nd atom of the bond to break (e.g. C2): H6
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N2
+    Enter 2nd atom of the bond to break (e.g. C2): H7
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N3
+    Enter 2nd atom of the bond to break (e.g. C2): H5
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-14)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N2
+    Enter 2nd atom of the bond to break (e.g. C2): H5
+
+    Break another bond (y/n)? [no] n
+
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] <RETURN>
+
+    Going back to molecule recognition with changed settings.
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    3392 molecules found.
+
+    Sorting atom types...
+    2204 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 8 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 9 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C6H7N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  N1  N2  N3  N4 
+C1  *** 154 146  -   -   -  112  -   -   -   -   -   -   -  144  -   -  
+C2  154 ***  -  148  -   -   -  109  -   -   -   -   -   -   -  149  -  
+C3  146  -  ***  -   -   -   -   -   -  106  -   -   -  135  -   -   -  
+C4   -  148  -  ***  -   -   -   -   -   -  105  -   -   -   -   -  135 
+C5   -   -   -   -  ***  -   -   -   -   -   -  114  -  137 127  -   -  
+C6   -   -   -   -   -  ***  -   -   -   -   -   -  113  -   -  129 141 
+H1  112  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H2   -  109  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -  101  -   -   -  
+H4   -   -  106  -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H5   -   -   -  105  -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H6   -   -   -   -  114  -   -   -   -   -   -  ***  -   -   -   -   -  
+H7   -   -   -   -   -  113  -   -   -   -   -   -  ***  -   -   -   -  
+N1   -   -  135  -  137  -   -   -  101  -   -   -   -  ***  -   -   -  
+N2  144  -   -   -  127  -   -   -   -   -   -   -   -   -  ***  -   -  
+N3   -  149  -   -   -  129  -   -   -   -   -   -   -   -   -  ***  -  
+N4   -   -   -  135  -  141  -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C2 - C4 - N4 - C6 - N3
+    5-ring: N2 - C5 - N1 - C3 - C1
+
+*** Molecule 2: C6H7N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  N1  N2  N3  N4 
+C1  *** 154  -   -   -   -  111  -   -   -   -   -   -  141 151  -   -  
+C2  154 *** 150  -   -   -   -  108  -   -   -   -   -   -   -  158  -  
+C3   -  150 ***  -   -   -   -   -   -  104  -   -   -   -   -   -  137 
+C4   -   -   -  ***  -  142  -   -   -   -   -  109  -  134  -   -   -  
+C5   -   -   -   -  ***  -   -   -   -   -  108  -   -   -   -  128 144 
+C6   -   -   -  142  -  ***  -   -   -   -   -   -  104  -  135  -   -  
+H1  111  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H2   -  108  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -  103  -   -   -  
+H4   -   -  104  -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H5   -   -   -   -  108  -   -   -   -   -  ***  -   -   -   -   -   -  
+H6   -   -   -  109  -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H7   -   -   -   -   -  104  -   -   -   -   -   -  ***  -   -   -   -  
+N1  141  -   -  134  -   -   -   -  103  -   -   -   -  ***  -   -   -  
+N2  151  -   -   -   -  135  -   -   -   -   -   -   -   -  ***  -   -  
+N3   -  158  -   -  128  -   -   -   -   -   -   -   -   -   -  ***  -  
+N4   -   -  137  -  144  -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C6 - C4 - N1
+    5-ring: N3 - C5 - N4 - C3 - C2
+
+*** Molecule 3: C6H6N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  N1  N2  N3  N4 
+C1  *** 152 156  -   -   -  109  -   -   -   -   -  146  -   -   -  
+C2  152 ***  -  159  -   -   -  107  -   -   -   -   -  146  -   -  
+C3  156  -  *** 156  -   -   -   -  110  -   -   -   -   -  144  -  
+C4   -  159 156 ***  -   -   -   -   -  107  -   -   -   -   -  142 
+C5   -   -   -   -  ***  -   -   -   -   -  106  -  132 129  -   -  
+C6   -   -   -   -   -  ***  -   -   -   -   -  113  -   -  130 129 
+H1  109  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H2   -  107  -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H3   -   -  110  -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H4   -   -   -  107  -   -   -   -   -  ***  -   -   -   -   -   -  
+H5   -   -   -   -  106  -   -   -   -   -  ***  -   -   -   -   -  
+H6   -   -   -   -   -  113  -   -   -   -   -  ***  -   -   -   -  
+N1  146  -   -   -  132  -   -   -   -   -   -   -  ***  -   -   -  
+N2   -  146  -   -  129  -   -   -   -   -   -   -   -  ***  -   -  
+N3   -   -  144  -   -  130  -   -   -   -   -   -   -   -  ***  -  
+N4   -   -   -  142  -  129  -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - C2 - N2 - C5 - N1
+    5-ring: N4 - C6 - N3 - C3 - C4
+    4-ring: C1 - C3 - C4 - C2
+
+    Atoms C1, C2, C3, C4 are equivalent.
+    Atoms C5, C6 are equivalent.
+    Atoms H1, H2, H3, H4 are equivalent.
+    Atoms H5, H6 are equivalent.
+    Atoms N1, N2, N3, N4 are equivalent.
+
+*** Molecule 4: C5H6N2O2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  H1  H2  H3  H4  H5  H6  N1  N2  O1  O2 
+C1  ***  -  147  -   -  106  -   -   -   -   -  144  -  138  -  
+C2   -  ***  -   -  148  -   -   -   -   -   -   -   -  141 120 
+C3  147  -  ***  -   -   -   -  111  -   -   -   -  136  -   -  
+C4   -   -   -  ***  -   -  106  -   -   -   -  134 140  -   -  
+C5   -  148  -   -  ***  -   -   -  113 108 106  -   -   -   -  
+H1  106  -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H2   -   -   -  106  -   -  ***  -   -   -   -   -   -   -   -  
+H3   -   -  111  -   -   -   -  ***  -   -   -   -   -   -   -  
+H4   -   -   -   -  113  -   -   -  ***  -   -   -   -   -   -  
+H5   -   -   -   -  108  -   -   -   -  ***  -   -   -   -   -  
+H6   -   -   -   -  106  -   -   -   -   -  ***  -   -   -   -  
+N1  144  -   -  134  -   -   -   -   -   -   -  ***  -   -   -  
+N2   -   -  136 140  -   -   -   -   -   -   -   -  ***  -   -  
+O1  138 141  -   -   -   -   -   -   -   -   -   -   -  ***  -  
+O2   -  120  -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C1 - C3 - N2 - C4 - N1
+
+    Atoms H4, H5, H6 are equivalent.
+
+*** Molecule 5: C3H3N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  N1  N2 
+C1  ***  -   -  107  -   -  130 137 
+C2   -  *** 139  -  110  -  142  -  
+C3   -  139 ***  -   -  107  -  137 
+H1  107  -   -  ***  -   -   -   -  
+H2   -  110  -   -  ***  -   -   -  
+H3   -   -  107  -   -  ***  -   -  
+N1  130 142  -   -   -   -  ***  -  
+N2  137  -  137  -   -   -   -  *** 
+
+    5-ring: C1 - N1 - C2 - C3 - N2
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 6: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 154  -   -   -  136 125 
+C2  154 *** 106 110 107  -   -  
+H1   -  106 ***  -   -   -   -  
+H2   -  110  -  ***  -   -   -  
+H3   -  107  -   -  ***  -   -  
+O1  136  -   -   -   -  ***  -  
+O2  125  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 7: O; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 8: H; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+
+*** The following 8 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C6H7N4 (2 pieces, 135.15 g/mol)
+      (17 noneq. atoms, 18 noneq. bonds, 30 noneq. angles)
+      Concentration:   0.064513 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C2 - C4 - N4 - C6 - N3
+         2.)  5-ring: N2 - C5 - N1 - C3 - C1
+
+  - Molecule 2:  C6H7N4 (1 piece, 135.15 g/mol)
+      (17 noneq. atoms, 18 noneq. bonds, 30 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C1 - N2 - C6 - C4 - N1
+         2.)  5-ring: N3 - C5 - N4 - C3 - C2
+
+  - Molecule 3:  C6H6N4 (1 piece, 134.14 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 7 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 3 rings:
+         1.)  5-ring: C1 - C2 - N2 - C5 - N1
+         2.)  5-ring: N4 - C6 - N3 - C3 - C4
+         3.)  4-ring: C1 - C3 - C4 - C2
+
+  - Molecule 4:  C5H6N2O2 (1 piece, 126.11 g/mol)
+      (13 noneq. atoms, 13 noneq. bonds, 20 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - C3 - N2 - C4 - N1
+
+  - Molecule 5:  C3H3N2 (91 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.935362 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N1 - C2 - C3 - N2
+
+  - Molecule 6:  C2H3O2 (99 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.193416 mol/liter
+
+  - Molecule 7:  O (1000 pieces, 16.00 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  32.256725 mol/liter
+
+  - Molecule 8:  H (2197 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  70.868025 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] n
+
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] 2
+
+    Break bonds in which molecule (1-8)? 4
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): C1
+    Enter 2nd atom of the bond to break (e.g. C2): O1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): C1
+    Enter 2nd atom of the bond to break (e.g. C2): C3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): C2
+    Enter 2nd atom of the bond to break (e.g. C2): C4
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): C1
+    Enter 2nd atom of the bond to break (e.g. C2): C2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): C1
+    Enter 2nd atom of the bond to break (e.g. C2): C2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-8)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): N1
+    Enter 2nd atom of the bond to break (e.g. C2): H3
+
+    Break another bond (y/n)? [no] n
+
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] <RETURN>
+
+    Going back to molecule recognition with changed settings.
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    3400 molecules found.
+
+    Sorting atom types...
+    2213 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 4 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 1 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C3H3N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  N1  N2 
+C1  ***  -   -  107  -   -  130 137 
+C2   -  *** 139  -  110  -  142  -  
+C3   -  139 ***  -   -  107  -  137 
+H1  107  -   -  ***  -   -   -   -  
+H2   -  110  -   -  ***  -   -   -  
+H3   -   -  107  -   -  ***  -   -  
+N1  130 142  -   -   -   -  ***  -  
+N2  137  -  137  -   -   -   -  *** 
+
+    5-ring: C1 - N1 - C2 - C3 - N2
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 2: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 154  -   -   -  136 125 
+C2  154 *** 106 110 107  -   -  
+H1   -  106 ***  -   -   -   -  
+H2   -  110  -  ***  -   -   -  
+H3   -  107  -   -  ***  -   -  
+O1  136  -   -   -   -  ***  -  
+O2  125  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 3: O; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 4: H; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+
+*** The following 4 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C3H3N2 (100 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   3.225672 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N1 - C2 - C3 - N2
+
+  - Molecule 2:  C2H3O2 (100 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.225672 mol/liter
+
+  - Molecule 3:  O (1000 pieces, 16.00 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  32.256725 mol/liter
+
+  - Molecule 4:  H (2200 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  70.964795 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] y
+
+    Uniting molecules which have been broken by wrapping...
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (C3H3N2):    438.87 pm
+
+      (*) Molecule 2 (C2H3O2):    346.86 pm
+
+      (*) Molecule 3 (O):       (only one atom)
+
+      (*) Molecule 4 (H):       (only one atom)
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+
+    Defining ring centers in C3H3N2:
+      - Defining #3 as Center of Ring 1: C1 - N1 - C2 - C3 - N2
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #4 in C3H3N2 ...
+      - Dipole vector #2 --> #3 in C2H3O2 ...
+      - Dipole vector #2 --> #3 in O ...
+      - Dipole vector #2 --> #3 in H ...
+
+>>> 13 virtual atoms have been defined: >>>
+
+    #1 in C3H3N2: Center of Geometry.
+    #2 in C3H3N2: Center of Mass.
+
+    #3 in C3H3N2 - defined through center:
+      -  C1    Weight 20.00%
+      -  C2    Weight 20.00%
+      -  C3    Weight 20.00%
+      -  N1    Weight 20.00%
+      -  N2    Weight 20.00%
+
+    #4 in C3H3N2 - tip of molecular dipole vector starting in #2.
+
+    #1 in C2H3O2: Center of Geometry.
+    #2 in C2H3O2: Center of Mass.
+
+    #3 in C2H3O2 - tip of molecular dipole vector starting in #2.
+
+    #1 in O: Center of Geometry.
+    #2 in O: Center of Mass.
+
+    #3 in O - tip of molecular dipole vector starting in #2.
+
+    #1 in H: Center of Geometry.
+    #2 in H: Center of Mass.
+
+    #3 in H - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? rdf
+
+ rdf     - Radial Distribution Function
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] n
+
+
+    Which of the molecules should be the reference molecule (C3H3N2=1, C2H3O2=2, O=3, H=4)? 4
+
+    H is the reference molecule.
+
+
+>>> Observation 1 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 1
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, H=4)? 3
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM H (0) or from OM O (1)? [0] 0
+    Take observed atom(s) from RM H (0) or from OM O (1)? [1] 1
+
+    H is only one atom, there is no choice.
+    O is only one atom, there is no choice.
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1200
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [360] 1200
+    Correct radial distribution for this RDF (y/n)? [yes] y
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] n
+    Add a condition to this observation (y/n)? [no] n
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] y
+
+>>> Observation 2 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 1
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, H=4)? 2
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM H (0) or from OM C2H3O2 (1)? [0] 0
+    Take observed atom(s) from RM H (0) or from OM C2H3O2 (1)? [1] 1
+
+    H is only one atom, there is no choice.
+    Which atom(s) to take from OM C2H3O2 (e.g. "C1,C3-5,H", "*"=all)? [#2] *
+    This yields in 7 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1200
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [360] 1200
+    Correct radial distribution for this RDF (y/n)? [yes] y
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] n
+    Add a condition to this observation (y/n)? [no] n
+
+<<< End of Observation 2 <<<
+
+    Add another observation (y/n)? [no] y
+
+>>> Observation 3 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 1
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, H=4)? 1
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM H (0) or from OM C3H3N2 (1)? [0] 0
+    Take observed atom(s) from RM H (0) or from OM C3H3N2 (1)? [1] 1
+
+    H is only one atom, there is no choice.
+    Which atom(s) to take from OM C3H3N2 (e.g. "C1,C3-5,H", "*"=all)? [#2] *
+    This yields in 8 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1200
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [360] 1200
+    Correct radial distribution for this RDF (y/n)? [yes] y
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] n
+    Add a condition to this observation (y/n)? [no] n
+
+<<< End of Observation 3 <<<
+
+    Add another observation (y/n)? [no] n
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - RDF: H_O_[H1r_O1o]
+  *** Observation 2
+    - RDF: H_C2H3O2_[H1r_CHOo]
+  *** Observation 3
+    - RDF: H_C3H3N2_[H1r_CHNo]
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    In which trajectory frame to start processing the trajectory? [1] 1
+    How many trajectory frames to read (from this position on)? [all] <RETURN>
+    Use every n-th read trajectory frame for the analysis: [1] 1
+
+    Using 13675 time steps: Every 1st within range 1 - approx. 13675.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Initializing observation 1...
+  Creating RDF...
+Initializing observation 2...
+  Creating RDF...
+Initializing observation 3...
+  Creating RDF...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 .................................................. ETA  1h08m07s
+Step     50 .................................................. ETA  1h07m52s
+Step    100 .................................................. ETA  1h07m37s
+Step    150 .................................................. ETA  1h08m29s
+Step    200 .................................................. ETA  1h08m54s
+Step    250 .................................................. ETA  1h08m21s
+Step    300 .................................................. ETA  1h08m31s
+Step    350 .................................................. ETA  1h08m35s
+Step    400 .................................................. ETA  1h08m34s
+Step    450 .................................................. ETA  1h08m04s
+Step    500 .................................................. ETA  1h07m36s
+Step    550 .................................................. ETA  1h07m11s
+Step    600 .................................................. ETA  1h07m07s
+Step    650 .................................................. ETA  1h06m43s
+Step    700 .................................................. ETA  1h06m38s
+Step    750 .................................................. ETA  1h06m15s
+Step    800 .................................................. ETA  1h05m53s
+Step    850 .................................................. ETA  1h05m46s
+Step    900 .................................................. ETA  1h05m24s
+Step    950 .................................................. ETA  1h05m29s
+Step   1000 .................................................. ETA  1h05m07s
+Step   1050 .................................................. ETA  1h04m46s
+Step   1100 .................................................. ETA  1h04m37s
+Step   1150 .................................................. ETA  1h04m37s
+Step   1200 .................................................. ETA  1h04m16s
+Step   1250 .................................................. ETA  1h04m05s
+Step   1300 .................................................. ETA  1h03m45s
+Step   1350 .................................................. ETA  1h03m34s
+Step   1400 .................................................. ETA  1h03m13s
+Step   1450 .................................................. ETA  1h03m02s
+Step   1500 .................................................. ETA  1h02m42s
+Step   1550 .................................................. ETA  1h02m38s
+Step   1600 .................................................. ETA  1h02m18s
+Step   1650 .................................................. ETA  1h02m06s
+Step   1700 .................................................. ETA  1h01m46s
+Step   1750 .................................................. ETA  1h01m27s
+Step   1800 .................................................. ETA  1h01m15s
+Step   1850 .................................................. ETA  1h01m02s
+Step   1900 .................................................. ETA  1h00m43s
+Step   1950 .................................................. ETA  1h00m30s
+Step   2000 .................................................. ETA  1h00m23s
+Step   2050 .................................................. ETA  1h00m10s
+Step   2100 .................................................. ETA 59m51s
+Step   2150 .................................................. ETA 59m38s
+Step   2200 .................................................. ETA 59m19s
+Step   2250 .................................................. ETA 59m01s
+Step   2300 .................................................. ETA 58m47s
+Step   2350 .................................................. ETA 58m29s
+Step   2400 .................................................. ETA 58m15s
+Step   2450 .................................................. ETA 57m57s
+Step   2500 .................................................. ETA 57m44s
+Step   2550 .................................................. ETA 57m26s
+Step   2600 .................................................. ETA 57m12s
+Step   2650 .................................................. ETA 56m54s
+Step   2700 .................................................. ETA 56m40s
+Step   2750 .................................................. ETA 56m22s
+Step   2800 .................................................. ETA 56m09s
+Step   2850 .................................................. ETA 55m51s
+Step   2900 .................................................. ETA 55m37s
+Step   2950 .................................................. ETA 55m19s
+Step   3000 .................................................. ETA 55m05s
+Step   3050 .................................................. ETA 54m48s
+Step   3100 .................................................. ETA 54m34s
+Step   3150 .................................................. ETA 54m20s
+Step   3200 .................................................. ETA 54m02s
+Step   3250 .................................................. ETA 53m48s
+Step   3300 .................................................. ETA 53m31s
+Step   3350 .................................................. ETA 53m17s
+Step   3400 .................................................. ETA 53m06s
+Step   3450 .................................................. ETA 52m51s
+Step   3500 .................................................. ETA 52m34s
+Step   3550 .................................................. ETA 52m20s
+Step   3600 .................................................. ETA 52m02s
+Step   3650 .................................................. ETA 51m48s
+Step   3700 .................................................. ETA 51m33s
+Step   3750 .................................................. ETA 51m16s
+Step   3800 .................................................. ETA 51m02s
+Step   3850 .................................................. ETA 50m45s
+Step   3900 .................................................. ETA 50m30s
+Step   3950 .................................................. ETA 50m13s
+Step   4000 .................................................. ETA 50m01s
+Step   4050 .................................................. ETA 49m46s
+Step   4100 .................................................. ETA 49m29s
+Step   4150 .................................................. ETA 49m15s
+Step   4200 .................................................. ETA 49m02s
+Step   4250 .................................................. ETA 48m45s
+Step   4300 .................................................. ETA 48m31s
+Step   4350 .................................................. ETA 48m16s
+Step   4400 .................................................. ETA 48m03s
+Step   4450 .................................................. ETA 47m48s
+Step   4500 .................................................. ETA 47m31s
+Step   4550 .................................................. ETA 47m16s
+Step   4600 .................................................. ETA 47m03s
+Step   4650 .................................................. ETA 46m47s
+Step   4700 .................................................. ETA 46m32s
+Step   4750 .................................................. ETA 46m15s
+Step   4800 .................................................. ETA 46m03s
+Step   4850 .................................................. ETA 45m48s
+Step   4900 .................................................. ETA 45m32s
+Step   4950 .................................................. ETA 45m17s
+Step   5000 .................................................. ETA 45m00s
+Step   5050 .................................................. ETA 44m45s
+Step   5100 .................................................. ETA 44m28s
+Step   5150 .................................................. ETA 44m13s
+Step   5200 .................................................. ETA 43m58s
+Step   5250 .................................................. ETA 43m41s
+Step   5300 .................................................. ETA 43m26s
+Step   5350 .................................................. ETA 43m09s
+Step   5400 .................................................. ETA 42m54s
+Step   5450 .................................................. ETA 42m38s
+Step   5500 .................................................. ETA 42m22s
+Step   5550 .................................................. ETA 42m07s
+Step   5600 .................................................. ETA 41m51s
+Step   5650 .................................................. ETA 41m36s
+Step   5700 .................................................. ETA 41m19s
+Step   5750 .................................................. ETA 41m04s
+Step   5800 .................................................. ETA 40m49s
+Step   5850 .................................................. ETA 40m33s
+Step   5900 .................................................. ETA 40m18s
+Step   5950 .................................................. ETA 40m02s
+Step   6000 .................................................. ETA 39m47s
+Step   6050 .................................................. ETA 39m30s
+Step   6100 .................................................. ETA 39m15s
+Step   6150 .................................................. ETA 38m58s
+Step   6200 .................................................. ETA 38m44s
+Step   6250 .................................................. ETA 38m29s
+Step   6300 .................................................. ETA 38m13s
+Step   6350 .................................................. ETA 37m57s
+Step   6400 .................................................. ETA 37m42s
+Step   6450 .................................................. ETA 37m26s
+Step   6500 .................................................. ETA 37m11s
+Step   6550 .................................................. ETA 36m55s
+Step   6600 .................................................. ETA 36m39s
+Step   6650 .................................................. ETA 36m24s
+Step   6700 .................................................. ETA 36m07s
+Step   6750 .................................................. ETA 35m52s
+Step   6800 .................................................. ETA 35m37s
+Step   6850 .................................................. ETA 35m22s
+Step   6900 .................................................. ETA 35m06s
+Step   6950 .................................................. ETA 34m51s
+Step   7000 .................................................. ETA 34m36s
+Step   7050 .................................................. ETA 34m20s
+Step   7100 .................................................. ETA 34m05s
+Step   7150 .................................................. ETA 33m49s
+Step   7200 .................................................. ETA 33m33s
+Step   7250 .................................................. ETA 33m18s
+Step   7300 .................................................. ETA 33m02s
+Step   7350 .................................................. ETA 32m46s
+Step   7400 .................................................. ETA 32m31s
+Step   7450 .................................................. ETA 32m14s
+Step   7500 .................................................. ETA 31m59s
+Step   7550 .................................................. ETA 31m44s
+Step   7600 .................................................. ETA 31m27s
+Step   7650 .................................................. ETA 31m13s
+Step   7700 .................................................. ETA 30m57s
+Step   7750 .................................................. ETA 30m41s
+Step   7800 .................................................. ETA 30m26s
+Step   7850 .................................................. ETA 30m10s
+Step   7900 .................................................. ETA 29m54s
+Step   7950 .................................................. ETA 29m39s
+Step   8000 .................................................. ETA 29m23s
+Step   8050 .................................................. ETA 29m07s
+Step   8100 .................................................. ETA 28m52s
+Step   8150 .................................................. ETA 28m36s
+Step   8200 .................................................. ETA 28m20s
+Step   8250 .................................................. ETA 28m05s
+Step   8300 .................................................. ETA 27m49s
+Step   8350 .................................................. ETA 27m33s
+Step   8400 .................................................. ETA 27m17s
+Step   8450 .................................................. ETA 27m02s
+Step   8500 .................................................. ETA 26m47s
+Step   8550 .................................................. ETA 26m31s
+Step   8600 .................................................. ETA 26m15s
+Step   8650 .................................................. ETA 25m59s
+Step   8700 .................................................. ETA 25m44s
+Step   8750 .................................................. ETA 25m28s
+Step   8800 .................................................. ETA 25m12s
+Step   8850 .................................................. ETA 24m57s
+Step   8900 .................................................. ETA 24m41s
+Step   8950 .................................................. ETA 24m25s
+Step   9000 .................................................. ETA 24m10s
+Step   9050 .................................................. ETA 23m54s
+Step   9100 .................................................. ETA 23m38s
+Step   9150 .................................................. ETA 23m23s
+Step   9200 .................................................. ETA 23m07s
+Step   9250 .................................................. ETA 22m52s
+Step   9300 .................................................. ETA 22m36s
+Step   9350 .................................................. ETA 22m21s
+Step   9400 .................................................. ETA 22m05s
+Step   9450 .................................................. ETA 21m49s
+Step   9500 .................................................. ETA 21m34s
+Step   9550 .................................................. ETA 21m18s
+Step   9600 .................................................. ETA 21m02s
+Step   9650 .................................................. ETA 20m47s
+Step   9700 .................................................. ETA 20m31s
+Step   9750 .................................................. ETA 20m16s
+Step   9800 .................................................. ETA 20m00s
+Step   9850 .................................................. ETA 19m44s
+Step   9900 .................................................. ETA 19m29s
+Step   9950 .................................................. ETA 19m13s
+Step  10000 .................................................. ETA 18m57s
+Step  10050 .................................................. ETA 18m42s
+Step  10100 .................................................. ETA 18m26s
+Step  10150 .................................................. ETA 18m10s
+Step  10200 .................................................. ETA 17m55s
+Step  10250 .................................................. ETA 17m40s
+Step  10300 .................................................. ETA 17m24s
+Step  10350 .................................................. ETA 17m08s
+Step  10400 .................................................. ETA 16m52s
+Step  10450 .................................................. ETA 16m37s
+Step  10500 .................................................. ETA 16m21s
+Step  10550 .................................................. ETA 16m05s
+Step  10600 .................................................. ETA 15m50s
+Step  10650 .................................................. ETA 15m34s
+Step  10700 .................................................. ETA 15m18s
+Step  10750 .................................................. ETA 15m02s
+Step  10800 .................................................. ETA 14m47s
+Step  10850 .................................................. ETA 14m31s
+Step  10900 .................................................. ETA 14m16s
+Step  10950 .................................................. ETA 14m00s
+Step  11000 .................................................. ETA 13m44s
+Step  11050 .................................................. ETA 13m29s
+Step  11100 .................................................. ETA 13m13s
+Step  11150 .................................................. ETA 12m58s
+Step  11200 .................................................. ETA 12m42s
+Step  11250 .................................................. ETA 12m26s
+Step  11300 .................................................. ETA 12m10s
+Step  11350 .................................................. ETA 11m55s
+Step  11400 .................................................. ETA 11m39s
+Step  11450 .................................................. ETA 11m23s
+Step  11500 .................................................. ETA 11m08s
+Step  11550 .................................................. ETA 10m52s
+Step  11600 .................................................. ETA 10m36s
+Step  11650 .................................................. ETA 10m21s
+Step  11700 .................................................. ETA 10m05s
+Step  11750 .................................................. ETA  9m49s
+Step  11800 .................................................. ETA  9m33s
+Step  11850 .................................................. ETA  9m18s
+Step  11900 .................................................. ETA  9m02s
+Step  11950 .................................................. ETA  8m46s
+Step  12000 .................................................. ETA  8m31s
+Step  12050 .................................................. ETA  8m15s
+Step  12100 .................................................. ETA  7m59s
+Step  12150 .................................................. ETA  7m43s
+Step  12200 .................................................. ETA  7m28s
+Step  12250 .................................................. ETA  7m12s
+Step  12300 .................................................. ETA  6m56s
+Step  12350 .................................................. ETA  6m41s
+Step  12400 .................................................. ETA  6m25s
+Step  12450 .................................................. ETA  6m09s
+Step  12500 .................................................. ETA  5m53s
+Step  12550 .................................................. ETA  5m38s
+Step  12600 .................................................. ETA  5m22s
+Step  12650 .................................................. ETA  5m06s
+Step  12700 .................................................. ETA  4m51s
+Step  12750 .................................................. ETA  4m35s
+Step  12800 .................................................. ETA  4m19s
+Step  12850 .................................................. ETA  4m03s
+Step  12900 .................................................. ETA  3m48s
+Step  12950 .................................................. ETA  3m32s
+Step  13000 .................................................. ETA  3m16s
+Step  13050 .................................................. ETA  3m00s
+Step  13100 .................................................. ETA  2m45s
+Step  13150 .................................................. ETA  2m29s
+Step  13200 .................................................. ETA  2m13s
+Step  13250 .................................................. ETA  1m58s
+Step  13300 .................................................. ETA  1m42s
+Step  13350 .................................................. ETA  1m26s
+Step  13400 .................................................. ETA  1m10s
+Step  13450 .................................................. ETA 55s
+Step  13500 .................................................. ETA 39s
+Step  13550 .................................................. ETA 23s
+Step  13600 .................................................. ETA  7s
+Step  13650 ...
+End of trajectory file reached.
+
+
+##########   Main pass done   ##########
+
+13653 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Observation 1 >>>
+
+* Radial Distribution Function
+    4253687954 bin entries, 25782912046 out of bin range (85.84 percent).
+    Max. bin entry: 1.056230E+07  -->  EPS: 1.862645E-09
+    Mean value:    1784.31 pm    Standard deviation:    519.465 pm
+    Min. value:     86.891 pm    Max.value:             3221.01 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at   99.50 pm, height 48.9271
+      1. minimum at  251.50 pm, height  0.0861,  1.6964 particles in 1. solvation shell.
+      2. maximum at  322.50 pm, height  1.9888
+      2. minimum at  425.50 pm, height  0.9830,  5.7062 particles in 2. solvation shell.
+    <<< Peak Data <<<
+    Saving RDF as "rdf_H_O_[H1r_O1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_H_O_[H1r_O1o].agr"...
+
+>>> Observation 2 >>>
+
+* Radial Distribution Function
+    2934932715 bin entries, 18090687285 out of bin range (86.04 percent).
+    Max. bin entry: 7.373735E+06  -->  EPS: 9.313226E-10
+    Mean value:    1789.22 pm    Standard deviation:    514.414 pm
+    Min. value:     89.023 pm    Max.value:              3220.9 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at  102.50 pm, height  1.5632
+      1. minimum at  216.50 pm, height  0.2371,  0.1880 particles in 1. solvation shell.
+      2. maximum at  402.50 pm, height  1.1192
+    <<< Peak Data <<<
+    Saving RDF as "rdf_H_C2H3O2_[H1r_CHOo].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_H_C2H3O2_[H1r_CHOo].agr"...
+
+>>> Observation 3 >>>
+
+* Radial Distribution Function
+    3341124574 bin entries, 20688155426 out of bin range (86.10 percent).
+    Max. bin entry: 8.437495E+06  -->  EPS: 1.862645E-09
+    Mean value:    1790.75 pm    Standard deviation:    512.991 pm
+    Min. value:    92.1394 pm    Max.value:             3220.69 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at  103.50 pm, height  2.8397
+      1. minimum at  476.50 pm, height  0.9404,  5.4310 particles in 1. solvation shell.
+    <<< Peak Data <<<
+    Saving RDF as "rdf_H_C3H3N2_[H1r_CHNo].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_H_C3H3N2_[H1r_CHNo].agr"...
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Analysis was running for 1h 11m 39s.
+      (3.176 steps per second)
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+
