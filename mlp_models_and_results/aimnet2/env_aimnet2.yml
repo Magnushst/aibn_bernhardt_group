@@ -1,0 +1,24 @@
+name: aimnet_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - ase
+  - rdkit
+  - tqdm
+  - numba              
+  - cudatoolkit=11.8
+  - pip:
+    - git+https://github.com/isayevlab/aimnetcentral.git#egg=aimnet[ase]
