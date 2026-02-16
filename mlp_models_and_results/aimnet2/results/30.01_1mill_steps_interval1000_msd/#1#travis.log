@@ -1,0 +1,333 @@
+Command line:
+"travis aimnet2_analysis_unwrapped_v5.lmp"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bunya2.rcc.uq.edu.au at Fri Jan 30 09:13:38 2026 (PID 2831586)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from terminal,  Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+    Opening position trajectory aimnet2_analysis_unwrapped_v5.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 1005 frames (just a *guess* from the file size of 135.68 MiB).
+
+    4700 atoms in the system: 500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {  -1415 ..  +4761 pm }, dX = 6176 pm
+      (in step 1)   Y = {  -1669 ..  +4918 pm }, dY = 6587 pm
+                    Z = {  -1257 ..  +4407 pm }, dZ = 5664 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] 
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    1194 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 9 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 4 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C6H9N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  H8  H9  N1  N2  N3  N4 
+C1  ***  -   -   -   -   -   -   -   -  112  -   -   -   -   -  133  -  136  -  
+C2   -  ***  -   -   -   -   -   -   -   -  103  -   -   -   -   -  135  -  133 
+C3   -   -  ***  -  138  -   -   -   -   -   -  108  -   -   -  133  -   -   -  
+C4   -   -   -  ***  -  133  -   -   -   -   -   -  109  -   -   -  135  -   -  
+C5   -   -  138  -  ***  -   -   -   -   -   -   -   -  115  -   -   -  137  -  
+C6   -   -   -  133  -  ***  -   -   -   -   -   -   -   -  107  -   -   -  136 
+H1   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  127 127  -   -  
+H2   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  101  -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  107 
+H4  112  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H5   -  103  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H6   -   -  108  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H7   -   -   -  109  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H8   -   -   -   -  115  -   -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H9   -   -   -   -   -  107  -   -   -   -   -   -   -   -  ***  -   -   -   -  
+N1  133  -  133  -   -   -  127  -   -   -   -   -   -   -   -  ***  -   -   -  
+N2   -  135  -  135  -   -  127  -   -   -   -   -   -   -   -   -  ***  -   -  
+N3  136  -   -   -  137  -   -  101  -   -   -   -   -   -   -   -   -  ***  -  
+N4   -  133  -   -   -  136  -   -  107  -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C2 - N4 - C6 - C4 - N2
+    5-ring: C1 - N1 - C3 - C5 - N3
+
+    Atoms C1, C2 are equivalent.
+    Atoms C3, C4 are equivalent.
+    Atoms C5, C6 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms H6, H7 are equivalent.
+    Atoms H8, H9 are equivalent.
+    Atoms N1, N2 are equivalent.
+    Atoms N3, N4 are equivalent.
+
+*** Molecule 2: C2H6O3; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  H5  H6  O1  O2  O3 
+C1  *** 148  -   -   -   -   -   -  133 122  -  
+C2  148 ***  -   -   -  112 110 108  -   -   -  
+H1   -   -  ***  -   -   -   -   -  115  -  127 
+H2   -   -   -  ***  -   -   -   -   -   -   96 
+H3   -   -   -   -  ***  -   -   -   -   -  103 
+H4   -  112  -   -   -  ***  -   -   -   -   -  
+H5   -  110  -   -   -   -  ***  -   -   -   -  
+H6   -  108  -   -   -   -   -  ***  -   -   -  
+O1  133  -  115  -   -   -   -   -  ***  -   -  
+O2  122  -   -   -   -   -   -   -   -  ***  -  
+O3   -   -  127  96 103  -   -   -   -   -  *** 
+
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5, H6 are equivalent.
+
+*** Molecule 3: C3H5N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  H5  N1  N2 
+C1  ***  -   -   -   -  112  -   -  134 131 
+C2   -  *** 133  -   -   -  113  -  139  -  
+C3   -  133 ***  -   -   -   -  108  -  134 
+H1   -   -   -  ***  -   -   -   -  105  -  
+H2   -   -   -   -  ***  -   -   -   -  105 
+H3  112  -   -   -   -  ***  -   -   -   -  
+H4   -  113  -   -   -   -  ***  -   -   -  
+H5   -   -  108  -   -   -   -  ***  -   -  
+N1  134 139  -  105  -   -   -   -  ***  -  
+N2  131  -  134  -  105  -   -   -   -  *** 
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 4: C3H4N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  N1  N2 
+C1  ***  -   -   -  106  -   -  137 134 
+C2   -  *** 138  -   -  108  -  133  -  
+C3   -  138 ***  -   -   -  108  -  139 
+H1   -   -   -  ***  -   -   -  101  -  
+H2  106  -   -   -  ***  -   -   -   -  
+H3   -  108  -   -   -  ***  -   -   -  
+H4   -   -  108  -   -   -  ***  -   -  
+N1  137 133  -  101  -   -   -  ***  -  
+N2  134  -  139  -   -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+*** Molecule 5: C2H4O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  O1  O2 
+C1  *** 148  -   -   -   -  133 118 
+C2  148 ***  -  115 110 107  -   -  
+H1   -   -  ***  -   -   -  102  -  
+H2   -  115  -  ***  -   -   -   -  
+H3   -  110  -   -  ***  -   -   -  
+H4   -  107  -   -   -  ***  -   -  
+O1  133  -  102  -   -   -  ***  -  
+O2  118  -   -   -   -   -   -  *** 
+
+    Atoms H2, H3, H4 are equivalent.
+
+*** Molecule 6: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 152  -   -   -  130 124 
+C2  152 *** 108 112 109  -   -  
+H1   -  108 ***  -   -   -   -  
+H2   -  112  -  ***  -   -   -  
+H3   -  109  -   -  ***  -   -  
+O1  130  -   -   -   -  ***  -  
+O2  124  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 7: H5O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  H5  O1  O2 
+H1  ***  -   -   -   -  122 125 
+H2   -  ***  -   -   -  102  -  
+H3   -   -  ***  -   -  101  -  
+H4   -   -   -  ***  -   -   99 
+H5   -   -   -   -  ***  -   97 
+O1  122 102 101  -   -  ***  -  
+O2  125  -   -   99  97  -  *** 
+
+    Atoms H2, H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 8: H4O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  O1  O2 
+H1  ***  -   -   -  125 112 
+H2   -  ***  -   -  105  -  
+H3   -   -  ***  -  103  -  
+H4   -   -   -  ***  -   97 
+O1  125 105 103  -  ***  -  
+O2  112  -   -   97  -  *** 
+
+    Atoms H2, H3 are equivalent.
+
+*** Molecule 9: H2O; Representant 1; Distances in pm ***
+
+    H1  H2  O1 
+H1  ***  -   94 
+H2   -  *** 100 
+O1   94 100 *** 
+
+    Atoms H1, H2 are equivalent.
+
+
+*** The following 9 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C6H9N4 (1 piece, 137.16 g/mol)
+      (10 noneq. atoms, 10 noneq. bonds, 16 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C2 - N4 - C6 - C4 - N2
+         2.)  5-ring: C1 - N1 - C3 - C5 - N3
+
+  - Molecule 2:  C2H6O3 (3 pieces, 78.07 g/mol)
+      (8 noneq. atoms, 7 noneq. bonds, 9 noneq. angles)
+      Concentration:   0.096770 mol/liter
+
+  - Molecule 3:  C3H5N2 (12 pieces, 69.09 g/mol)
+      (6 noneq. atoms, 6 noneq. bonds, 8 noneq. angles)
+      Concentration:   0.387081 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C2 - C3 - N2 - C1 - N1
+
+  - Molecule 4:  C3H4N2 (86 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   2.774078 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 5:  C2H4O2 (83 pieces, 60.05 g/mol)
+      (6 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.677308 mol/liter
+
+  - Molecule 6:  C2H3O2 (14 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.451594 mol/liter
+
+  - Molecule 7:  H5O2 (1 piece, 37.04 g/mol)
+      (3 noneq. atoms, 2 noneq. bonds, 3 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 8:  H4O2 (1 piece, 36.03 g/mol)
+      (5 noneq. atoms, 4 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 9:  H2O (993 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  32.030928 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] 
+
+*** SIGINT caught: Hard interrupt by user ***
+Stopping execution.
+Decoding line numbers... ("addr2line <addr> -f -i -C -e /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis")
+ # 15 - [  0x4847c3] - DumpLinuxBacktrace() - backtrace.cpp:93 
+ # 14 - [  0x484d79] - CrashInt() - backtrace.cpp:279 
+ # 13 - [  0x484e2a] - SIGNAL_INT(int) - backtrace.cpp:340 
+ #  6 - [  0x559acc] - myget(CxString*) - tools.cpp:1888 (discriminator 1) 
+ #  5 - [  0x559f2c] - CxString::operator char const*() const - xstring.h:268 
+                     - AskYesNo(char const*, int, ...) - tools.cpp:252 
+ #  4 - [  0x55e614] - GatherInfos() - gather.cpp:1780 (discriminator 1) 
+ #  3 - [  0x42fd99] - main - travis.cpp:755 (discriminator 1) 
+ #  1 - [  0x4623ee] - _start - ??:? 
+Delivering control to operating system.

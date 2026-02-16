@@ -1,0 +1,53 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2026 09:06:22
+! Source code version: Jul 29 2022
+! Input file written at Thu Jan 22 19:33:53 2026.
+aimnet2_analysis_unwrapped.lmp
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+n
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+msd
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Enter the physical time distance between successive trajectory frames in fs: [0.5] 
+1000
+! Which molecule should be observed (C3H7N2O=1, C2H6O3=2, C3H5N2=3, C3H4N2=4, C2H4O2=5, C2H3O2=6, H4O2=7, H3O=8, H2O=9)? 
+9
+! Which atom(s) to take from OM H2O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [60] 
+
+! Add another observation (y/n)? [no] 
+y
+! Which molecule should be observed (C3H7N2O=1, C2H6O3=2, C3H5N2=3, C3H4N2=4, C2H4O2=5, C2H3O2=6, H4O2=7, H3O=8, H2O=9)? 
+3
+! Which atom(s) to take from OM C3H5N2 (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [60] 
+
+! Add another observation (y/n)? [no] 
+y
+! Which molecule should be observed (C3H7N2O=1, C2H6O3=2, C3H5N2=3, C3H4N2=4, C2H4O2=5, C2H3O2=6, H4O2=7, H3O=8, H2O=9)? 
+8
+! Which atom(s) to take from OM H3O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [60] 
+
+! Add another observation (y/n)? [no] 
+
+! Remove center of mass movement of the box (y/n)? [yes] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

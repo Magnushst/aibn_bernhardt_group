@@ -1,0 +1,141 @@
+Command line:
+"travis"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bunya1.rcc.uq.edu.au at Thu Jan 22 09:26:58 2026 (PID 837393)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from terminal,  Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+[Renaming existing File input.txt to #2#input.txt ...OK.]
+    No trajectory file specified.
+    Please use the "-p" flag to specify an input trajectory in the command line.
+
+    Enter the file name of the trajectory file to open: [Quit] aimnet2_analysis_unwrapped.lmp
+
+    Opening position trajectory aimnet2_analysis_unwrapped.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 200 frames (just a *guess* from the file size of 27.04 MiB).
+
+    4700 atoms in the system: 500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {   -916 ..  +4672 pm }, dX = 5589 pm
+      (in step 1)   Y = {   -999 ..  +4807 pm }, dY = 5806 pm
+                    Z = {  -1137 ..  +5120 pm }, dZ = 6257 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] 
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] n
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###
+### The atoms C(1210) and H(1263) are VERY close to each other. (Distance=37.1980 pm)
+### The atoms C(1259) and H(1213) are VERY close to each other. (Distance=45.9736 pm)#
+### The atoms H(339) and H(342) are VERY close to each other. (Distance=22.8755 pm)##
+### The atoms O(429) and H(423) are VERY close to each other. (Distance=45.0210 pm)#####
+### The atoms O(1300) and H(1346) are VERY close to each other. (Distance=37.0335 pm)
+### The atoms H(1345) and H(1393) are VERY close to each other. (Distance=41.8714 pm)##
+### The atoms C(1000) and H(1007) are VERY close to each other. (Distance=43.2783 pm)####
+### The atoms H(1793) and H(1283) are VERY close to each other. (Distance=17.0796 pm)#
+### The atoms H(1370) and H(1423) are VERY close to each other. (Distance=15.0138 pm)######
+### The atoms H(1914) and H(1918) are VERY close to each other. (Distance=28.8933 pm)#
+### The atoms H(1949) and H(1953) are VERY close to each other. (Distance=10.7910 pm)#
+### The atoms H(2031) and H(2070) are VERY close to each other. (Distance=15.8363 pm)#
+### The atoms C(2097) and H(2150) are VERY close to each other. (Distance=37.6468 pm)
+### The atoms O(2135) and H(2148) are VERY close to each other. (Distance=41.1580 pm)#
+### The atoms H(2232) and O(2663) are VERY close to each other. (Distance=46.1600 pm)###
+### The atoms C(2928) and H(2977) are VERY close to each other. (Distance=48.3931 pm)#
+### The atoms H(2527) and H(2995) are VERY close to each other. (Distance=17.4782 pm)###
+### The atoms H(2758) and H(2748) are VERY close to each other. (Distance=34.4511 pm)########
+### The atoms C(3414) and H(3427) are VERY close to each other. (Distance=45.5770 pm)
+### The atoms N(3422) and H(3419) are VERY close to each other. (Distance=49.4338 pm)##
+### The atoms H(3600) and H(3606) are VERY close to each other. (Distance=45.3131 pm)##
+### The atoms H(3722) and N(3725) are VERY close to each other. (Distance=41.1226 pm)###
+### The atoms H(3969) and H(4447) are VERY close to each other. (Distance=30.8322 pm)#
+### The atoms C(4034) and H(4046) are VERY close to each other. (Distance=40.8003 pm)###
+### The atoms H(4228) and O(4692) are VERY close to each other. (Distance=40.8804 pm)##
+### Suppressing further "atoms close to each other" warnings.###]
+
+    1172 molecules found.
+
+
+*** Warning: Some of the atoms were found to be very close to each other (distance < 50 pm).
+             This usually indicates a problem, e.g. an incorrect cell vector.
+
+    Continue with molecule recognition anyways (y/n)? [yes] 
+
+*** SIGINT caught: Hard interrupt by user ***
+Stopping execution.
+Decoding line numbers... ("addr2line <addr> -f -i -C -e /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis")
+ # 16 - [  0x4847c3] - DumpLinuxBacktrace() - backtrace.cpp:93 
+ # 15 - [  0x484d79] - CrashInt() - backtrace.cpp:279 
+ # 14 - [  0x484e2a] - SIGNAL_INT(int) - backtrace.cpp:340 
+ #  7 - [  0x559acc] - myget(CxString*) - tools.cpp:1888 (discriminator 1) 
+ #  6 - [  0x559f2c] - CxString::operator char const*() const - xstring.h:268 
+                     - AskYesNo(char const*, int, ...) - tools.cpp:252 
+ #  5 - [  0x617360] - CTimeStep::ScanMolecules() - timestep.cpp:857 (discriminator 1) 
+ #  4 - [  0x55fae3] - GatherInfos() - gather.cpp:1616 (discriminator 1) 
+ #  3 - [  0x42fd99] - main - travis.cpp:755 (discriminator 1) 
+ #  1 - [  0x4623ee] - _start - ??:? 
+Delivering control to operating system.

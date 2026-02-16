@@ -1,0 +1,777 @@
+Command line:
+"travis -p aimnet2_analysis_unwrapped.lmp -i input_for_travis.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bunya2.rcc.uq.edu.au at Fri Jan 23 11:36:40 2026 (PID 2034395)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from input_for_travis.txt, Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+    Opening position trajectory aimnet2_analysis_unwrapped.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 200 frames (just a *guess* from the file size of 27.03 MiB).
+
+    4700 atoms in the system: 500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {  -1366 ..  +4582 pm }, dX = 5947 pm
+      (in step 1)   Y = {   -768 ..  +4664 pm }, dY = 5432 pm
+                    Z = {   -957 ..  +4847 pm }, dZ = 5804 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] n
+
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] y
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] y
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    1195 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 9 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 3 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C3H7N2O; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  H5  H6  H7  N1  N2  O1 
+C1  ***  -   -   -   -  111  -   -   -   -  135 130  -  
+C2   -  *** 130  -   -   -  108  -   -   -  140  -   -  
+C3   -  130 ***  -   -   -   -  107  -   -   -  139  -  
+H1   -   -   -  ***  -   -   -   -   -   -  124  -  120 
+H2   -   -   -   -  ***  -   -   -   -   -   -  104  -  
+H3  111  -   -   -   -  ***  -   -   -   -   -   -   -  
+H4   -  108  -   -   -   -  ***  -   -   -   -   -   -  
+H5   -   -  107  -   -   -   -  ***  -   -   -   -   -  
+H6   -   -   -   -   -   -   -   -  ***  -   -   -   99 
+H7   -   -   -   -   -   -   -   -   -  ***  -   -   98 
+N1  135 140  -  124  -   -   -   -   -   -  ***  -   -  
+N2  130  -  139  -  104  -   -   -   -   -   -  ***  -  
+O1   -   -   -  120  -   -   -   -   99  98  -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+    Atoms H6, H7 are equivalent.
+
+*** Molecule 2: C2H6O3; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  H5  H6  O1  O2  O3 
+C1  *** 153  -   -   -   -   -   -  138 121  -  
+C2  153 ***  -   -   -  110 113 105  -   -   -  
+H1   -   -  ***  -   -   -   -   -  114  -  118 
+H2   -   -   -  ***  -   -   -   -   -   -  103 
+H3   -   -   -   -  ***  -   -   -   -   -  101 
+H4   -  110  -   -   -  ***  -   -   -   -   -  
+H5   -  113  -   -   -   -  ***  -   -   -   -  
+H6   -  105  -   -   -   -   -  ***  -   -   -  
+O1  138  -  114  -   -   -   -   -  ***  -   -  
+O2  121  -   -   -   -   -   -   -   -  ***  -  
+O3   -   -  118 103 101  -   -   -   -   -  *** 
+
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5, H6 are equivalent.
+
+*** Molecule 3: C3H5N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  H5  N1  N2 
+C1  ***  -   -   -   -  108  -   -  132 134 
+C2   -  *** 135  -   -   -  108  -  138  -  
+C3   -  135 ***  -   -   -   -  108  -  138 
+H1   -   -   -  ***  -   -   -   -  103  -  
+H2   -   -   -   -  ***  -   -   -   -  101 
+H3  108  -   -   -   -  ***  -   -   -   -  
+H4   -  108  -   -   -   -  ***  -   -   -  
+H5   -   -  108  -   -   -   -  ***  -   -  
+N1  132 138  -  103  -   -   -   -  ***  -  
+N2  134  -  138  -  101  -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 4: C3H4N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  N1  N2 
+C1  ***  -   -   -  113  -   -  137 135 
+C2   -  *** 137  -   -  110  -  136  -  
+C3   -  137 ***  -   -   -  106  -  135 
+H1   -   -   -  ***  -   -   -  101  -  
+H2  113  -   -   -  ***  -   -   -   -  
+H3   -  110  -   -   -  ***  -   -   -  
+H4   -   -  106  -   -   -  ***  -   -  
+N1  137 136  -  101  -   -   -  ***  -  
+N2  135  -  135  -   -   -   -   -  *** 
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+*** Molecule 5: C2H4O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  O1  O2 
+C1  *** 155  -   -   -   -  132 124 
+C2  155 ***  -  110 109 108  -   -  
+H1   -   -  ***  -   -   -  102  -  
+H2   -  110  -  ***  -   -   -   -  
+H3   -  109  -   -  ***  -   -   -  
+H4   -  108  -   -   -  ***  -   -  
+O1  132  -  102  -   -   -  ***  -  
+O2  124  -   -   -   -   -   -  *** 
+
+    Atoms H2, H3, H4 are equivalent.
+
+*** Molecule 6: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 158  -   -   -  127 122 
+C2  158 *** 107 112 110  -   -  
+H1   -  107 ***  -   -   -   -  
+H2   -  112  -  ***  -   -   -  
+H3   -  110  -   -  ***  -   -  
+O1  127  -   -   -   -  ***  -  
+O2  122  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 7: H4O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  O1  O2 
+H1  ***  -   -   -  127 113 
+H2   -  ***  -   -   97  -  
+H3   -   -  ***  -  100  -  
+H4   -   -   -  ***  -   96 
+O1  127  97 100  -  ***  -  
+O2  113  -   -   96  -  *** 
+
+    Atoms H2, H3 are equivalent.
+
+*** Molecule 8: H3O; Representant 1; Distances in pm ***
+
+    H1  H2  H3  O1 
+H1  ***  -   -   98 
+H2   -  ***  -  103 
+H3   -   -  *** 116 
+O1   98 103 116 *** 
+
+    Atoms H1, H2, H3 are equivalent.
+
+*** Molecule 9: H2O; Representant 1; Distances in pm ***
+
+    H1  H2  O1 
+H1  ***  -   94 
+H2   -  *** 102 
+O1   94 102 *** 
+
+    Atoms H1, H2 are equivalent.
+
+
+*** The following 9 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C3H7N2O (2 pieces, 87.10 g/mol)
+      (12 noneq. atoms, 12 noneq. bonds, 18 noneq. angles)
+      Concentration:   0.064513 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 2:  C2H6O3 (2 pieces, 78.07 g/mol)
+      (8 noneq. atoms, 7 noneq. bonds, 9 noneq. angles)
+      Concentration:   0.064513 mol/liter
+
+  - Molecule 3:  C3H5N2 (10 pieces, 69.09 g/mol)
+      (6 noneq. atoms, 6 noneq. bonds, 8 noneq. angles)
+      Concentration:   0.322567 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 4:  C3H4N2 (88 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   2.838592 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C2 - C3 - N2 - C1 - N1
+
+  - Molecule 5:  C2H4O2 (85 pieces, 60.05 g/mol)
+      (6 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.741822 mol/liter
+
+  - Molecule 6:  C2H3O2 (13 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.419337 mol/liter
+
+  - Molecule 7:  H4O2 (1 piece, 36.03 g/mol)
+      (5 noneq. atoms, 4 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 8:  H3O (1 piece, 19.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 9:  H2O (993 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  32.030928 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] n
+
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] 2
+
+    Break bonds in which molecule (1-9)? 9
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 9
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 8
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 7
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 4
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): h1
+    Enter 2nd atom of the bond to break (e.g. C2): n1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n2
+    Enter 2nd atom of the bond to break (e.g. C2): h2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o3
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o3
+    Enter 2nd atom of the bond to break (e.g. C2): h2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 2
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o3
+    Enter 2nd atom of the bond to break (e.g. C2): h3
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n2
+    Enter 2nd atom of the bond to break (e.g. C2): h2
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h6
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h6
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h7
+
+    Break another bond (y/n)? [no] n
+
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] <RETURN>
+
+    Going back to molecule recognition with changed settings.
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    3400 molecules found.
+
+    Sorting atom types...
+    2205 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 4 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 1 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C3H3N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  N1  N2 
+C1  ***  -   -  113  -   -  135 137 
+C2   -  *** 137  -  106  -  135  -  
+C3   -  137 ***  -   -  110  -  136 
+H1  113  -   -  ***  -   -   -   -  
+H2   -  106  -   -  ***  -   -   -  
+H3   -   -  110  -   -  ***  -   -  
+N1  135 135  -   -   -   -  ***  -  
+N2  137  -  136  -   -   -   -  *** 
+
+    5-ring: C3 - C2 - N1 - C1 - N2
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 2: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 155  -   -   -  132 124 
+C2  155 *** 109 110 108  -   -  
+H1   -  109 ***  -   -   -   -  
+H2   -  110  -  ***  -   -   -  
+H3   -  108  -   -  ***  -   -  
+O1  132  -   -   -   -  ***  -  
+O2  124  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 3: O; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 4: H; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+
+*** The following 4 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C3H3N2 (100 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   3.225672 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C3 - C2 - N1 - C1 - N2
+
+  - Molecule 2:  C2H3O2 (100 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.225672 mol/liter
+
+  - Molecule 3:  O (1000 pieces, 16.00 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  32.256725 mol/liter
+
+  - Molecule 4:  H (2200 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  70.964795 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] y
+
+    Uniting molecules which have been broken by wrapping...
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (C3H3N2):    438.81 pm
+
+      (*) Molecule 2 (C2H3O2):    350.58 pm
+
+      (*) Molecule 3 (O):       (only one atom)
+
+      (*) Molecule 4 (H):       (only one atom)
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - H...
+
+    Defining ring centers in C3H3N2:
+      - Defining #3 as Center of Ring 1: C3 - C2 - N1 - C1 - N2
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #4 in C3H3N2 ...
+      - Dipole vector #2 --> #3 in C2H3O2 ...
+      - Dipole vector #2 --> #3 in O ...
+      - Dipole vector #2 --> #3 in H ...
+
+>>> 13 virtual atoms have been defined: >>>
+
+    #1 in C3H3N2: Center of Geometry.
+    #2 in C3H3N2: Center of Mass.
+
+    #3 in C3H3N2 - defined through center:
+      -  C3    Weight 20.00%
+      -  C2    Weight 20.00%
+      -  C1    Weight 20.00%
+      -  N1    Weight 20.00%
+      -  N2    Weight 20.00%
+
+    #4 in C3H3N2 - tip of molecular dipole vector starting in #2.
+
+    #1 in C2H3O2: Center of Geometry.
+    #2 in C2H3O2: Center of Mass.
+
+    #3 in C2H3O2 - tip of molecular dipole vector starting in #2.
+
+    #1 in O: Center of Geometry.
+    #2 in O: Center of Mass.
+
+    #3 in O - tip of molecular dipole vector starting in #2.
+
+    #1 in H: Center of Geometry.
+    #2 in H: Center of Mass.
+
+    #3 in H - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? rdf
+
+ rdf     - Radial Distribution Function
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] n
+
+
+    Which of the molecules should be the reference molecule (C3H3N2=1, C2H3O2=2, O=3, H=4)? 3
+
+    O is the reference molecule.
+
+
+>>> Observation 1 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 1
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, H=4)? 4
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM O (0) or from OM H (1)? [0] 0
+    Take observed atom(s) from RM O (0) or from OM H (1)? [1] 1
+
+    O is only one atom, there is no choice.
+    H is only one atom, there is no choice.
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1800.0
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [540] 1200
+    Correct radial distribution for this RDF (y/n)? [yes] y
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] n
+    Add a condition to this observation (y/n)? [no] n
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] <RETURN>
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - RDF: O_H_[O1r_H1o]
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    In which trajectory frame to start processing the trajectory? [1] 
+End of input file reached. Switching to keyboard input.
+
+    Do you want to write an input file for this session (y/n)? [yes] 
+
+*** SIGINT caught: Hard interrupt by user ***
+Stopping execution.
+Decoding line numbers... ("addr2line <addr> -f -i -C -e /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis")
+ # 17 - [  0x4847c3] - DumpLinuxBacktrace() - backtrace.cpp:93 
+ # 16 - [  0x484d79] - CrashInt() - backtrace.cpp:279 
+ # 15 - [  0x484e2a] - SIGNAL_INT(int) - backtrace.cpp:340 
+ #  8 - [  0x559acc] - myget(CxString*) - tools.cpp:1888 (discriminator 1) 
+ #  7 - [  0x559f2c] - CxString::operator char const*() const - xstring.h:268 
+                     - AskYesNo(char const*, int, ...) - tools.cpp:252 
+ #  6 - [  0x559c0f] - myget(CxString*) - tools.cpp:1846 (discriminator 1) 
+ #  5 - [  0x55a394] - CxString::operator char const*() const - xstring.h:268 
+                     - AskUnsignedInteger(char const*, int, ...) - tools.cpp:355 
+ #  4 - [  0x5694c0] - GatherInfos() - gather.cpp:5841 (discriminator 1) 
+ #  3 - [  0x42fd99] - main - travis.cpp:755 (discriminator 1) 
+ #  1 - [  0x4623ee] - _start - ??:? 
+Delivering control to operating system.

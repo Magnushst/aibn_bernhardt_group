@@ -1,0 +1,786 @@
+Command line:
+"travis"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bunya1.rcc.uq.edu.au at Wed Jan 21 15:17:47 2026 (PID 4025992)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from terminal,  Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+[Renaming existing File input.txt to #6#input.txt ...OK.]
+    No trajectory file specified.
+    Please use the "-p" flag to specify an input trajectory in the command line.
+
+    Enter the file name of the trajectory file to open: [Quit] aimnet_analysis_unwrapped.lmp
+
+    Opening position trajectory aimnet_analysis_unwrapped.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 2000 frames (just a *guess* from the file size of 20.21 MiB).
+
+    374 atoms in the system: 1x Cl, 249x H, 124x O
+
+    System extent:  X = {   -263 ..  +1920 pm }, dX = 2183 pm
+      (in step 1)   Y = {   -181 ..  +1974 pm }, dY = 2155 pm
+                    Z = {   -147 ..  +1728 pm }, dZ = 1875 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] n
+
+    Found cell geometry data in trajectory file:
+
+      X = 1570.00 pm,   Y = 1570.00 pm,   Z = 1570.00 pm
+
+    The overall box density is 0.974194 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] 
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] n
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+      Cl      |          17 |  35.45150 |           102.00 |          175.00 | #00FF00
+
+
+    Initialized spatial domain engine with 6 x 6 x 6 cells, min. diameter = 235 pm.
+
+    Molecule recognition [#####################################################]
+
+    124 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 3 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 0 rings.
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: H5O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  H5  O1  O2 
+H1  ***  -   -   -   -  119 121 
+H2   -  ***  -   -   -  110  -  
+H3   -   -  ***  -   -  100  -  
+H4   -   -   -  ***  -   -  102 
+H5   -   -   -   -  ***  -  102 
+O1  119 110 100  -   -  ***  -  
+O2  121  -   -  102 102  -  *** 
+
+    Atoms H2, H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 2: Cl; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 3: H2O; Representant 1; Distances in pm ***
+
+    H1  H2  O1 
+H1  ***  -  103 
+H2   -  ***  97 
+O1  103  97 *** 
+
+    Atoms H1, H2 are equivalent.
+
+
+*** The following 3 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  H5O2 (1 piece, 37.04 g/mol)
+      (3 noneq. atoms, 2 noneq. bonds, 3 noneq. angles)
+      Concentration:   0.429092 mol/liter
+
+  - Molecule 2:  Cl (1 piece, 35.45 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:   0.429092 mol/liter
+
+  - Molecule 3:  H2O (122 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  52.349190 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] 
+
+    Accept these molecules (y) or change something (n)? [yes] 
+
+    Uniting molecules which have been broken by wrapping...
+      - Molecule H5O2[1] united, 1 bonds unwrapped.
+      - Molecule H2O[11] united, 1 bonds unwrapped.
+      - Molecule H2O[12] united, 1 bonds unwrapped.
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (H5O2):    378.31 pm
+
+      (*) Molecule 2 (Cl):    (only one atom)
+
+      (*) Molecule 3 (H2O):     173.22 pm
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - H5O2...
+      - Cl...
+      - H2O...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - H5O2...
+      - Cl...
+      - H2O...
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #3 in H5O2 ...
+      - Dipole vector #2 --> #3 in Cl ...
+      - Dipole vector #2 --> #3 in H2O ...
+
+>>> 9 virtual atoms have been defined: >>>
+
+    #1 in H5O2: Center of Geometry.
+    #2 in H5O2: Center of Mass.
+
+    #3 in H5O2 - tip of molecular dipole vector starting in #2.
+
+    #1 in Cl: Center of Geometry.
+    #2 in Cl: Center of Mass.
+
+    #3 in Cl - tip of molecular dipole vector starting in #2.
+
+    #1 in H2O: Center of Geometry.
+    #2 in H2O: Center of Mass.
+
+    #3 in H2O - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? msd
+
+ msd     - Mean Square Displacement / Diffusion Coefficients
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] 
+
+    Enter the physical time distance between successive trajectory frames in fs: [0.5] 50
+
+
+>>> Observation 1 >>>
+
+    Which molecule should be observed (H5O2=1, Cl=2, H2O=3)? 3
+
+*** Mean Square Displacement
+
+    Which atom(s) to take from OM H2O (e.g. "C1,C3-5,H", "*"=all)? [#2] *
+
+    The correlation depth of the MSD determines the maximum temporal distance between two trajectory frames to be
+    considered, and the maximum correlation time on the horizontal axis. It has nothing to do with selecting a certain
+    part of the trajectory. The full trajectory is always used to compute the MSD, unless otherwise specified further below.
+
+    Note: The correlation depth should not be larger than approx. 30% of the total trajectory step count.
+
+    Enter the correlation depth for this MSD (in trajectory frames): [600] 
+
+    Taking every 1. step for the time axis, shifting correlation window 1 steps at once.
+    If you have to change these settings, use the "advanced mode".
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] 
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - MSD: H2O_HO
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Remove center of mass movement of the box (y/n)? [yes] 
+
+    In which trajectory frame to start processing the trajectory? [1] 
+    How many trajectory frames to read (from this position on)? [all] 
+    Use every n-th read trajectory frame for the analysis: [1] 
+
+    Using 2000 time steps: Every 1st within range 1 - approx. 2000.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Initializing observation 1...
+  Creating MSD...
+    MSD Cache: Trying to reserve 17.31 MiB of memory...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 ..................................................
+Step     50 ..................................................
+Step   1050 ................................................
+End of trajectory file reached.
+
+
+##########   Main pass done   ##########
+
+2000 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Observation 1 >>>
+
+* Mean Square Displacement
+    Computing square displacement of cached vectors...
+         1/366:  [##############################]
+         2/366:  [##############################]
+         3/366:  [##############################]
+         4/366:  [##############################]
+         5/366:  [##############################]
+         6/366:  [##############################]
+         7/366:  [##############################]
+         8/366:  [##############################]
+         9/366:  [##############################]
+        10/366:  [##############################]
+        11/366:  [##############################]
+        12/366:  [##############################]
+        13/366:  [##############################]
+        14/366:  [##############################]
+        15/366:  [##############################]
+        16/366:  [##############################]
+        17/366:  [##############################]
+        18/366:  [##############################]
+        19/366:  [##############################]
+        20/366:  [##############################]
+        21/366:  [##############################]
+        22/366:  [##############################]
+        23/366:  [##############################]
+        24/366:  [##############################]
+        25/366:  [##############################]
+        26/366:  [##############################]
+        27/366:  [##############################]
+        28/366:  [##############################]
+        29/366:  [##############################]
+        30/366:  [##############################]
+        31/366:  [##############################]
+        32/366:  [##############################]
+        33/366:  [##############################]
+        34/366:  [##############################]
+        35/366:  [##############################]
+        36/366:  [##############################]
+        37/366:  [##############################]
+        38/366:  [##############################]
+        39/366:  [##############################]
+        40/366:  [##############################]
+        41/366:  [##############################]
+        42/366:  [##############################]
+        43/366:  [##############################]
+        44/366:  [##############################]
+        45/366:  [##############################]
+        46/366:  [##############################]
+        47/366:  [##############################]
+        48/366:  [##############################]
+        49/366:  [##############################]
+        50/366:  [##############################]
+        51/366:  [##############################]
+        52/366:  [##############################]
+        53/366:  [##############################]
+        54/366:  [##############################]
+        55/366:  [##############################]
+        56/366:  [##############################]
+        57/366:  [##############################]
+        58/366:  [##############################]
+        59/366:  [##############################]
+        60/366:  [##############################]
+        61/366:  [##############################]
+        62/366:  [##############################]
+        63/366:  [##############################]
+        64/366:  [##############################]
+        65/366:  [##############################]
+        66/366:  [##############################]
+        67/366:  [##############################]
+        68/366:  [##############################]
+        69/366:  [##############################]
+        70/366:  [##############################]
+        71/366:  [##############################]
+        72/366:  [##############################]
+        73/366:  [##############################]
+        74/366:  [##############################]
+        75/366:  [##############################]
+        76/366:  [##############################]
+        77/366:  [##############################]
+        78/366:  [##############################]
+        79/366:  [##############################]
+        80/366:  [##############################]
+        81/366:  [##############################]
+        82/366:  [##############################]
+        83/366:  [##############################]
+        84/366:  [##############################]
+        85/366:  [##############################]
+        86/366:  [##############################]
+        87/366:  [##############################]
+        88/366:  [##############################]
+        89/366:  [##############################]
+        90/366:  [##############################]
+        91/366:  [##############################]
+        92/366:  [##############################]
+        93/366:  [##############################]
+        94/366:  [##############################]
+        95/366:  [##############################]
+        96/366:  [##############################]
+        97/366:  [##############################]
+        98/366:  [##############################]
+        99/366:  [##############################]
+       100/366:  [##############################]
+       101/366:  [##############################]
+       102/366:  [##############################]
+       103/366:  [##############################]
+       104/366:  [##############################]
+       105/366:  [##############################]
+       106/366:  [##############################]
+       107/366:  [##############################]
+       108/366:  [##############################]
+       109/366:  [##############################]
+       110/366:  [##############################]
+       111/366:  [##############################]
+       112/366:  [##############################]
+       113/366:  [##############################]
+       114/366:  [##############################]
+       115/366:  [##############################]
+       116/366:  [##############################]
+       117/366:  [##############################]
+       118/366:  [##############################]
+       119/366:  [##############################]
+       120/366:  [##############################]
+       121/366:  [##############################]
+       122/366:  [##############################]
+       123/366:  [##############################]
+       124/366:  [##############################]
+       125/366:  [##############################]
+       126/366:  [##############################]
+       127/366:  [##############################]
+       128/366:  [##############################]
+       129/366:  [##############################]
+       130/366:  [##############################]
+       131/366:  [##############################]
+       132/366:  [##############################]
+       133/366:  [##############################]
+       134/366:  [##############################]
+       135/366:  [##############################]
+       136/366:  [##############################]
+       137/366:  [##############################]
+       138/366:  [##############################]
+       139/366:  [##############################]
+       140/366:  [##############################]
+       141/366:  [##############################]
+       142/366:  [##############################]
+       143/366:  [##############################]
+       144/366:  [##############################]
+       145/366:  [##############################]
+       146/366:  [##############################]
+       147/366:  [##############################]
+       148/366:  [##############################]
+       149/366:  [##############################]
+       150/366:  [##############################]
+       151/366:  [##############################]
+       152/366:  [##############################]
+       153/366:  [##############################]
+       154/366:  [##############################]
+       155/366:  [##############################]
+       156/366:  [##############################]
+       157/366:  [##############################]
+       158/366:  [##############################]
+       159/366:  [##############################]
+       160/366:  [##############################]
+       161/366:  [##############################]
+       162/366:  [##############################]
+       163/366:  [##############################]
+       164/366:  [##############################]
+       165/366:  [##############################]
+       166/366:  [##############################]
+       167/366:  [##############################]
+       168/366:  [##############################]
+       169/366:  [##############################]
+       170/366:  [##############################]
+       171/366:  [##############################]
+       172/366:  [##############################]
+       173/366:  [##############################]
+       174/366:  [##############################]
+       175/366:  [##############################]
+       176/366:  [##############################]
+       177/366:  [##############################]
+       178/366:  [##############################]
+       179/366:  [##############################]
+       180/366:  [##############################]
+       181/366:  [##############################]
+       182/366:  [##############################]
+       183/366:  [##############################]
+       184/366:  [##############################]
+       185/366:  [##############################]
+       186/366:  [##############################]
+       187/366:  [##############################]
+       188/366:  [##############################]
+       189/366:  [##############################]
+       190/366:  [##############################]
+       191/366:  [##############################]
+       192/366:  [##############################]
+       193/366:  [##############################]
+       194/366:  [##############################]
+       195/366:  [##############################]
+       196/366:  [##############################]
+       197/366:  [##############################]
+       198/366:  [##############################]
+       199/366:  [##############################]
+       200/366:  [##############################]
+       201/366:  [##############################]
+       202/366:  [##############################]
+       203/366:  [##############################]
+       204/366:  [##############################]
+       205/366:  [##############################]
+       206/366:  [##############################]
+       207/366:  [##############################]
+       208/366:  [##############################]
+       209/366:  [##############################]
+       210/366:  [##############################]
+       211/366:  [##############################]
+       212/366:  [##############################]
+       213/366:  [##############################]
+       214/366:  [##############################]
+       215/366:  [##############################]
+       216/366:  [##############################]
+       217/366:  [##############################]
+       218/366:  [##############################]
+       219/366:  [##############################]
+       220/366:  [##############################]
+       221/366:  [##############################]
+       222/366:  [##############################]
+       223/366:  [##############################]
+       224/366:  [##############################]
+       225/366:  [##############################]
+       226/366:  [##############################]
+       227/366:  [##############################]
+       228/366:  [##############################]
+       229/366:  [##############################]
+       230/366:  [##############################]
+       231/366:  [##############################]
+       232/366:  [##############################]
+       233/366:  [##############################]
+       234/366:  [##############################]
+       235/366:  [##############################]
+       236/366:  [##############################]
+       237/366:  [##############################]
+       238/366:  [##############################]
+       239/366:  [##############################]
+       240/366:  [##############################]
+       241/366:  [##############################]
+       242/366:  [##############################]
+       243/366:  [##############################]
+       244/366:  [##############################]
+       245/366:  [##############################]
+       246/366:  [##############################]
+       247/366:  [##############################]
+       248/366:  [##############################]
+       249/366:  [##############################]
+       250/366:  [##############################]
+       251/366:  [##############################]
+       252/366:  [##############################]
+       253/366:  [##############################]
+       254/366:  [##############################]
+       255/366:  [##############################]
+       256/366:  [##############################]
+       257/366:  [##############################]
+       258/366:  [##############################]
+       259/366:  [##############################]
+       260/366:  [##############################]
+       261/366:  [##############################]
+       262/366:  [##############################]
+       263/366:  [##############################]
+       264/366:  [##############################]
+       265/366:  [##############################]
+       266/366:  [##############################]
+       267/366:  [##############################]
+       268/366:  [##############################]
+       269/366:  [##############################]
+       270/366:  [##############################]
+       271/366:  [##############################]
+       272/366:  [##############################]
+       273/366:  [##############################]
+       274/366:  [##############################]
+       275/366:  [##############################]
+       276/366:  [##############################]
+       277/366:  [##############################]
+       278/366:  [##############################]
+       279/366:  [##############################]
+       280/366:  [##############################]
+       281/366:  [##############################]
+       282/366:  [##############################]
+       283/366:  [##############################]
+       284/366:  [##############################]
+       285/366:  [##############################]
+       286/366:  [##############################]
+       287/366:  [##############################]
+       288/366:  [##############################]
+       289/366:  [##############################]
+       290/366:  [##############################]
+       291/366:  [##############################]
+       292/366:  [##############################]
+       293/366:  [##############################]
+       294/366:  [##############################]
+       295/366:  [##############################]
+       296/366:  [##############################]
+       297/366:  [##############################]
+       298/366:  [##############################]
+       299/366:  [##############################]
+       300/366:  [##############################]
+       301/366:  [##############################]
+       302/366:  [##############################]
+       303/366:  [##############################]
+       304/366:  [##############################]
+       305/366:  [##############################]
+       306/366:  [##############################]
+       307/366:  [##############################]
+       308/366:  [##############################]
+       309/366:  [##############################]
+       310/366:  [##############################]
+       311/366:  [##############################]
+       312/366:  [##############################]
+       313/366:  [##############################]
+       314/366:  [##############################]
+       315/366:  [##############################]
+       316/366:  [##############################]
+       317/366:  [##############################]
+       318/366:  [##############################]
+       319/366:  [##############################]
+       320/366:  [##############################]
+       321/366:  [##############################]
+       322/366:  [##############################]
+       323/366:  [##############################]
+       324/366:  [##############################]
+       325/366:  [##############################]
+       326/366:  [##############################]
+       327/366:  [##############################]
+       328/366:  [##############################]
+       329/366:  [##############################]
+       330/366:  [##############################]
+       331/366:  [##############################]
+       332/366:  [##############################]
+       333/366:  [##############################]
+       334/366:  [##############################]
+       335/366:  [##############################]
+       336/366:  [##############################]
+       337/366:  [##############################]
+       338/366:  [##############################]
+       339/366:  [##############################]
+       340/366:  [##############################]
+       341/366:  [##############################]
+       342/366:  [##############################]
+       343/366:  [##############################]
+       344/366:  [##############################]
+       345/366:  [##############################]
+       346/366:  [##############################]
+       347/366:  [##############################]
+       348/366:  [##############################]
+       349/366:  [##############################]
+       350/366:  [##############################]
+       351/366:  [##############################]
+       352/366:  [##############################]
+       353/366:  [##############################]
+       354/366:  [##############################]
+       355/366:  [##############################]
+       356/366:  [##############################]
+       357/366:  [##############################]
+       358/366:  [##############################]
+       359/366:  [##############################]
+       360/366:  [##############################]
+       361/366:  [##############################]
+       362/366:  [##############################]
+       363/366:  [##############################]
+       364/366:  [##############################]
+       365/366:  [##############################]
+       366/366:  [##############################]
+    373429800 bin entries.
+
+    Saving result as msd_H2O_HO.csv ...
+
+    Performing linear regression on interval 15.00 - 30.00 ps...
+
+      MSD(t) = 4729.607298 + 218.252058 * t   (units: [MSD] = pm^2, [t] = ps).
+           R = 0.999112   (correlation coefficient)
+
+      Diffusion coefficient D = 36.375343 pm^2/ps  =  3.63753E-11 m^2/s.
+        (assuming <x^2> = 6 * D * t)
+
+    Saving linear regression curve as msd_H2O_HO_fit.csv ...
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Analysis was running for 0h 0m 10s.
+      (200.000 steps per second)
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+

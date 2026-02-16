@@ -1,0 +1,223 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2026 09:06:22
+! Source code version: Jul 29 2022
+! Input file written at Fri Jan 23 09:37:16 2026.
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+n
+! Please select: [done] 
+2
+! Break bonds in which molecule (1-9)? 
+9
+! Break all bonds within this molecule (y/n)? [no] 
+
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+9
+! Break all bonds within this molecule (y/n)? [no] 
+y
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+8
+! Break all bonds within this molecule (y/n)? [no] 
+y
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+7
+! Break all bonds within this molecule (y/n)? [no] 
+y
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+5
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+4
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+h1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+n1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+3
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+n1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+3
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+n2
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h2
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+2
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+2
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o3
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+2
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o3
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h2
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+2
+! Break all bonds within this molecule (y/n)? [no] 
+
+! Enter 1st atom of the bond to break (e.g. C1): 
+o3
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h3
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+n1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+n2
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h2
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h1
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+o1
+! Invalid input. Enter "y" or "n".
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h6
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+n
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h6
+! Break another bond (y/n)? [no] 
+y
+! Break bonds in which molecule (1-9)? 
+1
+! Break all bonds within this molecule (y/n)? [no] 
+
+! Enter 1st atom of the bond to break (e.g. C1): 
+o1
+! Enter 2nd atom of the bond to break (e.g. C2): 
+h7
+! Break another bond (y/n)? [no] 
+n
+! Please select: [done] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+rdf
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Which of the molecules should be the reference molecule (C3H3N2=1, C2H3O2=2, O=3, H=4)? 
+3
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, H=4)? 
+4
+! Take reference atom(s) from RM O (0) or from OM H (1)? [0] 
+0
+! Take observed atom(s) from RM O (0) or from OM H (1)? [1] 
+
+! Enter the maximal radius of this RDF (in pm): [1800.0] 
+
+! Enter the resolution (bin count) for this RDF: [540] 
+1200
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no]
+
+
+
+
+

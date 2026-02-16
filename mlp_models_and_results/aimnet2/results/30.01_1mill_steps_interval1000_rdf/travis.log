@@ -1,0 +1,920 @@
+Command line:
+"travis -p aimnet2_analysis_unwrapped_v5.lmp -i INPUT_TRAVIS_AIMNET.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on bunya2.rcc.uq.edu.au at Fri Jan 30 09:39:00 2026 (PID 2847849)
+ #  Running in /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729
+ #  Version: Jul 29 2022, built at Jan 19 2026, 09:13:21, compiler "13.3.0", GCC 13.3.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/s4851246,  Executable: /scratch/user/s4851246/proton_project/travis_tool/travis-src-220729/exe/travis
+ #  Input from INPUT_TRAVIS_AIMNET.txt, Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/s4851246/.travis.conf ...
+
+    Opening position trajectory aimnet2_analysis_unwrapped_v5.lmp ...
+    Analyzing LAMMPS trajectory column definition:
+      - Field  1: id      
+      - Field  2: element 
+      - Field  3: xu      
+      - Field  4: yu      
+      - Field  5: zu      
+    Found 5 columns in total.
+
+    Trajectory contains approximately 1005 frames (just a *guess* from the file size of 135.68 MiB).
+
+    4700 atoms in the system: 500x C, 2800x H, 200x N, 1200x O
+
+    System extent:  X = {  -1415 ..  +4761 pm }, dX = 6176 pm
+      (in step 1)   Y = {  -1669 ..  +4918 pm }, dY = 6587 pm
+                    Z = {  -1257 ..  +4407 pm }, dZ = 5664 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] n
+
+    Found cell geometry data in trajectory file:
+
+      X = 3720.00 pm,   Y = 3720.00 pm,   Z = 3720.00 pm
+
+    The overall box density is 0.994420 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] y
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] y
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    1194 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 9 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 4 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C6H9N4; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  C4  C5  C6  H1  H2  H3  H4  H5  H6  H7  H8  H9  N1  N2  N3  N4 
+C1  ***  -   -   -   -   -   -   -   -  112  -   -   -   -   -  133  -  136  -  
+C2   -  ***  -   -   -   -   -   -   -   -  103  -   -   -   -   -  135  -  133 
+C3   -   -  ***  -  138  -   -   -   -   -   -  108  -   -   -  133  -   -   -  
+C4   -   -   -  ***  -  133  -   -   -   -   -   -  109  -   -   -  135  -   -  
+C5   -   -  138  -  ***  -   -   -   -   -   -   -   -  115  -   -   -  137  -  
+C6   -   -   -  133  -  ***  -   -   -   -   -   -   -   -  107  -   -   -  136 
+H1   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  127 127  -   -  
+H2   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  101  -  
+H3   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  107 
+H4  112  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H5   -  103  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H6   -   -  108  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H7   -   -   -  109  -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H8   -   -   -   -  115  -   -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H9   -   -   -   -   -  107  -   -   -   -   -   -   -   -  ***  -   -   -   -  
+N1  133  -  133  -   -   -  127  -   -   -   -   -   -   -   -  ***  -   -   -  
+N2   -  135  -  135  -   -  127  -   -   -   -   -   -   -   -   -  ***  -   -  
+N3  136  -   -   -  137  -   -  101  -   -   -   -   -   -   -   -   -  ***  -  
+N4   -  133  -   -   -  136  -   -  107  -   -   -   -   -   -   -   -   -  *** 
+
+    5-ring: C2 - N4 - C6 - C4 - N2
+    5-ring: C1 - N1 - C3 - C5 - N3
+
+    Atoms C1, C2 are equivalent.
+    Atoms C3, C4 are equivalent.
+    Atoms C5, C6 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms H6, H7 are equivalent.
+    Atoms H8, H9 are equivalent.
+    Atoms N1, N2 are equivalent.
+    Atoms N3, N4 are equivalent.
+
+*** Molecule 2: C2H6O3; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  H5  H6  O1  O2  O3 
+C1  *** 148  -   -   -   -   -   -  133 122  -  
+C2  148 ***  -   -   -  112 110 108  -   -   -  
+H1   -   -  ***  -   -   -   -   -  115  -  127 
+H2   -   -   -  ***  -   -   -   -   -   -   96 
+H3   -   -   -   -  ***  -   -   -   -   -  103 
+H4   -  112  -   -   -  ***  -   -   -   -   -  
+H5   -  110  -   -   -   -  ***  -   -   -   -  
+H6   -  108  -   -   -   -   -  ***  -   -   -  
+O1  133  -  115  -   -   -   -   -  ***  -   -  
+O2  122  -   -   -   -   -   -   -   -  ***  -  
+O3   -   -  127  96 103  -   -   -   -   -  *** 
+
+    Atoms H2, H3 are equivalent.
+    Atoms H4, H5, H6 are equivalent.
+
+*** Molecule 3: C3H5N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  H5  N1  N2 
+C1  ***  -   -   -   -  112  -   -  134 131 
+C2   -  *** 133  -   -   -  113  -  139  -  
+C3   -  133 ***  -   -   -   -  108  -  134 
+H1   -   -   -  ***  -   -   -   -  105  -  
+H2   -   -   -   -  ***  -   -   -   -  105 
+H3  112  -   -   -   -  ***  -   -   -   -  
+H4   -  113  -   -   -   -  ***  -   -   -  
+H5   -   -  108  -   -   -   -  ***  -   -  
+N1  134 139  -  105  -   -   -   -  ***  -  
+N2  131  -  134  -  105  -   -   -   -  *** 
+
+    5-ring: C2 - C3 - N2 - C1 - N1
+
+    Atoms C2, C3 are equivalent.
+    Atoms H1, H2 are equivalent.
+    Atoms H4, H5 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 4: C3H4N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  H4  N1  N2 
+C1  ***  -   -   -  106  -   -  137 134 
+C2   -  *** 138  -   -  108  -  133  -  
+C3   -  138 ***  -   -   -  108  -  139 
+H1   -   -   -  ***  -   -   -  101  -  
+H2  106  -   -   -  ***  -   -   -   -  
+H3   -  108  -   -   -  ***  -   -   -  
+H4   -   -  108  -   -   -  ***  -   -  
+N1  137 133  -  101  -   -   -  ***  -  
+N2  134  -  139  -   -   -   -   -  *** 
+
+    5-ring: C1 - N2 - C3 - C2 - N1
+
+*** Molecule 5: C2H4O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  H4  O1  O2 
+C1  *** 148  -   -   -   -  133 118 
+C2  148 ***  -  115 110 107  -   -  
+H1   -   -  ***  -   -   -  102  -  
+H2   -  115  -  ***  -   -   -   -  
+H3   -  110  -   -  ***  -   -   -  
+H4   -  107  -   -   -  ***  -   -  
+O1  133  -  102  -   -   -  ***  -  
+O2  118  -   -   -   -   -   -  *** 
+
+    Atoms H2, H3, H4 are equivalent.
+
+*** Molecule 6: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 152  -   -   -  130 124 
+C2  152 *** 108 112 109  -   -  
+H1   -  108 ***  -   -   -   -  
+H2   -  112  -  ***  -   -   -  
+H3   -  109  -   -  ***  -   -  
+O1  130  -   -   -   -  ***  -  
+O2  124  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 7: H5O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  H5  O1  O2 
+H1  ***  -   -   -   -  122 125 
+H2   -  ***  -   -   -  102  -  
+H3   -   -  ***  -   -  101  -  
+H4   -   -   -  ***  -   -   99 
+H5   -   -   -   -  ***  -   97 
+O1  122 102 101  -   -  ***  -  
+O2  125  -   -   99  97  -  *** 
+
+    Atoms H2, H3, H4, H5 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 8: H4O2; Representant 1; Distances in pm ***
+
+    H1  H2  H3  H4  O1  O2 
+H1  ***  -   -   -  125 112 
+H2   -  ***  -   -  105  -  
+H3   -   -  ***  -  103  -  
+H4   -   -   -  ***  -   97 
+O1  125 105 103  -  ***  -  
+O2  112  -   -   97  -  *** 
+
+    Atoms H2, H3 are equivalent.
+
+*** Molecule 9: H2O; Representant 1; Distances in pm ***
+
+    H1  H2  O1 
+H1  ***  -   94 
+H2   -  *** 100 
+O1   94 100 *** 
+
+    Atoms H1, H2 are equivalent.
+
+
+*** The following 9 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C6H9N4 (1 piece, 137.16 g/mol)
+      (10 noneq. atoms, 10 noneq. bonds, 16 noneq. angles)
+      Concentration:   0.032257 mol/liter
+      Detected 2 rings:
+         1.)  5-ring: C2 - N4 - C6 - C4 - N2
+         2.)  5-ring: C1 - N1 - C3 - C5 - N3
+
+  - Molecule 2:  C2H6O3 (3 pieces, 78.07 g/mol)
+      (8 noneq. atoms, 7 noneq. bonds, 9 noneq. angles)
+      Concentration:   0.096770 mol/liter
+
+  - Molecule 3:  C3H5N2 (12 pieces, 69.09 g/mol)
+      (6 noneq. atoms, 6 noneq. bonds, 8 noneq. angles)
+      Concentration:   0.387081 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C2 - C3 - N2 - C1 - N1
+
+  - Molecule 4:  C3H4N2 (86 pieces, 68.08 g/mol)
+      (9 noneq. atoms, 9 noneq. bonds, 13 noneq. angles)
+      Concentration:   2.774078 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N2 - C3 - C2 - N1
+
+  - Molecule 5:  C2H4O2 (83 pieces, 60.05 g/mol)
+      (6 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.677308 mol/liter
+
+  - Molecule 6:  C2H3O2 (14 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.451594 mol/liter
+
+  - Molecule 7:  H5O2 (1 piece, 37.04 g/mol)
+      (3 noneq. atoms, 2 noneq. bonds, 3 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 8:  H4O2 (1 piece, 36.03 g/mol)
+      (5 noneq. atoms, 4 noneq. bonds, 4 noneq. angles)
+      Concentration:   0.032257 mol/liter
+
+  - Molecule 9:  H2O (993 pieces, 18.02 g/mol)
+      (2 noneq. atoms, 1 noneq. bond, 1 noneq. angle)
+      Concentration:  32.030928 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] n
+
+    If you want some atom types to form no bonds at all, assign covalent radius 0 to them.
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] 2
+
+    Break bonds in which molecule (1-9)? 9
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 8
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 7
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 2
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 1
+    Break all bonds within this molecule (y/n)? [no] y
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 5
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): o1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 4
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n1
+    Enter 2nd atom of the bond to break (e.g. C2): h1
+
+    Break another bond (y/n)? [no] y
+
+    Break bonds in which molecule (1-9)? 3
+    Break all bonds within this molecule (y/n)? [no] n
+    Enter 1st atom of the bond to break (e.g. C1): n2
+    Enter 2nd atom of the bond to break (e.g. C2): h2
+
+    Break another bond (y/n)? [no] n
+
+
+    *** Modify Molecules ***
+
+    Your choices:
+
+    1.) Change covalent atom radii used for bond recognition
+    2.) Break specific bonds
+    3.) Rename elements
+    4.) Split molecule type into two types
+    5.) Add bonds / add solvation shell to molecule
+
+    Please select: [done] <RETURN>
+
+    Going back to molecule recognition with changed settings.
+
+
+    NPT: Using a cell vector of ( 3720.00 pm | 3720.00 pm | 3720.00 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 19 x 19 x 19 cells, min. diameter = 189 pm.
+
+    Molecule recognition [###########################################################]
+
+    3432 molecules found.
+
+    Sorting atom types...
+    2240 bonds have been broken.
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 6 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 1 rings.
+    Refining ring systems...
+    Assigning ring systems to molecule types...
+    Sorting rings by size...
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C3H3N2; Representant 1; Distances in pm ***
+    (ring bonds are shown in green)
+
+    C1  C2  C3  H1  H2  H3  N1  N2 
+C1  ***  -   -  106  -   -  134 137 
+C2   -  *** 138  -  108  -  139  -  
+C3   -  138 ***  -   -  108  -  133 
+H1  106  -   -  ***  -   -   -   -  
+H2   -  108  -   -  ***  -   -   -  
+H3   -   -  108  -   -  ***  -   -  
+N1  134 139  -   -   -   -  ***  -  
+N2  137  -  133  -   -   -   -  *** 
+
+    5-ring: C1 - N1 - C2 - C3 - N2
+
+    Atoms C2, C3 are equivalent.
+    Atoms H2, H3 are equivalent.
+    Atoms N1, N2 are equivalent.
+
+*** Molecule 2: C2H3O2; Representant 1; Distances in pm ***
+
+    C1  C2  H1  H2  H3  O1  O2 
+C1  *** 148  -   -   -  118 133 
+C2  148 *** 115 110 107  -   -  
+H1   -  115 ***  -   -   -   -  
+H2   -  110  -  ***  -   -   -  
+H3   -  107  -   -  ***  -   -  
+O1  118  -   -   -   -  ***  -  
+O2  133  -   -   -   -   -  *** 
+
+    Atoms H1, H2, H3 are equivalent.
+    Atoms O1, O2 are equivalent.
+
+*** Molecule 3: O; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 4: N; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 5: C; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 6: H; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+
+*** The following 6 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C3H3N2 (98 pieces, 67.07 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 6 noneq. angles)
+      Concentration:   3.161159 mol/liter
+      Detected 1 ring:
+         1.)  5-ring: C1 - N1 - C2 - C3 - N2
+
+  - Molecule 2:  C2H3O2 (97 pieces, 59.04 g/mol)
+      (4 noneq. atoms, 3 noneq. bonds, 4 noneq. angles)
+      Concentration:   3.128902 mol/liter
+
+  - Molecule 3:  O (1006 pieces, 16.00 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  32.450265 mol/liter
+
+  - Molecule 4:  N (4 pieces, 14.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:   0.129027 mol/liter
+
+  - Molecule 5:  C (12 pieces, 12.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:   0.387081 mol/liter
+
+  - Molecule 6:  H (2215 pieces, 1.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  71.448646 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] n
+
+    Accept these molecules (y) or change something (n)? [yes] y
+
+    Uniting molecules which have been broken by wrapping...
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (C3H3N2):    434.23 pm
+
+      (*) Molecule 2 (C2H3O2):    343.45 pm
+
+      (*) Molecule 3 (O):       (only one atom)
+
+      (*) Molecule 4 (N):       (only one atom)
+
+      (*) Molecule 5 (C):       (only one atom)
+
+      (*) Molecule 6 (H):       (only one atom)
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - N...
+      - C...
+      - H...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - C3H3N2...
+      - C2H3O2...
+      - O...
+      - N...
+      - C...
+      - H...
+
+    Defining ring centers in C3H3N2:
+      - Defining #3 as Center of Ring 1: C1 - N1 - C2 - C3 - N2
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #4 in C3H3N2 ...
+      - Dipole vector #2 --> #3 in C2H3O2 ...
+      - Dipole vector #2 --> #3 in O ...
+      - Dipole vector #2 --> #3 in N ...
+      - Dipole vector #2 --> #3 in C ...
+      - Dipole vector #2 --> #3 in H ...
+
+>>> 19 virtual atoms have been defined: >>>
+
+    #1 in C3H3N2: Center of Geometry.
+    #2 in C3H3N2: Center of Mass.
+
+    #3 in C3H3N2 - defined through center:
+      -  C1    Weight 20.00%
+      -  C2    Weight 20.00%
+      -  C3    Weight 20.00%
+      -  N1    Weight 20.00%
+      -  N2    Weight 20.00%
+
+    #4 in C3H3N2 - tip of molecular dipole vector starting in #2.
+
+    #1 in C2H3O2: Center of Geometry.
+    #2 in C2H3O2: Center of Mass.
+
+    #3 in C2H3O2 - tip of molecular dipole vector starting in #2.
+
+    #1 in O: Center of Geometry.
+    #2 in O: Center of Mass.
+
+    #3 in O - tip of molecular dipole vector starting in #2.
+
+    #1 in N: Center of Geometry.
+    #2 in N: Center of Mass.
+
+    #3 in N - tip of molecular dipole vector starting in #2.
+
+    #1 in C: Center of Geometry.
+    #2 in C: Center of Mass.
+
+    #3 in C - tip of molecular dipole vector starting in #2.
+
+    #1 in H: Center of Geometry.
+    #2 in H: Center of Mass.
+
+    #3 in H - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? rdf
+
+ rdf     - Radial Distribution Function
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] 
+End of input file reached. Switching to keyboard input.
+
+    Do you want to write an input file for this session (y/n)? [yes] 
+    Copying contents of old input file to input.txt ...
+Please continue with answering the last question above.
+
+n
+
+
+    Which of the molecules should be the reference molecule (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 3
+
+    O is the reference molecule.
+
+
+>>> Observation 1 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 3
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM O (0) or from OM O (1)? [0] 0
+    Take observed atom(s) from RM O (0) or from OM O (1)? [1] 1
+
+    O is only one atom, there is no choice.
+    O is only one atom, there is no choice.
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1200
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [360] 
+    Correct radial distribution for this RDF (y/n)? [yes] 
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] 
+    Add a condition to this observation (y/n)? [no] 
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] y
+
+>>> Observation 2 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+    Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 6
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM O (0) or from OM H (1)? [0] 
+    Take observed atom(s) from RM O (0) or from OM H (1)? [1] 
+
+    O is only one atom, there is no choice.
+    H is only one atom, there is no choice.
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1860.00 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3221.61 pm.
+    If you enter a max. radius of > 1860.00 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1800.0] 1200
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [360] 
+    Correct radial distribution for this RDF (y/n)? [yes] 
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] 
+    Add a condition to this observation (y/n)? [no] 
+
+<<< End of Observation 2 <<<
+
+    Add another observation (y/n)? [no] 
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - RDF: O_O_[O1r_O1o]
+  *** Observation 2
+    - RDF: O_H_[O1r_H1o]
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    In which trajectory frame to start processing the trajectory? [1] 
+    How many trajectory frames to read (from this position on)? [all] 
+    Use every n-th read trajectory frame for the analysis: [1] 
+
+    Using 1005 time steps: Every 1st within range 1 - approx. 1005.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Initializing observation 1...
+  Creating RDF...
+Initializing observation 2...
+  Creating RDF...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 .................................................. ETA 16m33s
+Step     50 .................................................. ETA 15m50s
+Step    100 .................................................. ETA 15m00s
+Step    150 .................................................. ETA 14m13s
+Step    200 .................................................. ETA 13m20s
+Step    250 .................................................. ETA 12m29s
+Step    300 .................................................. ETA 11m39s
+Step    350 .................................................. ETA 10m45s
+Step    400 .................................................. ETA  9m54s
+Step    450 .................................................. ETA  9m01s
+Step    500 .................................................. ETA  8m08s
+Step    550 .................................................. ETA  7m15s
+Step    600 .................................................. ETA  6m22s
+Step    650 .................................................. ETA  5m28s
+Step    700 .................................................. ETA  4m35s
+Step    750 .................................................. ETA  3m41s
+Step    800 .................................................. ETA  2m47s
+Step    850 .................................................. ETA  1m53s
+Step    900 .................................................. ETA 59s
+Step    950 ..................................................
+End of trajectory file reached.
+
+
+##########   Main pass done   ##########
+
+1000 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Observation 1 >>>
+
+* Radial Distribution Function
+    142507254 bin entries, 868522746 out of bin range (85.90 percent).
+    Max. bin entry: 1.189935E+06  -->  EPS: 2.328306E-10
+    Mean value:    1786.51 pm    Standard deviation:    517.576 pm
+    Min. value:     212.77 pm    Max.value:              3219.2 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at  261.67 pm, height  4.0483
+      1. minimum at  325.00 pm, height  1.0762,  3.5225 particles in 1. solvation shell.
+      2. maximum at  368.33 pm, height  1.4344
+      2. minimum at  418.33 pm, height  0.6563,  3.5565 particles in 2. solvation shell.
+      3. maximum at  461.67 pm, height  1.0159
+      3. minimum at  491.67 pm, height  0.9067,  3.3810 particles in 3. solvation shell.
+    <<< Peak Data <<<
+    Saving RDF as "rdf_O_O_[O1r_O1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_O_O_[O1r_O1o].agr"...
+
+>>> Observation 2 >>>
+
+* Radial Distribution Function
+    315807577 bin entries, 1912482423 out of bin range (85.83 percent).
+    Max. bin entry: 2.620551E+06  -->  EPS: 4.656613E-10
+    Mean value:    1784.92 pm    Standard deviation:    519.794 pm
+    Min. value:    85.7144 pm    Max.value:             3220.75 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at   98.33 pm, height 43.9428
+      1. minimum at  235.00 pm, height  0.2952,  3.6808 particles in 1. solvation shell.
+      2. maximum at  305.00 pm, height  2.2233
+      2. minimum at  408.33 pm, height  0.8006, 12.6325 particles in 2. solvation shell.
+    <<< Peak Data <<<
+    Saving RDF as "rdf_O_H_[O1r_H1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_O_H_[O1r_H1o].agr"...
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Analysis was running for 0h 18m 8s.
+      (0.919 steps per second)
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+

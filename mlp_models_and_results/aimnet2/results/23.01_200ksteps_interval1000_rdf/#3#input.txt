@@ -1,0 +1,12 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jan 19 2026 09:06:22
+! Source code version: Jul 29 2022
+! Input file written at Thu Jan 22 09:26:58 2026.
+aimnet2_analysis_unwrapped.lmp
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+n
+! Continue with molecule recognition anyways (y/n)? [yes] 

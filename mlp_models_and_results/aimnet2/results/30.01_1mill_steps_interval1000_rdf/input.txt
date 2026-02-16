@@ -1,0 +1,94 @@
+n
+y
+y
+n
+n
+2
+9
+y
+y
+8
+y
+y
+7
+y
+y
+2
+y
+y
+1
+y
+y
+5
+n
+o1
+h1
+y
+4
+n
+n1
+h1
+y
+3
+n
+n1
+h1
+y
+3
+n
+n2
+h2
+n
+
+n
+y
+rdf
+n
+! Which of the molecules should be the reference molecule (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 
+3
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 
+3
+! Take reference atom(s) from RM O (0) or from OM O (1)? [0] 
+0
+! Take observed atom(s) from RM O (0) or from OM O (1)? [1] 
+1
+! Enter the maximal radius of this RDF (in pm): [1800.0] 
+1200
+! Enter the resolution (bin count) for this RDF: [360] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+y
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C3H3N2=1, C2H3O2=2, O=3, N=4, C=5, H=6)? 
+6
+! Take reference atom(s) from RM O (0) or from OM H (1)? [0] 
+
+! Take observed atom(s) from RM O (0) or from OM H (1)? [1] 
+
+! Enter the maximal radius of this RDF (in pm): [1800.0] 
+1200
+! Enter the resolution (bin count) for this RDF: [360] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+
