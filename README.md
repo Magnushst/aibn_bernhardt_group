@@ -1,11 +1,11 @@
-# aibn_bernhardt_group
+# README aibn_bernhardt_group
 
 Molecular Modelling of Proton Transport in Aqueous Electrolytes
 
 This repository contains scripts, environment configurations, and analysis results for benchmarking four state-of-the-art Machine Learning Potentials (MLPs)—AIMNet2, MACE, Orb, and SevenNet—in modelling proton transport within aqueous electrolytes (Water/Acetic Acid/Imidazole mixtures).
 
 
-## Repository Structure
+### Repository Structure
 /mlp_models_and_results
 The core of the project, containing the implementation and data for each model.
 
