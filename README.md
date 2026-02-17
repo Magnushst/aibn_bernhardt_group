@@ -9,7 +9,7 @@ This repository contains scripts, environment configurations, and analysis resul
 /mlp_models_and_results
 The core of the project, containing the implementation and data for each model.
 
-Model Subfolders (aimnet2, mace, orb, seven_net):
+Model Subfolders (aimnet2, mace, orb, seven_net): 
 *_prod_run.py: The ASE-based production script for the Molecular Dynamics 
 
 simulation.env_*.yml: The Conda environment file required to run the specific model.
@@ -31,14 +31,14 @@ Scripts used for post-processing trajectories via TRAVIS and generating the comp
 
 
 
-HPC Diagnostic Scripts
+### HPC Diagnostic Scripts
 Tools specifically developed for the Bunya HPC environment:
 bunya_diagnostics_fairshare.sh & check_resources.sh: Scripts to monitor user fairshare, job priority, and current resource usage.
 check_available_gpu.py: A Python tool to find free or under-utilised GPUs in the gpu_cuda partition to improve job backfill efficiency.
 
 
 
-Usage
+### Usage
 To reproduce a simulation:
 Navigate to the desired model folder in /mlp_models_and_results.
 Create the environment: conda env create -f env_[model].yml.
