@@ -6,15 +6,15 @@ This repository contains scripts, environment configurations, and analysis resul
 
 
 ### Repository Structure
-/mlp_models_and_results
+/mlp_models_and_results\
 The core of the project, containing the implementation and data for each model.
 
-/Model Subfolders (aimnet2, mace, orb, seven_net):
+/Model Subfolders (aimnet2, mace, orb, seven_net):\
 *_prod_run.py: The ASE-based production script for the Molecular Dynamics
 
 /simulation.env_*.yml: The Conda environment file required to run the specific model.
 
-/results:
+/results:\
 Organised by analysis type, timestep count, and saving interval (e.g., 09.02_200ksteps_interval10_msd).\
 Analyses include:\
 RDF: Radial Distribution Functions to determine coordination numbers.\
@@ -23,11 +23,11 @@ Bond Analysis: Covalent and Hydrogen bond lifetime analyses.
 
 resume_interupted_prod_run.py: A robust restart script designed to truncate corrupt frames from interrupted .xyz files and resume simulations on HPC systems.
 
-/system_creation
-/Contains the generation scripts used to build the initial molecular mixture (1000 Water, 100 Acetic Acid, 100 Imidazole) with specific box lengths (37.2 Å) and periodic boundary conditions.
+/system_creation\
+Contains the generation scripts used to build the initial molecular mixture (1000 Water, 100 Acetic Acid, 100 Imidazole) with specific box lengths (37.2 Å) and periodic boundary conditions.
 
-/travis_function_analysis_plotting
-/Scripts used for post-processing trajectories via TRAVIS and generating the comparative plots for RDF, MSD, and bond lifetimes.
+/travis_function_analysis_plotting\
+Scripts used for post-processing trajectories via TRAVIS and generating the comparative plots for RDF, MSD, and bond lifetimes.
 
 
 
