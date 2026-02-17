@@ -1,8 +1,7 @@
 # README aibn_bernhardt_group
 
 Molecular Modelling of Proton Transport in Aqueous Electrolytes
-
-This repository contains scripts, environment configurations, and analysis results for benchmarking four state-of-the-art Machine Learning Potentials (MLPs)—AIMNet2, MACE, Orb, and SevenNet—in modelling proton transport within aqueous electrolytes (Water/Acetic Acid/Imidazole mixtures).
+This repository contains the scripts, environment configurations, and analysis results for benchmarking four state-of-the-art Machine Learning Potentials (MLPs): AIMNet2, MACE, Orb, and SevenNet. The project evaluates their performance in modelling proton transport within aqueous electrolytes, specifically focusing on mixtures of Water, Acetic Acid, and Imidazole.
 
 
 ### Repository Structure
@@ -45,3 +44,63 @@ Create the environment: conda env create -f env_[model].yml.\
 Run the production script: python [model]_prod_run.py.\
 Use the restart script if the job hits a walltime limit or crashes due to memory fragmentation.
 
+
+
+
+Repository Structure
+/mlp_models_and_results
+This directory serves as the core of the project, containing the implementation details and raw data for each evaluated model.
+
+Model Subfolders (aimnet2, mace, orb, seven_net)
+Each subfolder follows a standardised structure:
+
+[model]_prod_run.py
+The ASE-based (Atomic Simulation Environment) production script used to execute the Molecular Dynamics simulations.
+
+env_[model].yml
+The Conda environment file containing the specific dependencies and versions required to run the MLP.
+
+results/
+Contains various subdirectories organised by analysis type, date, timestep count, and saving interval. Examples include:
+
+05.02_200ksteps_interval10_hbond_bond_analysis
+
+05.02_200ksteps_interval10_rdf
+
+09.02_200ksteps_interval10_msd
+
+200ksteps_interval10_covalent_bond_analysis
+
+Support Scripts
+resume_interupted_prod_run.py
+A utility script designed for HPC environments. It includes a repair function that scans .xyz files for corrupt or half-written frames caused by job timeouts or crashes. It truncates the file to the last valid frame before resuming the simulation to ensure data integrity.
+
+/system_creation
+This directory contains the scripts used to generate the initial simulation box.
+
+The system consists of 1200 molecules in total.
+
+The simulation box is defined with a length of 37.2 Å.
+
+Periodic boundary conditions (PBC) are applied to simulate a bulk liquid environment.
+
+/travis_function_analysis_plotting
+This directory contains scripts for post-processing and visualising the simulation data.
+
+Trajectory Analysis: Utilises TRAVIS (Trajectory Analyser and Visualiser) to process raw .xyz files.
+
+Post-processing: Scripts to convert trajectory data into LAMMPS unwrapped formats for further analysis.
+
+Visualisation: Python-based plotting scripts for generating Radial Distribution Function (RDF), Mean Squared Displacement (MSD), and bond survival probability graphs.
+
+HPC Diagnostic Scripts
+A collection of tools specifically developed to optimise workflow and resource management on the Bunya HPC cluster:
+
+bunya_diagnostics_fairshare.sh
+Monitors user fairshare and job priority to estimate wait times.
+
+check_resources.sh
+Reports current CPU, memory, and disk quota usage.
+
+check_available_gpu.py
+A Python-based tool that queries the gpu_cuda partition to identify free or under-utilised GPUs, assisting in manual job backfilling.
