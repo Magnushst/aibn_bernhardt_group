@@ -50,3 +50,16 @@ A collection of Bash and Python scripts specifically developed to optimise workf
   Monitors user fairshare metrics and job priority to help estimate scheduler wait times.
 * **`check_resources.sh`:** \
   Reports the current CPU, memory, and disk quota usage for the user.
+
+---
+
+## Simulation Protocol
+
+The standard molecular dynamics protocol implemented in the production scripts adheres to the following parameters:
+* **Ensemble:** NPT (Constant Number of particles, Pressure, and Temperature).
+* **Temperature:** 330 K (Targeted to compensate for the characteristic over-structuring and temperature underestimation typical of current MLPs).
+* **Timestep:** 1.0 fs.
+* **System Size:** 1200 molecules (3800 atoms).
+* **Box Length:** 37.2 Å.
+
+---
