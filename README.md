@@ -26,7 +26,7 @@ This directory serves as the core of the project, containing the implementation 
 * **resume_interupted_prod_run.py:**
   A robust utility script designed for High-Performance Computing (HPC) environments. It includes a repair function that scans `.xyz` trajectory files for corrupt or half-written frames (often caused by job timeouts or walltime limits), truncates the file to the last valid frame, and safely resumes the simulation.
 
-### /system_creation \
+### /system_creation
 This directory contains the Python scripts used to generate the initial simulation box.
 * Builds the molecular mixture (1000 Water, 100 Acetic Acid, 100 Imidazole).
 * Configures the simulation box with a specified length of 37.2 Å.
@@ -59,7 +59,7 @@ The standard molecular dynamics protocol implemented in the production scripts a
 * **Ensemble:** NPT (Constant Number of particles, Pressure, and Temperature).
 * **Temperature:** 330 K (Targeted to compensate for the characteristic over-structuring and temperature underestimation typical of current MLPs).
 * **Timestep:** 1.0 fs.
-* **System Size:** 1200 molecules (3800 atoms).
+* **System Size:** 1200 molecules (4700 atoms).
 * **Box Length:** 37.2 Å.
 
 ---
